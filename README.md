@@ -1,3 +1,5 @@
+[![Build Status](https://www.gitbook.io/button/status/book/maxheld/heart-txt)](https://www.gitbook.io/book/maxheld/heart-txt/activity)
+
 Why bother? Because:
 
 > Learning from hackers is learning to win.

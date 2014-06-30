@@ -4,18 +4,23 @@ Why bother? Because:
 
 > Learning from hackers is learning to win.
 
-Over the past few years of working on my PhD, I've spent a fair amount of time figuring out the best possible tech-setup.
+![Keyboard Keys](http://dl.dropboxusercontent.com/u/5341489/images/keyboard-keys-2.jpg)
+> by [Ho John Lee](https://www.flickr.com/photos/hjl/8205547070/in/photolist-dv6zgu-nffY2e) under [CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)
+
+---
+
+Over the past few years of working on my PhD, I've spent a fair amount of time figuring out the best possible tech-setup for research and teaching.
 Ok, to be honest, I procrastinated.
 But: While I am still not a programmer (sadly), I've come to the conclusion that hackers have developed a set of great tools, technology and practices that are applicable to social scientists and other knowledge workers, too [^3].
 
-I thought I'd offer a workshop for whomever is interested in this.
-
-<!--more-->
-
-<div markdown="0"><a href="http://www.bigsss-bremen.de" class="btn btn-warning">These are some early sketches for a possible workshop at BIGSSS.</a></div>
+I thought I'd offer two things about this for whomever is interested.
+1. a **workshop** (at BIGSSS)
+2. and jumpstart a **collaborative book** (over on gitbook.io)
 
 
 ## Themes
+
+<div markdown="0"><a href="http://www.bigsss-bremen.de" class="btn btn-warning">These are some early sketches for a possible workshop at BIGSSS.</a></div>
 
 Overall themes would include:
 

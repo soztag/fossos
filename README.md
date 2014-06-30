@@ -20,7 +20,7 @@ I thought I'd offer two things about this for whomever is interested.
 
 ## Themes
 
-<div markdown="0"><a href="http://www.bigsss-bremen.de" class="btn btn-warning">These are some early sketches for a possible workshop at BIGSSS.</a></div>
+*These are some early sketches for a possible workshop at [BIGSSS](http://www.bigsss-bremen.de).*
 
 Overall themes would include:
 

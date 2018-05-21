@@ -1,0 +1,174 @@
+---
+title: "Syllabus"
+author:
+  name: "Maximilian Held"
+  affiliation: "Friedrich-Alexander Universität Erlangen-Nürnberg (FAU)"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+bibliography: library.bib
+---
+
+<div class="jumbotron" style="color:white; background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(img/keyboard-keys-2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+  <h2>Free and Open Source Software for Open Science</h1>
+  <p>... because learning from hackers is learning to win?</p>
+  <p> <span class="label label-default">
+  #DataScience
+  </span>
+  <span class="label label-primary">
+  #rstats
+  </span>
+  <span class="label label-info">
+  Git(Hub)
+  </span>
+    <span class="label label-success">
+  #ReproducibleResearch
+  </span>
+  </p>
+  <p><small><sub>
+    Image Credit: Red Alt [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) [hjl](https://www.flickr.com/photos/hjl/8205547070/in/photolist-dv6zgu-nffY2e)
+  </sub></small></p>
+</div>
+
+```{r, child="README.rmd"}
+```
+
+---
+
+> *[Coding – ] it’s the next best thing we have to a superpower.*
+> – [Drew Houston](@drewhouston) via [code.org](https://code.org)
+
+> *The bad news is that whenever you learn a new skill, you’re going to suck.*
+> – [Hadley Wickham](http://hadley.nz)
+
+
+## German Title {.alert .alert-info}
+
+Depending on who will be attending the class, instruction may also occur in english or german.
+In either event, all of the readings and other course material are english, and participants are expected to be proficient in reading and writing english technical documents.
+
+Here, for the sake of completeness, is the german title:
+
+> Open Source Werkzeuge für die wissenschaftliche Datenverarbeitung
+
+
+## Course Description
+
+Digitisation has created both new challenges and yet unrealised potentials for empirical social sciences. 
+Larger, and often streamed datasets require more programmatic and dynamic statistical analyses. 
+Existing commercial programs with graphical user interfaces (GUIs) are expensive, and analyses can easily become intransparent, sometimes contributing to a crisis of reproducibility in the social sciences and beyond [cf. @MairThouShaltBe2016] or even propagating outright bugs [cf. @ReinhartGrowthTimeDebt2010].
+
+Happily, the open source community has already pioneered a set of technologies and conventions for their software development efforts, that have proven useful in solving these problems in many academic fields. 
+Unfortunately, learning these tools takes more time than is usually available until any given project deadline.
+
+The goal of this seminar is therefore to train participants in a coherent set of leading tools and best practices, including:
+
+- Separating content and presentation using plain-text formats for technical and scientific writing, including LaTeX, Markdown and RMarkdown.
+- Establishing an efficient plain-text workflow using editors and an Integrated Development Environment (IDE), including Atom and RStudio.
+- Introducing the world of UNIX-style command-line interface (CLI) programs and package managers, such as homebrew or APT.
+- Creating programmatic statistical analyses with R, including an introduction to R and the tidyverse.
+- Learning source control management (SCM) and massively collaborative development using Git and GitHub.
+- Preparing graphical and interactive summaries of data, using ggplot2 and shiny.
+- Rendering results in a variety of formats (Word, HTML, PDF), using RMarkdown and bookdown.
+- Strengthening reproducibility by applying assertions (checkmate), dependency management (packrat) and continuous integration and deployment (Travis).
+
+Towards the end of the seminar, participants will use this toolchain to work on one of their own projects, to make a small contribution to an open source package or to answer questions on the popular coding website stackoverflow.com, thus establishing a first presence for themselves in the open source community.
+
+This seminar provides a broad introduction and furnishes participants with an end-to-end consistent toolchain, but does not go into great depth of any particular tool. 
+Rather, the emphasis is on how these tools work together, how they can be problem-solved and what additional steps might be. 
+As such, the seminar has no prerequisites; everyone is welcome. 
+While it is not a computer science class, it should also be valuable to students with coding experience who may be interested in the tooling covered. 
+We will not cover the scaling and efficiency issues of proper “Big Data”, but confine ourselves to in-memory problems. 
+We also limit ourselves to the R ecosystem, though some tools and problems will be similar for other programming languages such as python.
+
+An introduction to data science and open source may well open up new job opportunities, or serve as a first stepping stone to a career with tech, but that is arguably not the only reason why social scientists should be excited about it. 
+Instead, to learn the way of open source is perhaps to update the ideals of the scientific process for the modern day: radical openness and rigorous reproducibility, maximal inclusivity and promised meritocracy, generous sharing and personal attribution. 
+Open source may also be a worthwhile exercise in participant observation for social scientists: here is a real, if surely flawed utopia, massively coordinating individuals beyond *both* market and state.
+
+Less loftily, but not least, the seminar also promises a starter dose of gratification from having built something that actually works, and is of some immediate use to our fellow human – a good feeling sometimes hard to come by in the social sciences.
+
+
+### Crosslistings
+
+This is listed as upper division Bachelor seminar ("Hauptseminar") (7.5 ECTS) in:
+
+- Bachelor Sociology
+  - Sociological Methods (Module `SOZ M`, [Soziologische Methodenlehre](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/methoden-der-empirischen-sozialforschung/))
+  - Labor and Organisation (Module `Soz Qf4`, [Arbeit und Organisation](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/arbeit-und-organisation/))
+    (We will be using datasets from labor sociology.)
+- Bachelor Digital Humanities and Social Sciences ("BA Zweitfach")
+  - tba.
+
+
+## Prerequisites {.alert .alert-info}
+
+*Everyone* is welcome to this seminar.
+This is *not* a "proper" computer science class, and participants do *not* need any background in CS or math.
+
+You should just be curious and ready to:
+
+- learn to use specialised command-line software and open-source tools for collaboration,
+- read and write technical documents in simple, readable english and
+- collaborate intensively using (perhaps unfamiliar) web-based tools.
+
+No worries, we'll bring everyone up to speed in no time.
+
+
+## Venue {.alert .alert-warning}
+
+Classes will take place in one of two FAU locations:
+
+IFS
+
+: 
+    <address>
+    | Institut für Soziologie
+    | Room 5052
+    | Kochstraße 4
+    | 91054 Erlangen
+    </address>
+
+
+NCT
+
+: 
+    <address>
+    | Nuremberg Campus of Technology
+    | "Auf AEG" Haus 11
+    | Room 11.2.2
+    | Fürther Straße 246c
+    | 90429 Nuremberg
+    </address>
+    
+    (The building can be hard to find; see [here](http://www.ncatec.de/nct/wir-ueber-uns/lageplan.html) for directions).
+
+
+## Material {.well}
+
+All *mandatory* course material (readings) will be either
+
+- freely available online, 
+- on [StudOn](https://www.studon.fau.de/),
+- (if copyright restrictions do not permit otherwise) available on the course reserve collection ("Semesterapparat") at the IFS library.
+
+In *addition*, recommended material may also be available in these places, but you do not *have* to read it.
+
+Please consult the below schedule for the mandatory readings.
+
+## Schedule
+
+tba.
+
+
+
+
+## Contact
+
+Find my contact details [here](http://www.maxheld.de).
+
+
+## Recommended Readings (Optional)
+
+tba.
+
+
+## References
+

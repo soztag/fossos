@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Syllabus</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">FOSSOS</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Syllabus</a>
+</li>
+<li>
+  <a href="stack.html">Stack</a>
+</li>
+<li>
+  <a href="http://www.maxheld.de">Instructor</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-university"></span>
+     
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="http://univis.fau.de/">UnivIS</a>
+    </li>
+    <li>
+      <a href="https://www.campus.uni-erlangen.de/">meincampus</a>
+    </li>
+    <li>
+      <a href="https://www.studon.fau.de/crs2139506.html">studOn</a>
+    </li>
+    <li>
+      <a href="https://www.soziologie.phil.fau.de)">Institut für Soziologie</a>
+    </li>
+    <li>
+      <a href="https://www.ncatec.de">Nuremberg Campus of Technology</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="https://github.com/soztag/qdelib">
+    <span class="fa fa-github"></span>
+     
+  </a>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Syllabus</h1>
+<h4 class="author"><em>Maximilian Held</em></h4>
+<address class="author_afil">
+Friedrich-Alexander Universität Erlangen-Nürnberg (FAU)<br><h4 class="date"><em>21 May, 2018</em></h4>
+
+</div>
+
+
+<div class="jumbotron" style="color:white; background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(img/keyboard-keys-2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
+<h1>
+Free and Open Source Software for Open Science
+</h1>
+<p>
+… because learning from hackers is learning to win?
+</p>
+<p>
+<span class="label label-default"> #DataScience </span> <span class="label label-primary"> #rstats </span> <span class="label label-info"> Git(Hub) </span> <span class="label label-success"> #ReproducibleResearch </span>
+</p>
+<p>
+<small><sub> Image Credit: Red Alt <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a> <a href="https://www.flickr.com/photos/hjl/8205547070/in/photolist-dv6zgu-nffY2e">hjl</a> </sub></small>
+</p>
+</div>
+<p><a href="https://travis-ci.com/soztag/cupi"><img src="https://travis-ci.com/soztag/cupi.svg?token=VqJKxxUwxXFJyYyqJx7G&amp;branch=master" alt="Build Status" /></a></p>
+<p>“Free and Open Source Software for Open Science” is an undergraduate seminar taught by <a href="http://www.maxheld.de">Max Held</a> at <a href="https://www.fau.de">Friedrich-Alexander Universität Erlangen-Nürnberg (FAU)</a> in the 2018 fall term.</p>
+<p>As part of the class, participants are undertaking some coding exercises in this repository.</p>
+<hr />
+<blockquote>
+<p><em>[Coding – ] it’s the next best thing we have to a superpower.</em> – <a href="@drewhouston">Drew Houston</a> via <a href="https://code.org">code.org</a></p>
+</blockquote>
+<blockquote>
+<p><em>The bad news is that whenever you learn a new skill, you’re going to suck.</em> – <a href="http://hadley.nz">Hadley Wickham</a></p>
+</blockquote>
+<div id="german-title" class="section level2 alert alert-info">
+<h2>German Title</h2>
+<p>Depending on who will be attending the class, instruction may also occur in english or german. In either event, all of the readings and other course material are english, and participants are expected to be proficient in reading and writing english technical documents.</p>
+<p>Here, for the sake of completeness, is the german title:</p>
+<blockquote>
+<p>Open Source Werkzeuge für die wissenschaftliche Datenverarbeitung</p>
+</blockquote>
+</div>
+<div id="course-description" class="section level2">
+<h2>Course Description</h2>
+<p>Digitisation has created both new challenges and yet unrealised potentials for empirical social sciences. Larger, and often streamed datasets require more programmatic and dynamic statistical analyses. Existing commercial programs with graphical user interfaces (GUIs) are expensive, and analyses can easily become intransparent, sometimes contributing to a crisis of reproducibility in the social sciences and beyond <span class="citation">(cf. Mair 2016)</span> or even propagating outright bugs <span class="citation">(cf. Reinhart and Rogoff 2010)</span>.</p>
+<p>Happily, the open source community has already pioneered a set of technologies and conventions for their software development efforts, that have proven useful in solving these problems in many academic fields. Unfortunately, learning these tools takes more time than is usually available until any given project deadline.</p>
+<p>The goal of this seminar is therefore to train participants in a coherent set of leading tools and best practices, including:</p>
+<ul>
+<li>Separating content and presentation using plain-text formats for technical and scientific writing, including LaTeX, Markdown and RMarkdown.</li>
+<li>Establishing an efficient plain-text workflow using editors and an Integrated Development Environment (IDE), including Atom and RStudio.</li>
+<li>Introducing the world of UNIX-style command-line interface (CLI) programs and package managers, such as homebrew or APT.</li>
+<li>Creating programmatic statistical analyses with R, including an introduction to R and the tidyverse.</li>
+<li>Learning source control management (SCM) and massively collaborative development using Git and GitHub.</li>
+<li>Preparing graphical and interactive summaries of data, using ggplot2 and shiny.</li>
+<li>Rendering results in a variety of formats (Word, HTML, PDF), using RMarkdown and bookdown.</li>
+<li>Strengthening reproducibility by applying assertions (checkmate), dependency management (packrat) and continuous integration and deployment (Travis).</li>
+</ul>
+<p>Towards the end of the seminar, participants will use this toolchain to work on one of their own projects, to make a small contribution to an open source package or to answer questions on the popular coding website stackoverflow.com, thus establishing a first presence for themselves in the open source community.</p>
+<p>This seminar provides a broad introduction and furnishes participants with an end-to-end consistent toolchain, but does not go into great depth of any particular tool. Rather, the emphasis is on how these tools work together, how they can be problem-solved and what additional steps might be. As such, the seminar has no prerequisites; everyone is welcome. While it is not a computer science class, it should also be valuable to students with coding experience who may be interested in the tooling covered. We will not cover the scaling and efficiency issues of proper “Big Data”, but confine ourselves to in-memory problems. We also limit ourselves to the R ecosystem, though some tools and problems will be similar for other programming languages such as python.</p>
+<p>An introduction to data science and open source may well open up new job opportunities, or serve as a first stepping stone to a career with tech, but that is arguably not the only reason why social scientists should be excited about it. Instead, to learn the way of open source is perhaps to update the ideals of the scientific process for the modern day: radical openness and rigorous reproducibility, maximal inclusivity and promised meritocracy, generous sharing and personal attribution. Open source may also be a worthwhile exercise in participant observation for social scientists: here is a real, if surely flawed utopia, massively coordinating individuals beyond <em>both</em> market and state.</p>
+<p>Less loftily, but not least, the seminar also promises a starter dose of gratification from having built something that actually works, and is of some immediate use to our fellow human – a good feeling sometimes hard to come by in the social sciences.</p>
+<div id="crosslistings" class="section level3">
+<h3>Crosslistings</h3>
+<p>This is listed as upper division Bachelor seminar (“Hauptseminar”) (7.5 ECTS) in:</p>
+<ul>
+<li>Bachelor Sociology
+<ul>
+<li>Sociological Methods (Module <code>SOZ M</code>, <a href="https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/methoden-der-empirischen-sozialforschung/">Soziologische Methodenlehre</a>)</li>
+<li>Labor and Organisation (Module <code>Soz Qf4</code>, <a href="https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/arbeit-und-organisation/">Arbeit und Organisation</a>) (We will be using datasets from labor sociology.)</li>
+</ul></li>
+<li>Bachelor Digital Humanities and Social Sciences (“BA Zweitfach”)
+<ul>
+<li>tba.</li>
+</ul></li>
+</ul>
+</div>
+</div>
+<div id="prerequisites" class="section level2 alert alert-info">
+<h2>Prerequisites</h2>
+<p><em>Everyone</em> is welcome to this seminar. This is <em>not</em> a “proper” computer science class, and participants do <em>not</em> need any background in CS or math.</p>
+<p>You should just be curious and ready to:</p>
+<ul>
+<li>learn to use specialised command-line software and open-source tools for collaboration,</li>
+<li>read and write technical documents in simple, readable english and</li>
+<li>collaborate intensively using (perhaps unfamiliar) web-based tools.</li>
+</ul>
+<p>No worries, we’ll bring everyone up to speed in no time.</p>
+</div>
+<div id="venue" class="section level2 alert alert-warning">
+<h2>Venue</h2>
+<p>Classes will take place in one of two FAU locations:</p>
+<dl>
+<dt>IFS</dt>
+<dd><address>
+<div class="line-block">Institut für Soziologie<br />
+Room 5052<br />
+Kochstraße 4<br />
+91054 Erlangen</div>
+</address>
+</dd>
+<dt>NCT</dt>
+<dd><address>
+<div class="line-block">Nuremberg Campus of Technology<br />
+“Auf AEG” Haus 11<br />
+Room 11.2.2<br />
+Fürther Straße 246c<br />
+90429 Nuremberg</div>
+</address>
+<p>(The building can be hard to find; see <a href="http://www.ncatec.de/nct/wir-ueber-uns/lageplan.html">here</a> for directions).</p>
+</dd>
+</dl>
+</div>
+<div id="material" class="section level2 well">
+<h2>Material</h2>
+<p>All <em>mandatory</em> course material (readings) will be either</p>
+<ul>
+<li>freely available online,</li>
+<li>on <a href="https://www.studon.fau.de/">StudOn</a>,</li>
+<li>(if copyright restrictions do not permit otherwise) available on the course reserve collection (“Semesterapparat”) at the IFS library.</li>
+</ul>
+<p>In <em>addition</em>, recommended material may also be available in these places, but you do not <em>have</em> to read it.</p>
+<p>Please consult the below schedule for the mandatory readings.</p>
+</div>
+<div id="schedule" class="section level2">
+<h2>Schedule</h2>
+<p>tba.</p>
+</div>
+<div id="contact" class="section level2">
+<h2>Contact</h2>
+<p>Find my contact details <a href="http://www.maxheld.de">here</a>.</p>
+</div>
+<div id="recommended-readings-optional" class="section level2">
+<h2>Recommended Readings (Optional)</h2>
+<p>tba.</p>
+</div>
+<div id="references" class="section level2 unnumbered">
+<h2>References</h2>
+<div id="refs" class="references">
+<div id="ref-MairThouShaltBe2016">
+<p>Mair, Patrick. 2016. “Thou Shalt Be Reproducible! A Technology Perspective.” <em>Frontiers in Psychology</em> 7 (July). <a href="https://doi.org/10.3389/fpsyg.2016.01079" class="uri">https://doi.org/10.3389/fpsyg.2016.01079</a>.</p>
+</div>
+<div id="ref-ReinhartGrowthTimeDebt2010">
+<p>Reinhart, Carmen M., and Kenneth S. Rogoff. 2010. “Growth in a Time of Debt.” Working Paper 15639. National Bureau of Economic Research. <a href="https://doi.org/10.3386/w15639" class="uri">https://doi.org/10.3386/w15639</a>.</p>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

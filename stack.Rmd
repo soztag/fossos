@@ -1,0 +1,148 @@
+---
+title: "Stack"
+author: 
+  name: "Maximilian Held"
+  affiliation: "Friedrich-Alexander Universität Erlangen-Nürnberg (FAU)"
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+bibliography: library.bib
+---
+
+Here's the software stack we'll be using, including introductory remarks and links to documentation.
+This is by no means the *only* way to do open science with open source software, and recommended packages are likely to change over time.
+The below R-based toolchain should be considered as merely *one* (out of several) consistent implementation of some best practices.
+However, once participants have mastered this toolchain, they should find it relatively easy to adapt to other ecosystems.
+
+
+## Installation {.alert .alert-success}
+
+If at all possible, please install the below tools before the class begins.
+
+
+**Mandatory**:
+
+- [Pandoc, a universal document converter](https://pandoc.org)
+- [LaTeX Typsetting System](https://www.latex-project.org)
+- [git decentralized source control management (SCM)](https://git-scm.com)
+- [R Project for Statistical Computing](https://www.r-project.org)
+- [RStudio R Integrated Development Environment (IDE)](https://www.rstudio.com/products/RStudio/)
+- A bunch of R packages:
+  - [tidyverse](https://www.tidyverse.org)
+  - [rmarkdown](https://rmarkdown.rstudio.com)
+  - [pensieve](https://pensieve.maxheld.de)
+
+
+**Optional**:
+
+- [Atom, an open source editor](http://atom.io)
+
+The steps required for installation will depend on your platform and system setup.
+Please understand that we cannot support or troubleshoot these installations during class; there, however, are ample resources on the internet for troubleshooting an installation.
+
+
+## Preparation {.alert .alert-info}
+
+If the class is *not* held in a computer lab, please emember to bring and update your computer. 
+
+Specifically:
+
+- Have a current version of the Chrome or Firefox web browsers installed.
+- Make sure that your WiFi works. 
+  (At FAU, we have FAU-STUD, eduroam and FAU.fm. 
+  If you need help setting up your WiFi, consult the RRZE Website.)
+- Bring your power adapter.
+- A mobile device (iOS or Android tablet) will not suffice (unless you can SSH into a Linux-box or something). 
+- You need a laptop, but pretty much any (cheap or old) device will be fine, if it can run the above browsers in a current version.
+- If you do not have access to a laptop, please contact the course instructor (me) in advance, and we’ll arrange a device for you.
+
+
+## Writing
+
+Whenever we write something in this class, it will be in [plain text](http://en.wikipedia.org/wiki/Plain_text).
+Plain text, roughly speaking, consists *directly* and only of letters, encoded in an open standard.
+
+This may seem antiquated, but has several advantages:
+
+- Plain text can easily be versioned by computer software such as [git](http://git-scm.com).
+- Plain text is transparent to the user: it is *human-readable*.
+ For comparison, try opening a `*.doc` in a text editor, and see whether you can make out any meaning.
+- Plain text is lightweight and robust.
+ File sizes and memory footprint are tiny.
+- Plain text files future-proof your work and data.
+ `*.txt`, or, equivalently for data, `*.csv` can be opened and edited on pretty much any computer today, could be 30 years go, today, and probably still will be widely accessible in 30 years time.
+
+
+### Markup
+
+On the other hand, plain text has one glaring disadvantage: it does not look very nice, and does not implement many of the typesetting conventions that have evolved since Gutenberg (say, **bold** face).
+
+Markup syntaxes solve this problem.
+Markup syntaxes are sets of conventions (as in `*something*` for highlighting) to structure human-generated *text* in a way that computers can operate on them, such as formatting a piece of text.
+
+There are many, many, such markup languages out there, including **HTML** but also **Markdown** and **LaTeX**.
+
+We will be focusing on Markdown as a source language, and then use open source tools (especially **Pandoc**), to render our source documents to all sorts of other formats, including PDF (via LaTeX), HTML (such as this website), but also Microsoft Word documents.
+
+Markdown is a very lightweight markup language, that was designed to be maximally *human readable*, that is, looking meaningful *without* being compiled by a computer.
+Most of the syntax takes its clues from how people have already formatted plain text, such as enclosing a `*word*` with `*` for *highlighting*.
+
+Technically, Markdown is a convention for writing such files, as well as a program to convert such files into `HMTL`, as, for example, this website (which is written in Markdown).
+
+By convention, Markdown files use the `.md` file extension.
+It's important to recognize that still, an `.md` is a *plain text file*.
+You could open it with any text editor, or even change the extension to `*.txt` and nothing would change.
+The extension `.md` serves merely to tell computers that the following plain text is marked up in markdown.
+
+
+You should:
+
+- [ ] familiarize yourself thoroughly with markdown.
+ The best source is [John Gruber](http://daringfireball.net/projects/markdown/) who invented the syntax.
+ It's really not a lot to learn.
+- [ ] if you're looking for a very brief intro, head over to [Github](https://help.github.com/articles/markdown-basics) or check out this [Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+- [ ] install a markdown editor/previewer on your computer.
+ There are [plenty](http://mashable.com/2013/06/24/markdown-tools/) of choices, including the free [MarkdownPad](http://markdownpad.com) for Windows, and [Lightpaper](http://clockworkengine.com/lightpaper-mac/) for OS X.
+- [ ] If you don't want to install something, [Github](https://github.com) (see below) also offers a Markdown preview in its browser-based editor.
+- [ ] Play around with Markdown.
+- [ ] Last step: profit (as they say.)
+
+
+### Markdown Flavors
+
+Markdown was (originally) quite a minimal standard, and has since branched out into a few specialised "flavors", offering additional features.
+
+We will be using only *two* of these flavors.
+
+
+### GitHub-Flavored Markdown (GFM)
+
+GitHub, a leading code-hosting service, has extended the above original Markdown spec by a couple of additional features.
+In addition to these formatting niceties, Github also implements some clever cross-referencing and autocompletion magic.
+When using Github for source control and collaboration, you *really* must use these in issues, comments, commit messages etc. (they work *everywhere*).
+
+Learn about it here:
+
+- [ ] https://help.github.com/articles/github-flavored-markdown
+- [ ] [Writing on Github](https://help.github.com/articles/writing-on-github)
+- [ ] [Referencing issues in commit messages](https://help.github.com/articles/closing-issues-via-commit-messages)
+
+
+### Pandocs Markdown
+
+[Pandoc](https://pandoc.org) is, originally, a kind of swiss army knife for text document formats, such as, say, between Microsoft Word and HTML.
+As part of this work, Pandoc has also defined its own extension to Markdown (compatible with GFM), including such features as footnotes, captions and (loosely speaking) references.
+
+Learn about it here:
+
+- [ ] [Pandoc, a universal document converter](https://pandoc.org)
+- [ ] [Pandocs Markdown spec](https://rmarkdown.rstudio.com/authoring_pandoc_markdown.html) (RStudio has the most convenient documentation)
+
+
+### LaTeX
+
+[(La)TeX](http://www.latex-project.org) is strictly speaking a *typesetting* program, which can create beautiful documents.
+It has extensive support for all sorts of domain-specific typographic niceties, and is used a lot by academics, especially in math and sciences because.
+
+However, because LaTeX is quite cumbersome to compose and tends to distract writing with a lot of bells and whistles, we will *not* learn to write LaTeX directly "by hand".
+Instead, we will be using Pandoc to compile our Pandoc Markdown source *to* PDF (via LaTeX), and, because LaTeX can be slow to compile, we will only do so rarely and towards the end of any given project.
+
+Still, it is important to learn some of the basics of LaTeX to use it programmatically.

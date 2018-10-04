@@ -50,6 +50,14 @@ Here, for the sake of completeness, is the german title:
 > Open Source Werkzeuge für die wissenschaftliche Datenverarbeitung
 
 
+## Related Class: Introduction to R {.alert .alert-success}
+
+Daniel Lemmer is offering an [introduction to R](http://univis.fau.de/form?__s=2&dsc=anew/lecture_view&lvs=phil/dsp/isoz/zentr/einfhr_4&anonymous=1&founds=phil/dsp/ipowi/zentr/argent,/spanie,///isoz/zentr/einfhr_4&sem=2018w&__e=808) (in german) as a seminar in this winter term 2018.
+In this class (*fossos*), we will be using R, but we will *not* include (nor require) a full introduction to (especially base) R.
+Instead, we will focus on broader open source practices and paradigms, using R as an example, but also covering recent developments in [tidyverse](https://www.tidyverse.org) R.
+You do not *need* to also attend the "Introduction to R seminar"", but participation in both may give you a deeper understanding and command of a more fully-fledged stack.
+
+
 ## Course Description
 
 Digitisation has created both new challenges and yet unrealised potentials for empirical social sciences. 

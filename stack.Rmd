@@ -7,55 +7,269 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
 bibliography: library.bib
 ---
 
-Here's the software stack we'll be using, including introductory remarks and links to documentation.
-This is by no means the *only* way to do open science with open source software, and recommended packages are likely to change over time.
-The below R-based toolchain should be considered as merely *one* (out of several) consistent implementation of some best practices.
+Here's the software and services stack we'll be using.
+
+This is by no means the *only* way to do open science or data science with open source software, and recommended packages are likely to change over time.
+The below R-based toolchain should be considered as merely *one* (out of several) consistent implementations of some best practices.
 However, once participants have mastered this toolchain, they should find it relatively easy to adapt to other ecosystems.
+
+All of the software will be [free and open source software](https://en.wikipedia.org/wiki/Free_and_open-source_software), but we will also be using some proprietary Software-as-a-Service ([Saas](https://en.wikipedia.org/wiki/Software_as_a_service)).
+For each of the proprietary services, there *are* open-source and/or self-hosted alternatives, but these are often much less convenient (e.g. [self-hosted Jenkins](https://jenkins.io) vs [Travis CI](https://travis-ci.com)), or they are much less popular in the community, and therefore less useful (e.g. [GitLab](GitLab) vs [GitHub](https://github.com)).
+Relying on, or pushing proprietary services, especially in an education context, is always awkward, but the disadvantages can sometimes be outweighted by convenience and network effect advantages.
+For some aspects of open source software development and open science, proprietary services -- especially GitHub and the [StackExchange network](https://stackoverflow.com) -- for better or for worse just *are* the only game in town.
+In any event, *most* of what students will learn in this class is in free and open source software, and the remaining proprietary usage should easily translate to other, competing or open services. 
 
 
 ## Installation {.alert .alert-success}
 
-If at all possible, please install the below tools before the class begins.
-
-
-**Mandatory**:
-
-- [Pandoc, a universal document converter](https://pandoc.org)
-- [LaTeX Typsetting System](https://www.latex-project.org)
-- [git decentralized source control management (SCM)](https://git-scm.com)
-- [R Project for Statistical Computing](https://www.r-project.org)
-- [RStudio R Integrated Development Environment (IDE)](https://www.rstudio.com/products/RStudio/)
-- A bunch of R packages:
-  - [tidyverse](https://www.tidyverse.org)
-  - [rmarkdown](https://rmarkdown.rstudio.com)
-  - [pensieve](https://pensieve.maxheld.de)
-
-
-**Optional**:
-
-- [Atom, an open source editor](http://atom.io)
+Please install all of the below software and sign up for all the below services **before the first class**.
 
 The steps required for installation will depend on your platform and system setup.
 Please understand that we cannot support or troubleshoot these installations during class; there, however, are ample resources on the internet for troubleshooting an installation.
 
 
-## Preparation {.alert .alert-info}
+## Operating System Maintenance {.alert .alert-warning}
 
-If the class is *not* held in a computer lab, please emember to bring and update your computer. 
-
-Specifically:
-
-- Have a current version of the Chrome or Firefox web browsers installed.
-- Make sure that your WiFi works. 
-  (At FAU, we have FAU-STUD, eduroam and FAU.fm. 
-  If you need help setting up your WiFi, consult the RRZE Website.)
-- Bring your power adapter.
-- A mobile device (iOS or Android tablet) will not suffice (unless you can SSH into a Linux-box or something). 
-- You need a laptop, but pretty much any (cheap or old) device will be fine, if it can run the above browsers in a current version.
-- If you do not have access to a laptop, please contact the course instructor (me) in advance, and we’ll arrange a device for you.
+It is *your* responsibility to maintain your own computer and operating system (OS), as well as to figure out how to install the below software on your machine (though we will all help one another within reason).
 
 
-## Writing
+## Cloud Alternative
+
+As a backup plan to using your own operating system, you may use [RStudio Cloud](https://rstudio.cloud), a data science Saas.
+RStudio Cloud furnishes you with a ready RStudio session in a virtual machine with all necessary system dependencies.
+You will still have sign up to all of the *services* in the below, but none of the client *software*.
+
+RStudio Cloud is still in *alpha* and may not be always reliable.
+Once out of alpha, it will also be a paid service, for which you may have to pay yourself.
+
+You are strongly encouraged to invest the time and effort to set up and maintain a development environment on your own computer.
+
+
+## Tools and Resources
+
+### Basic Computing Literacy
+
+<div class="alert alert-info" role="alert">
+... is expected.
+To *start* this class you need to know your way around your own computer and commonly used technologies.
+</div>
+
+You should know, or easily find, the answer to questions such as:
+
+- *In what directory (absolute path) are programs I use daily stored on computer?*
+- *What is the OS and version on my computer?*
+- *In what directory (absolute path) do I store my files?*
+- *Do I have privileges to install software? If now, how can I get them?*
+- *Which file format is better suited to editing: A `*.docx` or a `*.pdf`?*
+- *Why do the search queries `jaguar car` and `jaguar -car` give different results on Google?*
+- *I can name at least 10 file types.*
+- *What is the username I usually use on public-facing platforms?*
+- *What is Two-Factor Authentification? (2FA)?*
+- *How is my harddisc formatted?*
+- *How can I upgrade my OS and frequently used software?*
+- *How is the data on my computer protected from unauthorised access?*
+- *What is my backup plan?*
+- *What is a VPN client, and what do I need it for?*
+
+If you feel like you need to brush up on some basic computing skills, these resources might be helpful:
+
+- [Basic Computer Skills](https://edu.gcfglobal.org/en/basic-computer-skills/)
+- WikiHow [Basic Computer Skills](https://www.wikihow.com/Category:Basic-Computer-Skills)
+- Tech Republic [10 things...](https://www.techrepublic.com/blog/10-things/10-things-you-have-to-know-to-be-computer-literate/)
+- Viking Code School [Terms to know](http://www.vikingcodeschool.com/web-development-basics/terms-to-know)
+- ... just google the answers to the above questions.
+
+
+### Project Management
+
+<a class="btn btn-primary" href="https://github.com" role="button">Sign up to GitHub.com</a>
+
+GitHub is a collaboration, code repository and git host (more on all of below) *along with some helpful project management tools*.
+
+<div class="alert alert-info" role="alert">
+Choose your username carefully: it should be easy to type, and clearly identify you.
+If you already have such a public username on other platforms (say, twitter), consider reusing that.
+Your username need not be your real name, but it makes things easier if it includes (parts of) your name.
+</div>
+
+<div class="alert alert-warning" role="alert">
+Also be careful in choosing your [commit email address](https://help.github.com/articles/about-commit-email-addresses/).
+This should be an email account you have access to forever.
+</div>
+
+
+#### Resources
+
+- [Getting Started with GitHub Video](https://www.youtube.com/watch?v=noZnOSpcjYY)
+- [Mastering Issues](https://guides.github.com/features/issues/)
+- [Advanced Formatting on GitHub](https://help.github.com/articles/working-with-advanced-formatting/)
+- [Your profile](https://help.github.com/categories/setting-up-and-managing-your-github-profile/)
+- [How to write good issues](https://wiredcraft.com/blog/how-we-write-our-github-issues)
+
+
+### Community & Help
+
+<a class="btn btn-primary" href="https://stackoverflow.com" role="button">Sign up to StackOverflow</a>
+<a class="btn btn-primary" href="http://community.rstudio.com" role="button">Sign up to RStudio community</a>
+
+<div class="alert alert-info" role="alert">
+This includes setting up a decent profile with picture, links etc.
+Same username suggestions apply as above.
+</div>
+
+Aside from Google, these are two great places to get help, and to get involved in the community.
+
+A lot of volunteers spend a lot of time on these sites, so it is very important not to waste their efforts, and to *only add quality content*, as defined by these sites.
+
+
+#### Resources
+
+- SE: [How to ask a good question](https://stackoverflow.com/help/how-to-ask)
+- wikiHow: [How to ask a question...](https://www.wikihow.com/Ask-a-Question-on-Stack-Overflow)
+- SE: [Code of conduct](https://stackoverflow.com/help/behavior)
+- SE: [How not to be a spammer](https://stackoverflow.com/help/promotion)
+- SE: [Help re: asking](https://stackoverflow.com/help/asking)
+- SE: [Help re: answering](https://stackoverflow.com/help/answering)
+- Community: [Welcome](https://community.rstudio.com/t/welcome-to-the-rstudio-community/8)
+- SE: [Making a great R reprex](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)
+- Tidyverse [reprex package](https://reprex.tidyverse.org)
+
+
+#### Additional Resources
+
+In addition to StackExchange and RStudio Community, there are a couple of other platforms where the (very friendly) R community hangs out:
+
+- [Twitter](https://twitter.com) `#rstats` hashtag.
+  Consider joining!
+- Reddit subreddits:
+  - https://www.reddit.com/r/datascience/
+  - https://www.reddit.com/r/RStudio/
+  - https://www.reddit.com/r/Rlanguage/
+  - https://www.reddit.com/r/rstats/
+
+
+### RStudio Cloud
+
+<a class="btn btn-primary" href="https://rstudio.cloud" role="button">Sign up to RStudio Cloud</a>
+
+<div class="alert alert-warning role="alert">
+It's best to sign up with your GitHub account, but this *does not give your RStudio Cloud instance read or write privileges to your repos.
+Remember to also configure [RStudio Cloud with your git credentials](https://maurolepore.github.io/cloudgithub/)
+</div>
+
+
+Resources:
+
+- [RStudio Cloud guide](https://rstudio.cloud/learn/guide)
+- All resources listed under [RStudio](#ide)
+
+
+### Markup Language
+
+<a class="btn btn-default" href="https://github.github.com/gfm/" role="button">GitHub Flavored Markdown Spec</a>
+
+The full [GFM spec](https://github.github.com/gfm/) is just FYI; there's nothing to install here.
+
+Plain text has many advantages (more on that later), but one glaring disadvantage: 
+it does not look very nice, and does not implement many of the typesetting conventions that have evolved since Gutenberg (say, **bold** face).
+
+Markup syntaxes solve this problem.
+Markup syntaxes are sets of conventions (as in `*something*` for highlighting) to structure human-generated *text* in a way that computers can operate on them, such as formatting a piece of text.
+
+There are many, many, such markup languages out there, including **HTML** but also **Markdown** and **LaTeX**.
+
+We will be focusing on Markdown as a source language, and then use open source tools (especially **Pandoc**), to render our source documents to all sorts of other formats, including PDF (via LaTeX), HTML (such as this website), but also Microsoft Word documents.
+
+Markdown is a very lightweight markup language, that was designed to be maximally *human readable*, that is, looking meaningful *without* being compiled by a computer.
+Most of the syntax takes its clues from how people have already formatted plain text, such as enclosing a `*word*` with `*` for *highlighting*.
+
+Technically, Markdown is a convention for writing such files, as well as a program to convert such files into `HMTL`, as, for example, this website (which is written in a flavor of Markdown).
+
+By convention, Markdown files use the `.md` file extension.
+It's important to recognize that still, an `.md` is a *plain text file*.
+You could open it with any text editor, or even change the extension to `*.txt` and nothing would change.
+The extension `.md` serves merely to tell computers that the following plain text is marked up in markdown.
+
+Markdown was (originally) quite a minimal standard, and has since branched out into a few specialised "flavors", offering additional features.
+
+We will be using only *two* of these flavors: GitHub Flavored Markdown and Pandoc's Markdown (more on that below).
+
+GitHub, a leading code-hosting service, has extended the above original Markdown spec by a couple of additional features.
+In addition to these formatting niceties, Github also implements some clever cross-referencing and autocompletion magic.
+When using Github for source control and collaboration, you *really* must use these in issues, comments, commit messages etc. (they work *everywhere*).
+
+
+#### Resources
+
+- [Markdown Basics](https://help.github.com/articles/markdown-basics)
+- [GFM Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- Original [Markdown Spec](https://daringfireball.net/projects/markdown/) by John Gruber, who invented the syntax.
+- [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
+- [Markdown Tutorial](https://www.markdowntutorial.com)
+- [GFM](https://help.github.com/articles/github-flavored-markdown)
+- [Writing on GitHub](https://help.github.com/articles/writing-on-github)
+
+
+#### Additional Resources
+
+If you like, you can also install a program on your computer to render Markdown to HTML.
+There are [plenty](http://mashable.com/2013/06/24/markdown-tools/) of choices, including the free [MarkdownPad](http://markdownpad.com) for Windows, and [Lightpaper](http://clockworkengine.com/lightpaper-mac/) for OS X.
+If you don't want to install something, [Github](https://github.com) (see below) also offers a Markdown preview in its browser-based editor.
+We will be using different programs going forward.
+
+
+### Command Line Interface
+
+<a class="btn btn-info" href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" role="button">Install Bash Shell</a>
+
+The bash shell is the standard Unix-style command-line interface (CLI).
+A lot of programs that we'll be using only run at the CLI, so it's important to know how to use it.
+It is also often used in scripting (= automating) tasks.
+
+On **macOS**, **Linux**: Nothing to install, ships with bash.
+
+On **Windows**:
+
+- If your version is >= Windows 10 Anniversary Update: Install [Install the Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and use the [Windows 10 Bash Shell](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/).
+- Otherwise, install [Git for Windows](https://gitforwindows.org) because that comes with at least a git shell
+
+
+#### Resources
+
+- [Command Line for Beginners](https://learntocodewith.me/getting-started/topics/command-line/)
+- Viking Code School [Command Line crash course](http://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course)
+
+
+#### Additional Resources
+
+- Learn enough  [Command line tutorial](https://www.learnenough.com/command-line-tutorial)
+- Codecademy course [Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line) (offers a free tier)
+- DataCampcourse [Introduction to Shell for Data Science](https://www.datacamp.com/courses/introduction-to-shell-for-data-science)
+
+
+### Package Management
+
+<a class="btn btn-default" href="https://en.wikipedia.org/wiki/APT_(Debian)" role="button">Linux: already ships with `apt`</a>
+<a class="btn btn-info" href="https://brew.sh" role="button">macOS: install home`brew`</a>
+<a class="btn btn-info" href="https://chocolatey.org" role="button">Windows: install chocolatey</a>
+
+Installing and upgrading a lot of command line tools and their dependencies gets old quickly.
+Package managers solve this problem; they provide a clean and elegant way to install (CLI) programs, and even allow you to quickly upgrade everything.
+
+<div class="alert alert-warning" role="alert">
+Consider installing the below software via your package manager.
+Whether this is advisable or even possible for any given piece of software depends on the software and your operating system.
+Google around for advice.
+As a rule of thumb, "heavy" packages (such as LaTeX) are sometimes best installed "by hand".
+</div>
+
+Notice that LaTeX, Atom and R (all below) each have their own *internal* package managers (as do many other software ecosystems).
+If you're installing a package *for* either of those, use the corresponding ecosystem package manager, *not* your system-wide program.
+
+
+### Text Editor
+
+<a class="btn btn-info" href="https://atom.io" role="button">Install Atom</a>
 
 Whenever we write something in this class, it will be in [plain text](http://en.wikipedia.org/wiki/Plain_text).
 Plain text, roughly speaking, consists *directly* and only of letters, encoded in an open standard.
@@ -70,74 +284,120 @@ This may seem antiquated, but has several advantages:
 - Plain text files future-proof your work and data.
  `*.txt`, or, equivalently for data, `*.csv` can be opened and edited on pretty much any computer today, could be 30 years go, today, and probably still will be widely accessible in 30 years time.
 
+Most operating systems ship with a text editor, but they are quite basic and can be cumbersome to use.
+Specialized text editors (or just editors) offer more functionality geared towards technical writing or software development.
 
-### Markup
+There are many editors out there, and people have [strong views on which is best](https://en.wikipedia.org/wiki/Editor_war).
+In some ways, this is surprising, because of all the software used in collaborative writing or development, *editors* are the tool that needs the least standardisation.
+Playing off the advantages of plain text files, everyone can use what works best for them, because they all output the *exact* same thing: a `*.txt`.
 
-On the other hand, plain text has one glaring disadvantage: it does not look very nice, and does not implement many of the typesetting conventions that have evolved since Gutenberg (say, **bold** face).
+You are therefore free to choose your own text editor.
 
-Markup syntaxes solve this problem.
-Markup syntaxes are sets of conventions (as in `*something*` for highlighting) to structure human-generated *text* in a way that computers can operate on them, such as formatting a piece of text.
+Atom has the advantage of being relatively easy to use, free and open source and relatively widely supported.
+It also comes with some nice Git(Hub) integration.
 
-There are many, many, such markup languages out there, including **HTML** but also **Markdown** and **LaTeX**.
+Atom, as most editors, has a modular design.
+Many of its features are factored out to separate packages, some of which are contributed by external volunteers.
 
-We will be focusing on Markdown as a source language, and then use open source tools (especially **Pandoc**), to render our source documents to all sorts of other formats, including PDF (via LaTeX), HTML (such as this website), but also Microsoft Word documents.
+Here's a list of packages you might also want to install:
 
-Markdown is a very lightweight markup language, that was designed to be maximally *human readable*, that is, looking meaningful *without* being compiled by a computer.
-Most of the syntax takes its clues from how people have already formatted plain text, such as enclosing a `*word*` with `*` for *highlighting*.
+- `atom-beautify`
+- `atom-html-preview`
+- `document-outline`
+- `git-plus`
+- `language-knitr`
+- `language-latex`
+- `latex`
+- `language-markdown`
+- `merge-conflicts`
+- `minimap-split-diff`
 
-Technically, Markdown is a convention for writing such files, as well as a program to convert such files into `HMTL`, as, for example, this website (which is written in Markdown).
+#### Resources
 
-By convention, Markdown files use the `.md` file extension.
-It's important to recognize that still, an `.md` is a *plain text file*.
-You could open it with any text editor, or even change the extension to `*.txt` and nothing would change.
-The extension `.md` serves merely to tell computers that the following plain text is marked up in markdown.
-
-
-You should:
-
-- [ ] familiarize yourself thoroughly with markdown.
- The best source is [John Gruber](http://daringfireball.net/projects/markdown/) who invented the syntax.
- It's really not a lot to learn.
-- [ ] if you're looking for a very brief intro, head over to [Github](https://help.github.com/articles/markdown-basics) or check out this [Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
-- [ ] install a markdown editor/previewer on your computer.
- There are [plenty](http://mashable.com/2013/06/24/markdown-tools/) of choices, including the free [MarkdownPad](http://markdownpad.com) for Windows, and [Lightpaper](http://clockworkengine.com/lightpaper-mac/) for OS X.
-- [ ] If you don't want to install something, [Github](https://github.com) (see below) also offers a Markdown preview in its browser-based editor.
-- [ ] Play around with Markdown.
-- [ ] Last step: profit (as they say.)
-
-
-### Markdown Flavors
-
-Markdown was (originally) quite a minimal standard, and has since branched out into a few specialised "flavors", offering additional features.
-
-We will be using only *two* of these flavors.
+- [Atom Getting Started Video](https://www.youtube.com/watch?v=U5POoGSrtGg)
+- [Atom Forums](https://discuss.atom.io/t/welcome-to-discuss-atom-io/4)
+- [Atom Flight Manual](https://flight-manual.atom.io/getting-started/sections/why-atom/) (only Chapters 1-2!)
 
 
-### GitHub-Flavored Markdown (GFM)
+### R Integrated Development Environment (IDE) {#ide}
 
-GitHub, a leading code-hosting service, has extended the above original Markdown spec by a couple of additional features.
-In addition to these formatting niceties, Github also implements some clever cross-referencing and autocompletion magic.
-When using Github for source control and collaboration, you *really* must use these in issues, comments, commit messages etc. (they work *everywhere*).
+<a class="btn btn-info" href="https://www.rstudio.com/products/rstudio/download/#download" role="button">Install RStudio</a>
 
-Learn about it here:
-
-- [ ] https://help.github.com/articles/github-flavored-markdown
-- [ ] [Writing on Github](https://help.github.com/articles/writing-on-github)
-- [ ] [Referencing issues in commit messages](https://help.github.com/articles/closing-issues-via-commit-messages)
+<div class="alert alert-warning" role="alert">
+*Before* installing RStudio, you must first install R (see below).
+We may, for now, not use R much by itself, but it can be easier to use all the other tools inside of RStudio, rather than separately.
+</div>
 
 
-### Pandocs Markdown
+#### Resources
+
+- RStudio [Cheat Sheet](https://www.rstudio.com/resources/cheatsheets/#ide)
+
+
+### Source Control Management (SCM)
+
+<a class="btn btn-info" href="https://git-scm.com" role="button">Install Git</a>
+
+Git is just a CLI program.
+It offers all the functionality of git, but you may also install a Git graphical user interface (GUI).
+
+There plenty of those out there, but one of the easiest is the GitHub Desktop app from GitHub (available only for Windows and macOS).
+
+<a class="btn btn-info" href="https://desktop.github.com" role="button">Install GitHub Desktop</a>
+
+You also need to *configure* git on your machine, and wherever else you are using Git (such as a SaaS):
+
+- [Your local machine](https://help.github.com/articles/setting-your-username-in-git/)
+- RStudio
+- [RStudio Cloud](https://bren.zendesk.com/hc/en-us/articles/360015826731-How-to-connect-RStudio-Cloud-with-Github)
+
+
+#### Resources
+
+- Jenny Bryan's [Happy Git With R](http://happygitwithr.com) (*yes, you should study this completely -- until Chapter 33*)
+- [Referencing issues in commit messages](https://help.github.com/articles/closing-issues-via-commit-messages)
+- [Why you should use version control](https://stackoverflow.com/questions/1408450/why-should-i-use-version-control)
+- [Version control for the solo analyst](https://stackoverflow.com/questions/2712421/r-and-version-control-for-the-solo-data-analyst)
+
+
+### Branching Model
+
+<a class="btn btn-default" href="https://guides.github.com/introduction/flow/" role="button">GitHub Flow</a>
+
+There is a varied set of practices and tools that have evolved *on top of* Git.
+Together with the powerful git scm, it is these practices and tools, that make massively collaborative software development possible.
+
+One of the simpler practices is GitHub Flow.
+We will use it to learn the branch and pull-request model.
+
+#### Resources
+
+- [Understanding the GitHub Flow](https://desktop.github.com)
+
+
+### Document Conversion
+
+<a class="btn btn-info" href="https://pandoc.org" role="button">Install Pandoc</a>
+
+We'll often want to convert documents from and to different markup formats.
+For that purpose, we'll use pandoc.
 
 [Pandoc](https://pandoc.org) is, originally, a kind of swiss army knife for text document formats, such as, say, between Microsoft Word and HTML.
-As part of this work, Pandoc has also defined its own extension to Markdown (compatible with GFM), including such features as footnotes, captions and (loosely speaking) references.
 
-Learn about it here:
+But as part of this work, Pandoc has *also* defined its own extension (flavor) to Markdown (largey compatible with GFM), including such features as footnotes, captions, references, and other aspects important for technical and scientific writing.
 
-- [ ] [Pandoc, a universal document converter](https://pandoc.org)
-- [ ] [Pandocs Markdown spec](https://rmarkdown.rstudio.com/authoring_pandoc_markdown.html) (RStudio has the most convenient documentation)
+You should *both* learn to *use* Pandoc at the CLI as well as to *write* in the corresponding Pandoc's Markdown style.
 
 
-### LaTeX
+#### Resources
+
+- [Pandoc User's Guide](https://pandoc.org/MANUAL.html)
+- *especially* [Pandoc's Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)
+
+
+### Typesetting
+
+<a class="btn btn-info" href="https://www.latex-project.org" role="button">Install LaTeX</a>
 
 [(La)TeX](http://www.latex-project.org) is strictly speaking a *typesetting* program, which can create beautiful documents.
 It has extensive support for all sorts of domain-specific typographic niceties, and is used a lot by academics, especially in math and sciences because.
@@ -146,3 +406,93 @@ However, because LaTeX is quite cumbersome to compose and tends to distract writ
 Instead, we will be using Pandoc to compile our Pandoc Markdown source *to* PDF (via LaTeX), and, because LaTeX can be slow to compile, we will only do so rarely and towards the end of any given project.
 
 Still, it is important to learn some of the basics of LaTeX to use it programmatically.
+
+
+#### Resources:
+
+- Overleaf [Learn LaTeX in 30 Minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
+
+
+### Bibliography Management
+
+<a class="btn btn-info" href="https://github.com/jgm/pandoc-citeproc" role="button">Install Pandoc Citeproc</a>
+<a class="btn btn-default" href="https://en.wikipedia.org/wiki/Comparison_of_reference_management_software" role="button">Install a Bibliography Manager of Your Choice</a>
+
+Bibliography management is *not* the focus of this class.
+
+It is also one of those tools, where there is no strong reason to standardize on any one program, so as long as the bibliography manager exports to one of the formats [that pandoc can ingest](https://pandoc.org/MANUAL.html#citations).
+
+Check if your bibliography manager can export to at least one of these formats.
+
+If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`) are preferable.
+
+
+#### Resources:
+
+- [Pandoc's Citeproc documentation](https://pandoc.org/MANUAL.html#citations)
+
+
+### R
+
+<a class="btn btn-info" href="https://www.r-project.org" role="button">Install R</a>
+
+
+#### Resources
+
+- Work through the RStudio Cloud [primers](https://rstudio.cloud/learn/primers)
+- DataCamp [Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r) (free tier)
+
+
+### Tidyverse
+
+<a class="btn btn-info" href="https://www.tidyverse.org" role="button">Install all tidyverse packages</a>
+
+
+#### Resources
+
+- List of [resources here](https://www.tidyverse.org/learn/).
+
+
+### Continous Integration & Development (CI/CD)
+
+
+#### Resources
+
+- Julia Silge's [Beginners Guide](https://juliasilge.com/blog/beginners-guide-to-travis/)
+- Travis CI: [Building an R Project](https://docs.travis-ci.com/user/languages/r/)
+
+
+### Dependency Management
+
+<a class="btn btn-info" href="https://rstudio.github.io/packrat/" role="button">Install packrat</a>
+<a class="btn btn-info" href="https://rstudio.github.io/packrat/" role="button">Install packrat</a>
+
+
+## Moving to Linux
+
+Installation and usage may be easier on Unix-compatible operating systems, including macOS and Linux.
+Getting Windows to play nicely with open source software can be harder, and some convenient system utilities (such as a package manager) are often missing.
+It *is* technically possible to use most, if not all, of the tools below on Windows, but they may behave slightly differently, and supporting them may be more involved.
+
+If you are using a Windows machine, you may consider the following alternatives to get a more Unix-compatible operating system, roughly ranked from easiest to most involved:
+
+1. Replace your existing operating system with, say, [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0), a frequently used Linux distribution.
+  Before you do this, make sure that your hardware has good Linux support.
+  This would also delete all of your data and applications, and you might have to choose and use new replacement applications.
+2. Same as 1, but with a [dual boot setup](https://opensource.com/article/18/5/dual-boot-linux).
+  This way, you can retain both your old operating system, and a new Linux install.
+  However, you always have to restart to switch between the two systems.
+3. Same as 2, but in a [virtual machine](https://itsfoss.com/install-linux-in-virtualbox/) which can run alongside and *inside* your Windows install.
+  ([Here](https://www.lifewire.com/install-ubuntu-linux-windows-10-steps-2202108) are alternative instructions).
+  Apparently, if your computer and Windows 10 version support it, there is also now a fancier/more efficient way to do this via [Hyper-V](https://www.windowscentral.com/how-run-linux-distros-windows-10-using-hyper-v).
+  Carries some performance penalty.
+4. [Install the Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
+  This solution is available only for recent versions of Windows 10.
+  It seems pretty elegant, but has some limitations (no GUIs) and may be quite involved.
+5. By an x86 Chromebook and use [crouton](https://github.com/dnschneid/crouton) or (better, but still in beta?) [crostini](https://www.zdnet.com/article/how-to-add-linux-to-your-chromebook/) to run Linux on your Chromebook.
+6. Rent a virtual machine (VM, same as 3), but on a rented cloud host.
+  You can access everything through a browser, but there is a (small) fee, depending on your setup.
+
+There is no guarantee that any of these alternatives or links will work for you; you will have to research them on your own.
+
+

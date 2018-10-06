@@ -22,7 +22,7 @@ navbar:
     - text: Nuremberg Campus of Technology
       href: https://www.ncatec.de
   - icon: fa-github
-    href: https://github.com/soztag/qdelib
+    href: https://github.com/maxheld83/fossos
 output:
   html_document:
     theme: cosmo

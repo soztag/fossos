@@ -28,16 +28,26 @@ bibliography: library.bib
   </sub></small></p>
 </div>
 
-```{r, child="README.rmd"}
+```{r readme, child="README.rmd"}
 ```
 
 ---
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dU1xS07N-FA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
 > *[Coding – ] it’s the next best thing we have to a superpower.*
 > – [Drew Houston](@drewhouston) via [code.org](https://code.org)
 
 > *The bad news is that whenever you learn a new skill, you’re going to suck.*
 > – [Hadley Wickham](http://hadley.nz)
+
+> *Computers ... a bicycle for the mind*
+> - [Steven Jobs](https://www.brainpickings.org/2011/12/21/steve-jobs-bicycle-for-the-mind-1990/)
+
+> *Think of free speech, not free beer.*
+> - [Richard Stallman]()
 
 
 ## Related Class: Introduction to R {.alert .alert-success}
@@ -81,7 +91,7 @@ The goal of this seminar is therefore to train participants in a coherent set of
 
 Towards the end of the seminar, participants will be able to use this toolchain to work on their own projects.
 
-```{r fig.cap="The [Data Science Venn Diagram](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram) by Drew Conway (2010)", out.width='100%'}
+```{r venn, fig.cap="The [Data Science Venn Diagram](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram) by Drew Conway (2010)", out.width='100%'}
 knitr::include_graphics(path = "img/Data_Science_VD.png")
 ```
 
@@ -101,7 +111,7 @@ Open source may also be a worthwhile exercise in participant observation for soc
 Less loftily, but not least, the seminar also promises a starter dose of gratification from having built something that actually works, and is of some immediate use to our fellow human – a good feeling sometimes hard to come by in the social sciences.
 
 
-### Crosslistings
+## Crosslistings
 
 This is listed as upper division Bachelor seminar ("Hauptseminar") (7.5 ECTS) in:
 
@@ -151,6 +161,86 @@ If you are facing financial difficulties in obtaining a laptop for the class, pl
 We'll figure something out for you.
 
 
+## Expectations
+
+Happily, there are a *lot* of great resources for learning data science tools out there, many of them free, some of them even open source themselves.
+We will be reusing a lot of these resources, and I (the instuctor) do not have to reinvent an (inferior) wheel.
+There is no *one* curriculum that's quite right for us, so I have cobbled together material from different sources.
+
+All resources are listed along with the [stack](/stack).
+
+The good news is that there are no academic papers or books for this class and everything students need is available online.
+There is, however, still a lot of material to work through (to the tune of hours per week), though it is written in a hopefully more accessible style than many academic documents.
+The listed resources are guaranteed to cover everything you need to use the software, often including tutorials, videos and exercises.
+Students are not limited to the listed resources; they can also choose their own material, so as long as it covers roughly the same ground.
+In fact, students are encouraged to share good additional resources with the rest of the class.
+
+<div class="alert alert-warning role="alert">
+Students are expected to work through (not just read) all the material listed as resources for the [stack](/stack), *before the session* during which the software is covered (see schedule).
+Additional resources are optional.
+</div>
+
+
+## Assessment {.alert .alert-info}
+
+Assessments are an unfortunate, tedious and arguably needless part of teaching -- but here we are, so we are going to make the best of it.
+
+Instead of some *make belief* work or hobby project, we are, for the most part, assignments in this class are designed to be *actually useful* to other people.
+This can be motivating, but it also means that other people are relying upon our work: it has to be delivered by the time, and in the quality expected.
+
+We will begin with relatively easy, small tasks to serve other students in class, then address smaller issues with resources for the broader community, and eventually, fixing "real" bugs or enhancing functionality of open source data science software.
+
+All tasks, big and small, are listed and tracked on the [class github repository issue tracker](https://github.com/maxheld83/fossos).
+Students should assign themselves to tasks they will be working on, and report / link to any progress on these tasks in the issue conversation.
+
+**All students**, including those who **just want a "Sitzschein" (pass/fail option) must contribute to a number of issues labelled as [`pass/fail`](https://github.com/maxheld83/fossos/labels/pass%2Ffail).
+
+Students who want to receive a grade on the class also have to complete at least three issues of two different types labelled as [`graded`](https://github.com/maxheld83/fossos/labels/graded).
+Grading criteria are listed for each of the issues.
+Generally, a good grade will require following the practices and standards appropriate for the type of contribution in question, and students will need to demonstrate adequate command of the toolchain covered in class.
+For an excellent grade, students will need to go (a bit) beyond the covered material, and work on an especially pressing or complicated problem.
+
+There is no straightfoward minimum metric (say, number of closed issues) to pass the class.
+Instead, students should display substantial contributions across a range of helpful activities, as recorded in the issue tracker.
+
+As the schedule evolves, the instructor will assign issues to milestones (= class dates).
+**Issues have to be completed at 20:00 CET the night *before* the session (= milestone) to which they have been assigned.**
+
+As an alternative to this assessment, if students already have some prior knowledge and a ready project they wish to work on, this can also be arranged.
+
+
+## Attendance {.alert .alert-warning}
+
+Attendance is not mandatory, as per university policy.
+However, students are *highly* recommended to attend the seminar regularly (no more than 2 missed sessions), and to thoroughly study the assigned material.
+It is highly unlikely that you will be able to receive passing grades on the assignments otherwise.
+
+Even though technical in nature, this class is no "rocket science", and we will get everyone up to speed, no matter the prior knowledge.
+However, you have to work hard and thoroughly, otherwise it is very possible that you will simply fail the class, or receive a very low grade.
+
+
+## Schedule
+
+The schedule will be evolving throughout the semester, as we see how much progress we make.
+
+The current schedule is listed on the [github issue tracker for this class](https://github.com/maxheld83/fossos/issues).
+Milestones will be used as class dates.
+The resources are listed in the respective section of the [stack](/stack).
+
+
+### Introduction
+
+For the introductory session, participants should watch this video:
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/cpbtcsGE0OA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+Here's the corresponding [slide deck](https://speakerdeck.com/hadley/you-cant-do-data-science-in-a-gui).
+
+
+
+
 ## Venue {.alert .alert-warning}
 
 Classes will take place in one of two FAU locations:
@@ -178,199 +268,6 @@ NCT
     </address>
     
     (The building can be hard to find; see [here](http://www.ncatec.de/nct/wir-ueber-uns/lageplan.html) for directions).
-
-
-## Assessment {.well}
-
-Assessments are an unfortunate, arguably needless and tedious part of teaching -- but here we are, so we are going to make the best of it.
-
-Instead of some *make belief* work or hobby project, we are, for the most part, going to take on *real* open source projects in our assignments.
-Student contributions, no matter how small, *will matter* for the people who use and maintain these projects.
-However, because we do not want to burden other people with bad pull requests (more on that later), this means that we will have to meet the highest standards *before* we push our work into the open.
-To ensure such a high standard, most of the public-facing "real" assignments will be preceded by some "sandbox" assignments.
-
-Both students who wish to receive a grade *and* those who just want a "Sitzschein" pass/fail option) must submit passing work (grade >= 4) for all but 2 of both the sandbox and real assignments.
-The assignments will be due *throughout the semester*.
-
-Participants who want a grade will also have to complete a little capstone project towards the end of the class, where they make a small but meaningful contribution to an existing piece of open source software using the tools and practices learned during the semester.
-
-Attendance is not mandatory, as per university policy.
-However, students are *highly* recommended to attend the seminar regularly (no more than 2 missed sessions), and to thoroughly study the assigned material.
-It is highly unlikely that you will be able to receive passing grades on the assignments otherwise.
-Even though technical in nature, this class is no "rocket science", and we will get everyone up to speed, no matter the prior knowledge.
-However, you have to work hard and thoroughly, otherwise it is very possible that you will simply fail the class, or receive a very low grade.
-
-The assignments are listed below.
-They are always due on Fridays, 20:00 CET *after* the session in which they are introduced.
-You will receive your grades before the following Monday, 20:00 CET.
-
-
-## Flipped Classroom
-
-
-## No Papers or Books to Read
-
-
-## Schedule and Material
-
-There are a *lot* of great resources for learning data science tools out there, many of them free, some of them even open source themselves.
-The good news is that we can reuse a lot of these resources, and I (the instructor) do not have to reinvent an (inferior) wheel.
-The (slighly) bad news is that there is no *one* curriculum that's quite right for us, so we have to cobble together material from different sources, all listed in the below.
-
-The material is all online, we do not need anything on paper for this class.
-
-
-### Introduction
-
-<span class="label label-primary">Tuesday, October 16, 2018 14:15--15:45</span>
-
-Material:
-
-- "You Can't Do Data Science in a GUI" [video](https://www.youtube.com/watch?v=cpbtcsGE0OA), [slide deck](https://speakerdeck.com/hadley/you-cant-do-data-science-in-a-gui)
-
-Preparation:
-
-- Bring a computer and power adapter.
-  Consider the above [hardware requirements](#reqs)
-
-
-### Project Management with Github & Markdown
-
-<span class="label label-primary">Tuesday, October 23, 2018 14:15--15:45</span>
-
-In this session, we'll set everyone up on GitHub.
-The focus will be on the web-based project management tools of GitHub, *not* the actual source control software or GitHub flow (that comes later). 
-
-
-
-Preparation:
-
-- Get a GitHub Account.
-  Use a proper username.
-  Fill out your profile with a picture, some information about you, etc.
-  Set up 2 Factor Authentification
-- Raise 2 issues on the [fossos](https://github.com/maxheld83/fossos) repository concerning problems you've run into, or questions you might have.
-  Make sure it's a good issue.
-  Show your command of GFM markup and advanced github issue formatting.
-
-
-### Development Environment
-
-<span class="label label-primary">Tuesday, October 30, 2018 14:15--15:45</span>
-
-During this class, we'll set up our computers as workable development environments.
-
-
-
-
-
-### The Command Line
-
-<span class="label label-primary">Tuesday, November 6, 2018 14:15--15:45</span>
-
-
-Preparation: 
-- If on Windows, get a bash shell (macOS and Linux ship with bash):
-  - If on Windows 10 (>= "Anniversary Update" or "Fall Creators Update"): Use the [Windows 10 Bash Shell](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/)
-  - Otherwise, install [Git for Windows](https://gitforwindows.org) (because this comes with the git shell)
-- Install a package manager on your computer
-  - macOS: [homebrew](https://brew.sh)
-  - Linux: [apt](https://en.wikipedia.org/wiki/APT_(Debian)), *should be already installed*
-  - Windows: [scoop](https://scoop.sh) *and* [chocolatey](https://chocolatey.org)
-
-
-### Text Based Formats & Atom Editor
-
-<span class="label label-primary">Tuesday, November 13, 2018 14:15--15:45</span>
-
-Preparation:
-
-- [ ] Install [LaTeX Typsetting System](https://www.latex-project.org)
-- [ ] Install [Atom Editor](https://www.atom.io)
-
-
-
-### Git
-
-<span class="label label-primary">Tuesday, November 20, 2018 14:15--15:45</span>
-
-Material:
-- [Try Git]((https://try.github.io/))
-
-Preparation:
-- Install [git](https://git-scm.com)
-
-For additional information, you can always consult the full [git documentation](https://git-scm.com/doc).
-
-
-### Git Flow
-
-<span class="label label-primary">Tuesday, November 27, 2018 14:15--15:45</span>
-
-
-
-### Pandoc & Pandoc Markdown
-
-<span class="label label-primary">Tuesday, December 4, 2018 14:15--15:45</span>
-
-
-Material:
-- Pandoc [User Guide](https://pandoc.org/MANUAL.html), especially section about [Pandoc's Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)
-
-
-### R & RStudio IDE
-
-<span class="label label-primary">Tuesday, December 11, 2018 14:15--15:45</span>
-
-
-Preparation:
-- Install [R]()
-
-
-### Literate Programming with RMarkdown
-
-<span class="label label-primary">Tuesday, December 18, 2018 14:15--15:45</span>
-
-
-### Continuous Integration with Travis
-
-<span class="label label-primary">Tuesday, January 8, 2018 14:15--15:45</span>
-
-
-### Foo
-
-<span class="label label-primary">Tuesday, January 15, 2018 14:15--15:45</span>
-
-
-### Foo
-
-<span class="label label-primary">Tuesday, January 22, 2018 14:15--15:45</span>
-
-
-### Foo
-
-<span class="label label-primary">Tuesday, January 29, 2018 14:15--15:45</span>
-
-
-### Foo
-
-<span class="label label-primary">Tuesday, February 5, 2018 14:15--15:45</span>
-
-
-### Recommended Material
-
-In addition to the above material, here are some more resources you might find interesting or helpful:
-
-- [Linear Digressions](http://lineardigressions.com) Podcast
-- [Data Skeptic](https://dataskeptic.com/) Podcast
-- [R Weekly](https://rweekly.org) Blog
-- [R Views](https://rviews.rstudio.com) Blog
-- Twitter `#rstats` hashtag
-
-
-## Contact
-
-Find my contact details [here](http://www.maxheld.de).
 
 
 ## References

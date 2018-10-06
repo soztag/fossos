@@ -146,14 +146,18 @@ In addition to StackExchange and RStudio Community, there are a couple of other 
   - https://www.reddit.com/r/RStudio/
   - https://www.reddit.com/r/Rlanguage/
   - https://www.reddit.com/r/rstats/
+- [Linear Digressions](http://lineardigressions.com) Podcast
+- [Data Skeptic](https://dataskeptic.com/) Podcast
+- [R Weekly](https://rweekly.org) Blog
+- [R Views](https://rviews.rstudio.com) Blog
 
 
-### RStudio Cloud
+### Cloud Provider
 
 <a class="btn btn-primary" href="https://rstudio.cloud" role="button">Sign up to RStudio Cloud</a>
 
 <div class="alert alert-warning role="alert">
-It's best to sign up with your GitHub account, but this *does not give your RStudio Cloud instance read or write privileges to your repos.
+It's best to sign up with your GitHub account, but this *does not* give your RStudio Cloud instance read or write privileges to your repos.
 Remember to also configure [RStudio Cloud with your git credentials](https://maurolepore.github.io/cloudgithub/)
 </div>
 
@@ -354,6 +358,7 @@ You also need to *configure* git on your machine, and wherever else you are usin
 
 #### Resources
 
+- [Try Git]((https://try.github.io/))
 - Jenny Bryan's [Happy Git With R](http://happygitwithr.com) (*yes, you should study this completely -- until Chapter 33*)
 - [Referencing issues in commit messages](https://help.github.com/articles/closing-issues-via-commit-messages)
 - [Why you should use version control](https://stackoverflow.com/questions/1408450/why-should-i-use-version-control)
@@ -443,6 +448,19 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 - DataCamp [Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r) (free tier)
 
 
+### Literate Programming
+
+<a class="btn btn-info" href="https://yihui.name/knitr/" role="button">Install knitr</a>
+<a class="btn btn-info" href="https://rmarkdown.rstudio.com" role="button">Install RMarkdown</a>
+
+
+#### Resources
+
+- Yihui Xie [knitr website](https://yihui.name/knitr/)
+- RStudio [R Markdown](https://rmarkdown.rstudio.com)
+- Yihui Xie et al.: [The definitive RMarkdown guide](https://bookdown.org/yihui/rmarkdown/)
+
+
 ### Tidyverse
 
 <a class="btn btn-info" href="https://www.tidyverse.org" role="button">Install all tidyverse packages</a>
@@ -455,6 +473,7 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 
 ### Continous Integration & Development (CI/CD)
 
+<a class="btn btn-info" href="https://travis-ci.com" role="button">Sign up to Travis CI</a>
 
 #### Resources
 
@@ -464,7 +483,6 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 
 ### Dependency Management
 
-<a class="btn btn-info" href="https://rstudio.github.io/packrat/" role="button">Install packrat</a>
 <a class="btn btn-info" href="https://rstudio.github.io/packrat/" role="button">Install packrat</a>
 
 

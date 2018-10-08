@@ -84,7 +84,7 @@ If you feel like you need to brush up on some basic computing skills, these reso
 
 <a class="btn btn-primary" href="https://github.com" role="button">Sign up to GitHub.com</a>
 
-GitHub is a collaboration, code repository and git host (more on all of below) *along with some helpful project management tools*.
+GitHub is a collaboration platform, code repository and git host (more on all of below) *along with some helpful project management tools*.
 
 <div class="alert alert-info" role="alert">
 Choose your username carefully: it should be easy to type, and clearly identify you.

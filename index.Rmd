@@ -240,7 +240,6 @@ Here's the corresponding [slide deck](https://speakerdeck.com/hadley/you-cant-do
 
 
 
-
 ## Venue {.alert .alert-warning}
 
 Classes will take place in one of two FAU locations:

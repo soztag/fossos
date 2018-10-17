@@ -363,6 +363,7 @@ You also need to *configure* git on your machine, and wherever else you are usin
 - [Referencing issues in commit messages](https://help.github.com/articles/closing-issues-via-commit-messages)
 - [Why you should use version control](https://stackoverflow.com/questions/1408450/why-should-i-use-version-control)
 - [Version control for the solo analyst](https://stackoverflow.com/questions/2712421/r-and-version-control-for-the-solo-data-analyst)
+- [Git/Github Guide from Karl Broman](http://kbroman.org/github_tutorial/)
 
 
 ### Branching Model
@@ -446,6 +447,15 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 
 - Work through the RStudio Cloud [primers](https://rstudio.cloud/learn/primers)
 - DataCamp [Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r) (free tier)
+- [R Cookbook](http://www.cookbook-r.com)
+
+
+#### Additional Resources
+
+- Check out swirl for [learning R, in R](https://swirlstats.com).
+- Statistics in R [Coursera course](https://www.coursera.org/specializations/statistics)
+- [Data Analysis with R](https://eu.udacity.com/course/data-analysis-with-r--ud651)
+
 
 
 ### Literate Programming

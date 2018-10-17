@@ -34,7 +34,7 @@ bibliography: library.bib
 ---
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dU1xS07N-FA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dU1xS07N-FA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
 > *[Coding – ] it’s the next best thing we have to a superpower.*
@@ -233,7 +233,7 @@ The resources are listed in the respective section of the [stack](/stack).
 For the introductory session, participants should watch this video:
 
 <div class="embed-responsive embed-responsive-16by9">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/cpbtcsGE0OA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cpbtcsGE0OA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
 Here's the corresponding [slide deck](https://speakerdeck.com/hadley/you-cant-do-data-science-in-a-gui).

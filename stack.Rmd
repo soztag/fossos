@@ -97,6 +97,17 @@ Also be careful in choosing your [commit email address](https://help.github.com/
 This should be an email account you have access to forever.
 </div>
 
+<div class="alert alert-success" role="alert">
+... and one last thing: By default, GitHub will notify you via E-Mail about pretty much every repository activity, which will result in a *lot* of email.
+Here's how you can customize or disable [these notifications](https://help.github.com/articles/choosing-the-delivery-method-for-your-notifications/).
+Make sure that you're not missing anything on GitHub.com either.
+
+Here's a sensible set of defaults:
+
+![Screenshot from [`github.com/settings/notifications`](https://github.com/settings/notifications)](img/notifications.png)
+</div>
+
+
 
 #### Resources
 

@@ -59,7 +59,8 @@ You should know, or easily find, the answer to questions such as:
 - *In what directory (absolute path) are programs I use daily stored on computer?*
 - *What is the OS and version on my computer?*
 - *In what directory (absolute path) do I store my files?*
-- *Do I have privileges to install software? If now, how can I get them?*
+- *Do I have privileges to install software?
+  If not, how can I get them?*
 - *Which file format is better suited to editing: A `*.docx` or a `*.pdf`?*
 - *Why do the search queries `jaguar car` and `jaguar -car` give different results on Google?*
 - *I can name at least 10 file types.*
@@ -169,7 +170,7 @@ In addition to StackExchange and RStudio Community, there are a couple of other 
 
 <div class="alert alert-warning role="alert">
 It's best to sign up with your GitHub account, but this *does not* give your RStudio Cloud instance read or write privileges to your repos.
-Remember to also configure [RStudio Cloud with your git credentials](https://maurolepore.github.io/cloudgithub/)
+Remember to also configure <a href="https://maurolepore.github.io/cloudgithub/">RStudio Cloud with your git credentials</a>.
 </div>
 
 
@@ -511,7 +512,7 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 
 Installation and usage may be easier on Unix-compatible operating systems, including macOS and Linux.
 Getting Windows to play nicely with open source software can be harder, and some convenient system utilities (such as a package manager) are often missing.
-It *is* technically possible to use most, if not all, of the tools below on Windows, but they may behave slightly differently, and supporting them may be more involved.
+It *is* technically possible to use most, if not all, of the tools above on Windows, but they may behave slightly differently, and supporting them may be more involved.
 
 If you are using a Windows machine, you may consider the following alternatives to get a more Unix-compatible operating system, roughly ranked from easiest to most involved:
 
@@ -528,7 +529,7 @@ If you are using a Windows machine, you may consider the following alternatives 
 4. [Install the Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
   This solution is available only for recent versions of Windows 10.
   It seems pretty elegant, but has some limitations (no GUIs) and may be quite involved.
-5. By an x86 Chromebook and use [crouton](https://github.com/dnschneid/crouton) or (better, but still in beta?) [crostini](https://www.zdnet.com/article/how-to-add-linux-to-your-chromebook/) to run Linux on your Chromebook.
+5. Buy an x86 Chromebook and use [crouton](https://github.com/dnschneid/crouton) or (better, but still in beta?) [crostini](https://www.zdnet.com/article/how-to-add-linux-to-your-chromebook/) to run Linux on your Chromebook.
 6. Rent a virtual machine (VM, same as 3), but on a rented cloud host.
   You can access everything through a browser, but there is a (small) fee, depending on your setup.
 

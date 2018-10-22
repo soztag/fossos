@@ -97,14 +97,14 @@ knitr::include_graphics(path = "img/Data_Science_VD.png")
 
 This seminar provides a broad introduction and furnishes participants with an end-to-end consistent toolchain, but does not go into great depth of any particular tool. 
 The class will also *not* focus on math and statistics knowledge or substantive sociological expertise, though both are essential for solid data science work.
-Rather, the emphasis is on what Drew Conway loosely called *hacking skills* in his [Data Science Venn Diagram](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram), that is, simply getting these tools to work together, learn how to trouble shoot them and to bring
+Rather, the emphasis is on what Drew Conway loosely called *hacking skills* in his [Data Science Venn Diagram](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram), that is, simply getting these tools to work together, to learn how to troubleshoot them, and -- aspirationally -- to absorb some best practices of open source development.
 
 While the class is *not* a proper computer science class, it should also be valuable to students with coding experience or a CS background who may be interested in the tooling covered. 
 
 We will not cover the scaling and efficiency issues of proper “Big Data”, but confine ourselves to in-memory problems. 
 We also limit ourselves to the R ecosystem, though some tools and problems will be similar for other programming languages such as python.
 
-An introduction to data science and open source may well open up new job opportunities, or serve as a first stepping stone to a career with tech, but that is arguably not the only reason why social scientists should be excited about it. 
+An introduction to data science and open source may well open up new job opportunities, or serve as a first stepping stone to a career in tech, but that is arguably not the only reason why social scientists should be excited about it. 
 Instead, to learn the way of open source is perhaps to update the ideals of the scientific process for the modern day: radical openness and rigorous reproducibility, maximal inclusivity and promised meritocracy, generous sharing and personal attribution. 
 Open source may also be a worthwhile exercise in participant observation for social scientists: here is a real, if surely flawed utopia, massively coordinating individuals beyond *both* market and state.
 
@@ -118,7 +118,6 @@ This is listed as upper division Bachelor seminar ("Hauptseminar") (7.5 ECTS) in
 - Bachelor Sociology
   - Sociological Methods (Module `SOZ M`, [Soziologische Methodenlehre](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/methoden-der-empirischen-sozialforschung/))
   - Labor and Organisation (Module `Soz Qf4`, [Arbeit und Organisation](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/arbeit-und-organisation/))
-    (We will be using datasets from labor sociology.)
 - Bachelor Digital Humanities and Social Sciences ("BA Zweitfach")
   - tba.
 
@@ -155,7 +154,7 @@ In particular, student laptops must:
 Emphatically, none of this requires a new, powerful or expensive device, let alone software.
 You can get a used laptop with / ready for Linux Ubuntu on EBay for well under €100 (if you buy a used computer, make sure that the hardware has good Linux support).
 With some [tweaking](https://leanpub.com/universities/courses/jhu/cbds-chromebook), you can even use an inexpensive (x86) Google Chromebook (which kinda runs on Linux).
-For more information, see [stack](/stack.html#moving_to_linux)
+For more information, see [stack](/stack.html#moving_to_linux).
 
 If you are facing financial difficulties in obtaining a laptop for the class, please contact the instructor.
 We'll figure something out for you.
@@ -176,7 +175,7 @@ Students are not limited to the listed resources; they can also choose their own
 In fact, students are encouraged to share good additional resources with the rest of the class.
 
 <div class="alert alert-warning role="alert">
-Students are expected to work through (not just read) all the material listed as resources for the [stack](/stack), *before the session* during which the software is covered (see schedule).
+Students are expected to work through (not just read) all the material listed as resources for the <a href="/stack">stack</a>, *before the session* during which the software is covered (see schedule).
 Additional resources are optional.
 </div>
 
@@ -185,13 +184,13 @@ Additional resources are optional.
 
 Assessments are an unfortunate, tedious and arguably needless part of teaching -- but here we are, so we are going to make the best of it.
 
-Instead of some *make belief* work or hobby project, we are, for the most part, assignments in this class are designed to be *actually useful* to other people.
+Instead of some *make belief* work or hobby project, for the most part, assignments in this class are designed to be *actually useful* to other people.
 This can be motivating, but it also means that other people are relying upon our work: it has to be delivered by the time, and in the quality expected.
 
 We will begin with relatively easy, small tasks to serve other students in class, then address smaller issues with resources for the broader community, and eventually, fixing "real" bugs or enhancing functionality of open source data science software.
 
 All tasks, big and small, are listed and tracked on the [class github repository issue tracker](https://github.com/maxheld83/fossos).
-Students should assign themselves to tasks they will be working on, and report / link to any progress on these tasks in the issue conversation.
+Students should assign themselves to tasks they will be working on, and report / link to any progress on these tasks in the issue thread.
 
 **All students**, including those who **just want a "Sitzschein" (pass/fail option) must contribute to a number of issues labelled as [`pass/fail`](https://github.com/maxheld83/fossos/labels/pass%2Ffail).
 

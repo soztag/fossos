@@ -37,10 +37,6 @@ bibliography: library.bib
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dU1xS07N-FA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
-```{r echo=FALSE}
-1+2
-```
-
 > *[Coding – ] it’s the next best thing we have to a superpower.*
 > – [Drew Houston](@drewhouston) via [code.org](https://code.org)
 
@@ -167,7 +163,6 @@ We'll figure something out for you.
 ## Expectations
 
 Happily, there are a *lot* of great resources for learning data science tools out there, many of them free, some of them even open source themselves.
-
 We will be reusing a lot of these resources, and I (the instuctor) do not have to reinvent an (inferior) wheel.
 There is no *one* curriculum that's quite right for us, so I have cobbled together material from different sources.
 
@@ -274,3 +269,4 @@ NCT
 
 
 ## References
+

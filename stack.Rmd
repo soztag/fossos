@@ -378,6 +378,11 @@ You also need to *configure* git on your machine, and wherever else you are usin
 - [Git/Github Guide from Karl Broman](http://kbroman.org/github_tutorial/)
 
 
+#### Additional Resources
+
+- [Free DataCamp Course](https://www.datacamp.com/courses/introduction-to-git-for-data-science)
+
+
 ### Branching Model
 
 <a class="btn btn-default" href="https://guides.github.com/introduction/flow/" role="button">GitHub Flow</a>

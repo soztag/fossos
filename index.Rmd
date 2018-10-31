@@ -223,7 +223,7 @@ Additional resources are optional.
 </div>
 
 
-## Assessment {.alert .alert-info}
+## Assessment
 
 Assessments are an unfortunate, tedious and arguably needless part of teaching -- but here we are, so we are going to make the best of it.
 
@@ -236,21 +236,45 @@ We will begin with relatively easy, small tasks to serve other students in class
 All tasks, big and small, are listed and tracked on the [class github repository issue tracker](https://github.com/soztag/fossos).
 Students should assign themselves to tasks they will be working on, and report / link to any progress on these tasks in the issue thread.
 
-**All students**, including those who **just want a "Sitzschein" (pass/fail option) must contribute to a number of issues labelled as [`pass/fail`](https://github.com/maxheld83/fossos/labels/pass%2Ffail).
-These are issues that are smaller in scale and scope.
 
-Students who want to receive a grade on the class also have to complete at least three issues of two different types labelled as [`graded`](https://github.com/maxheld83/fossos/labels/graded).
-Grading criteria are listed for each of the issues.
-Generally, a good grade will require following the practices and standards appropriate for the type of contribution in question, and students will need to demonstrate adequate command of the toolchain covered in class.
-For an excellent grade, students will need to go (a bit) beyond the covered material, and work on an especially pressing or complicated problem.
+### Pass/Fail
+
+**All students**, including those who **just want a "Sitzschein" (pass/fail option) must contribute to a number of issues labelled as [`pass/fail`](https://github.com/soztag/fossos/labels/pass%2Ffail).
+These are issues that are smaller in scale and scope.
 
 There is no straightfoward minimum metric (say, number of closed issues) to pass the class.
 Instead, students should display substantial contributions across a range of helpful activities, as recorded in the issue tracker.
 
-As the schedule evolves, the instructor will assign issues to milestones (= class dates).
-**Issues have to be completed at 20:00 CET the night *before* the session (= milestone) to which they have been assigned.**
 
-As an alternative to this assessment, if students already have some prior knowledge and a ready project they wish to work on, this can also be arranged.
+### Graded
+
+Students who want to receive a grade on the class also have to complete a couple of issues tagged with `graded-x`.
+
+The numbers next to the labels roughly indicate the **estimated work and difficulty** of a task (also known as "story points" in agile development).
+Estimates are frequently wrong, and these points can be adjusted in consultation with the instructor, if some task turns out to be much harder or easier than expected.
+These story points correspond to ECTS credit points; if you are taking this as a "Proseminar", you will need to have owned and closed issues worth 5 story points.
+
+There are **different *kinds* of issues**:
+
+#### `external documentation` / `external software`
+
+These are improvements to *external* repos (typically also on GitHub), either other software (typically R repositories) or documentation and learning resources (typically those covered in class).
+The actual work (forking, raising a pull request, etc.) consequently occurs in the external target repository, and this activity is merely *tracked* in a placeholder issue in the class repository.
+Simply link to any relevant issues, commits or pull requests on the target repo in a placeholder issue.
+
+For contributions to external documentation or software, it is very important that we do not burden the respective maintainers with sub-par work.
+To ensure that we deliver high quality work, you **must follow the following procedure**:
+
+```{r external}
+DiagrammeR::mermaid(diagram = "external.mmd", height = 1800, width = 800)
+```
+
+Grading criteria are listed for each of the issues.
+Generally, a good grade will require following the practices and standards appropriate for the type of contribution in question, and students will need to demonstrate adequate command of the toolchain covered in class.
+For an excellent grade, students will need to go (a bit) beyond the covered material, and work on an especially pressing or complicated problem.
+
+As an alternative to this (graded) assessment, if students already have some prior knowledge and a ready project they wish to work on, this can also be arranged.
+Students should contact the instructor, and also track their progress on their *own* project in a placeholder issue on the fossos issue tracker.
 
 
 ## Attendance

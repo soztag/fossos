@@ -1,0 +1,51 @@
+sequenceDiagram
+  participant student as Fork Repo / Student
+  participant fossos as Class Repo / Instructor
+  participant target as External Repo / Maintainer
+  Note over target: aka. upstream relative to the fork.
+  student->>student: Decide on a contribution.
+  alt existing issue
+    student->>fossos: Assign yourself to existing issue.
+  else new issue
+    student->>fossos: Add new issue and assign yourself.
+  end
+  loop until ok from instructor
+    student-->>target: Study existing code, issues and guidelines.
+    student->>student: Figure out a plan.
+    student->>fossos: Document detailed plan of work in issue.
+    fossos->>student: Receive feedback
+  end
+  loop until ok from maintainer
+    student->>target: Document plan in existing or new issue.
+    Note over student,target: Proceed according to maintainer guidelines and preferences.
+    Note over student,target: Always link to class repo and cc instructor in issues.
+    target->>student: Receive feedback.
+  end
+  student->>target: Assign yourself to issue in external repo.
+  Note over student,target: Give maintainer a timeframe for completion.
+  student->>target: Fork external repo.
+  student->>student: Create a new branch for patch in fork repo.
+  loop until merged by maintainer
+    loop until ok from instructor
+      student->>student: Code/write patch.
+      Note over student,fossos: Code in fork of external repo.
+      student->>student: Raise a pr from patch branch to fork repo master.
+      Note over student,fossos: This is the trial run.
+      Note over student,fossos: Makes feedback from instructor efficient.
+      student->>fossos: Report draft patch + fork pr in class issue.
+      fossos->>student: Receive feedback.
+    end
+    student->>student: Merge patch master into fork master.
+    student->>target: Raise/update pull request in upstream repo.
+    target->>student: Receive feedback.
+  end
+  alt pr is merged during semester
+    student->>target: Close original issue.
+    Note over student,target: Yeah! You're a coding rockstar!
+  else pr is not merged during semester
+    student->>fossos: Report that PR is not merged.
+    Note over student,target: Don't be sad. It happens.
+  end
+  student->>fossos: Link to PR, close placeholder issue.
+  student->>fossos: Ask for grade.
+  fossos->>student: Receive grade.

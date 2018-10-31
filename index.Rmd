@@ -33,7 +33,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-```{r readme, child="README.rmd"}
+```{r readme, child="README.md"}
 ```
 
 ---

@@ -144,7 +144,8 @@ A lot of volunteers spend a lot of time on these sites, so it is very important 
 - SE: [Help re: answering](https://stackoverflow.com/help/answering)
 - Community: [Welcome](https://community.rstudio.com/t/welcome-to-the-rstudio-community/8)
 - SE: [Making a great R reprex](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)
-- Tidyverse [reprex package](https://reprex.tidyverse.org)
+- Tidyverse: [reprex package](https://reprex.tidyverse.org)
+- code.likeagirl.io: [How to find a newcomer-friendly open source project](https://code.likeagirl.io/the-new-developers-guide-to-open-source-228ca257dd68)
 
 
 #### Additional Resources

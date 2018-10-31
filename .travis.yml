@@ -14,6 +14,7 @@ deploy:
   provider: pages
   skip_cleanup: true
   local-dir: _site/
+  committer-from-gh: true
   github-token: $GITHUB_TOKEN
   on:
     branch: master

@@ -29,7 +29,7 @@ The stack is listed below in the **approximate order** in which software is cove
 The first couple of topics and tools should be covered by everyone.
 Later, more advanced topics can be chosen by students according to their interest, as illustrated in the below flowchart.
 
-```{r}
+```{r, fig.cap="Flow Chart of Covered Topics"}
 DiagrammeR::mermaid(diagram = "topics.mmd")
 ```
 

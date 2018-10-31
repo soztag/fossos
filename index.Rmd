@@ -222,6 +222,17 @@ Students are expected to work through (not just read) all the material listed *b
 Additional resources are optional.
 </div>
 
+<div class="alert alert-success role="alert">
+Whenever your run into a problem, or have a question, raise an issue on our [github issue tracker](https://github.com/soztag/fossos/issues).
+Please also make sure that:
+
+- the issue does not *already exist* (always **search first!**)
+- the issue is properly *labelled* (so we can all navigate through the issues)
+- the issue is *answerable*, *actionable* and *closable*.
+  Good issues are framed in such a way that they *can* be closed.
+  For broader, more open-ended discussions, use the [class discussion board](https://github.com/orgs/soztag/teams/fossos-18-ws).
+</div>
+
 
 ## Assessment
 
@@ -230,6 +241,14 @@ Assessments are an unfortunate, tedious and arguably needless part of teaching -
 Instead of some *make belief* work or hobby project, for the most part, assignments in this class are designed to be *actually useful* to other people.
 This can be motivating, but it also means that other people are relying upon our work: 
 it has to be delivered by the time, and in the quality expected.
+
+You can also work on pretty much anything you like -- improving this very class (and its repo), some existing project that you like or even your own new (or existing) project.
+The only conditions are:
+
+1. The work needs to be related to the tools and practices covered in class.
+2. The work needs to be on GitHub or otherwise transparent.
+3. The instructor needs to be able to assess the quality of the work, and advise you in your work.
+  (I may not be able to do that).
 
 We will begin with relatively easy, small tasks to serve other students in class, then address smaller issues with resources for the broader community, and eventually, fixing "real" bugs or enhancing functionality of open source data science software.
 
@@ -245,6 +264,8 @@ These are issues that are smaller in scale and scope.
 There is no straightfoward minimum metric (say, number of closed issues) to pass the class.
 Instead, students should display substantial contributions across a range of helpful activities, as recorded in the issue tracker.
 
+Before working on these issues, students should *assign themselves*, to avoid us doing duplicate work.
+
 
 ### Graded
 
@@ -254,24 +275,83 @@ The numbers next to the labels roughly indicate the **estimated work and difficu
 Estimates are frequently wrong, and these points can be adjusted in consultation with the instructor, if some task turns out to be much harder or easier than expected.
 These story points correspond to ECTS credit points; if you are taking this as a "Proseminar", you will need to have owned and closed issues worth 5 story points.
 
-There are **different *kinds* of issues**:
+You will be graded based on how well you have adhered to the best practices and tooling covered in class, as well as (if applicable) the guidelines and standards of the external project (some other repo) or platform (Stack Overflow)
 
-#### `external documentation` / `external software`
+There are **different *kinds* of graded issues**:
+
+
+#### Reproducible Example
+
+Labels: 
+
+- `community.rstudio`, `stack-overflow` or `bug report`, 
+- and `reprex`, and `question` respectively.
+
+Though it may also benefit yourself, a well-formulated question or bug report with a reproducible example can also serve the community.
+This is what we're aiming for here.
+
+A well-formulated question, in the context of open source development is often a reproducible example, or *reprex*, for short.
+This means that you should provide a code snippet (or, if not applicable, a very precise description of steps) that will *allow any other user to reproduce the behavior in question, with no additional resources*.
+Producing this can be harder than it sounds, and just narrowing down a problem like that may often help you solve it.
+
+Make sure to read and adhere to all the resources listed [community and help](https://www.maxheld.de/fossos/stack.html#community__help).
+
+The three target platforms can be listed roughly in ascending order of precision of the question:
+
+1. http://community.rstudio.com: Is open to *relatively* open/vague questions, though you are absolutely expected to do your own research.
+2. http://stackoverflow.com: Questions should be very precise and reproducible, and be *definitively answerable*.
+  Not good for opiniated stuff.
+  Consider the resources listed under [community and help](https://www.maxheld.de/fossos/stack.html#community__help).
+3. Bug report: *If* you're absolutely sure that you have run into a bug, then it can be a good idea to raise it on the repository in question.
+  For most things, you should raise it on S-O or community.rstudio first, to be sure that it really *is* a bug.
+
+Here, as with all things open source, we must ensure that other people's time is well-spent engaging our question (or bug report).
+To ensure that, please follow this procedure:
+
+```{r reprex, fig.cap="Sequence Chart for a Reprex"}
+DiagrammeR::mermaid(diagram = "reprex.mmd", height = 1200, width = 800)
+```
+
+
+#### Answer on S-O or community.rstudio
+
+Labels: 
+
+- `community.rstudio`, `stack-overflow`,
+-  `reprex`, and `answer` respectively.
+
+Same process as for the above.
+
+
+#### External Contribution
+
+Labels: `external documentation`, `external software`.
 
 These are improvements to *external* repos (typically also on GitHub), either other software (typically R repositories) or documentation and learning resources (typically those covered in class).
 The actual work (forking, raising a pull request, etc.) consequently occurs in the external target repository, and this activity is merely *tracked* in a placeholder issue in the class repository.
 Simply link to any relevant issues, commits or pull requests on the target repo in a placeholder issue.
 
+This sounds quite challening, but it can be quite doable, especially if you're starting by improving the documentation.
+
+To start contributing to open source, you might also find these resources helpful:
+
+- code.likeagirl.io: [How to find a newcomer-friendly open source project](https://code.likeagirl.io/the-new-developers-guide-to-open-source-228ca257dd68)
+- Look for open issues on projects that you like, labelled as "needs help", "good first issue" or similar.
+  (Some maintainers will especially highlight starter issues.)
+
 For contributions to external documentation or software, it is very important that we do not burden the respective maintainers with sub-par work.
 To ensure that we deliver high quality work, you **must follow the following procedure**:
 
-```{r external}
+```{r external, fig.cap="Sequence Chart for an External Contribution"}
 DiagrammeR::mermaid(diagram = "external.mmd", height = 1800, width = 800)
 ```
 
 Grading criteria are listed for each of the issues.
 Generally, a good grade will require following the practices and standards appropriate for the type of contribution in question, and students will need to demonstrate adequate command of the toolchain covered in class.
 For an excellent grade, students will need to go (a bit) beyond the covered material, and work on an especially pressing or complicated problem.
+
+
+#### Own Project
 
 As an alternative to this (graded) assessment, if students already have some prior knowledge and a ready project they wish to work on, this can also be arranged.
 Students should contact the instructor, and also track their progress on their *own* project in a placeholder issue on the fossos issue tracker.

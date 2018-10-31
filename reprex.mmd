@@ -1,0 +1,36 @@
+sequenceDiagram
+  participant student as Student
+  participant fossos as Class Repo / Instructor
+  participant target as Target Platform
+  Note over target: community.rstudio, S-O or github issue.
+  student->>student: Decide on a problem, question or bug.
+  alt existing issue
+    student->>fossos: Assign yourself to existing issue.
+  else new issue
+    student->>fossos: Add new issue and assign yourself.
+  end
+  student-->>target: Study existing questions, answers and guidelines.
+  student->>student: Figure out a plan.
+  student->>fossos: Document detailed plan of work in issue.
+  loop until ok from instructor
+    student->>student: Come up with reprex.
+    student->>fossos: Post draft reprex into issue.
+    fossos->>student: Receive feedback.
+  end
+  student->>target: Post question with reprex.
+  opt bug confirmed
+    Note over student: Please be sure :).
+    student->>student: Find appropriate target repo.
+    student->>target: Study existing issue guidelines.
+    Note over target: This is now some gh repo.
+    loop until ok from instructor
+      student->>fossos: Post draft bug report into issue.
+      fossos->>student: Receive feedback.
+    end
+    student->>target: Post bug report.
+  end
+  opt some feedback on question or bug
+    student->>target: Follow up
+  end
+  student->>fossos: report posted question or bug
+  fossos->>student: receive grade

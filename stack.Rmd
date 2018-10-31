@@ -13,43 +13,38 @@ This is by no means the *only* way to do open science or data science with open 
 The below R-based toolchain should be considered as merely *one* (out of several) consistent implementations of some best practices.
 However, once participants have mastered this toolchain, they should find it relatively easy to adapt to other ecosystems.
 
-All of the software will be [free and open source software](https://en.wikipedia.org/wiki/Free_and_open-source_software), but we will also be using some proprietary Software-as-a-Service ([Saas](https://en.wikipedia.org/wiki/Software_as_a_service)).
+All of the software will be [free and open source software](https://en.wikipedia.org/wiki/Free_and_open-source_software), but we will also be using some proprietary Software-as-a-Service ([Saas](https://en.wikipedia.org/wiki/Software_as_a_service)) offerings.
 For each of the proprietary services, there *are* open-source and/or self-hosted alternatives, but these are often much less convenient (e.g. [self-hosted Jenkins](https://jenkins.io) vs [Travis CI](https://travis-ci.com)), or they are much less popular in the community, and therefore less useful (e.g. [GitLab](GitLab) vs [GitHub](https://github.com)).
 Relying on, or pushing proprietary services, especially in an education context, is always awkward, but the disadvantages can sometimes be outweighted by convenience and network effect advantages.
 For some aspects of open source software development and open science, proprietary services -- especially GitHub and the [StackExchange network](https://stackoverflow.com) -- for better or for worse just *are* the only game in town.
 In any event, *most* of what students will learn in this class is in free and open source software, and the remaining proprietary usage should easily translate to other, competing or open services. 
 
+<div class="alert alert-primary role="alert">
+The stack is listed below in the **approximate order** in which software is covered in this class, and together with **mandatory study material** and **tasks**.
+</div>
 
-## Installation {.alert .alert-success}
 
-Please install all of the below software and sign up for all the below services **before the first class**.
+## Introduction
+
+For the introductory session, participants should watch this video:
+
+<div class="embed-responsive embed-responsive-16by9">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/cpbtcsGE0OA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+Here's the corresponding [slide deck](https://speakerdeck.com/hadley/you-cant-do-data-science-in-a-gui).
+
+
+### Installation {.alert .alert-info}
+
+Participants should also install all of the below software and sign up for all the below services **before the first class**.
 
 The steps required for installation will depend on your platform and system setup.
-Please understand that we cannot support or troubleshoot these installations during class; there, however, are ample resources on the internet for troubleshooting an installation.
 
-
-## Operating System Maintenance {.alert .alert-warning}
-
-It is *your* responsibility to maintain your own computer and operating system (OS), as well as to figure out how to install the below software on your machine (though we will all help one another within reason).
-
-
-## Cloud Alternative
-
-As a backup plan to using your own operating system, you may use [RStudio Cloud](https://rstudio.cloud), a data science Saas.
-RStudio Cloud furnishes you with a ready RStudio session in a virtual machine with all necessary system dependencies.
-You will still have sign up to all of the *services* in the below, but none of the client *software*.
-
-RStudio Cloud is still in *alpha* and may not be always reliable.
-Once out of alpha, it will also be a paid service, for which you may have to pay yourself.
-
-You are strongly encouraged to invest the time and effort to set up and maintain a development environment on your own computer.
-
-
-## Tools and Resources
 
 ### Basic Computing Literacy
 
-<div class="alert alert-info" role="alert">
+<div class="alert alert-warning" role="alert">
 ... is expected.
 To *start* this class you need to know your way around your own computer and commonly used technologies.
 </div>
@@ -59,7 +54,7 @@ You should know, or easily find, the answer to questions such as:
 - *In what directory (absolute path) are programs I use daily stored on computer?*
 - *What is the OS and version on my computer?*
 - *In what directory (absolute path) do I store my files?*
-- *Do I have privileges to install software?
+- *Do I have sufficient privileges to install software?
   If not, how can I get them?*
 - *Which file format is better suited to editing: A `*.docx` or a `*.pdf`?*
 - *Why do the search queries `jaguar car` and `jaguar -car` give different results on Google?*
@@ -81,7 +76,9 @@ If you feel like you need to brush up on some basic computing skills, these reso
 - ... just google the answers to the above questions.
 
 
-### Project Management
+## Software Carpentry {#carpentry}
+
+### Project Management {#pm}
 
 <a class="btn btn-primary" href="https://github.com" role="button">Sign up to GitHub.com</a>
 
@@ -109,7 +106,6 @@ Here's a sensible set of defaults:
 </div>
 
 
-
 #### Resources
 
 - [Getting Started with GitHub Video](https://www.youtube.com/watch?v=noZnOSpcjYY)
@@ -119,7 +115,7 @@ Here's a sensible set of defaults:
 - [How to write good issues](https://wiredcraft.com/blog/how-we-write-our-github-issues)
 
 
-### Community & Help
+### Community & Help {#help}
 
 <a class="btn btn-primary" href="https://stackoverflow.com" role="button">Sign up to StackOverflow</a>
 <a class="btn btn-primary" href="http://community.rstudio.com" role="button">Sign up to RStudio community</a>
@@ -159,28 +155,11 @@ In addition to StackExchange and RStudio Community, there are a couple of other 
   - https://www.reddit.com/r/Rlanguage/
   - https://www.reddit.com/r/rstats/
 - [Linear Digressions](http://lineardigressions.com) Podcast
-- [Data Skeptic](https://dataskeptic.com/) Podcast
 - [R Weekly](https://rweekly.org) Blog
 - [R Views](https://rviews.rstudio.com) Blog
 
 
-### Cloud Provider
-
-<a class="btn btn-primary" href="https://rstudio.cloud" role="button">Sign up to RStudio Cloud</a>
-
-<div class="alert alert-warning role="alert">
-It's best to sign up with your GitHub account, but this *does not* give your RStudio Cloud instance read or write privileges to your repos.
-Remember to also configure <a href="https://maurolepore.github.io/cloudgithub/">RStudio Cloud with your git credentials</a>.
-</div>
-
-
-Resources:
-
-- [RStudio Cloud guide](https://rstudio.cloud/learn/guide)
-- All resources listed under [RStudio](#ide)
-
-
-### Markup Language
+### Markup Language {#markup}
 
 <a class="btn btn-default" href="https://github.github.com/gfm/" role="button">GitHub Flavored Markdown Spec</a>
 
@@ -234,11 +213,11 @@ If you don't want to install something, [Github](https://github.com) (see below)
 We will be using different programs going forward.
 
 
-### Command Line Interface
+### Command Line Interface {#cli}
 
 <a class="btn btn-info" href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" role="button">Install Bash Shell</a>
 
-The bash shell is the standard Unix-style command-line interface (CLI).
+The bash shell is the standard Unix-style command-line interface (CLI) (as opposed to a point-and-click graphical user interface, or GUI).
 A lot of programs that we'll be using only run at the CLI, so it's important to know how to use it.
 It is also often used in scripting (= automating) tasks.
 
@@ -258,12 +237,12 @@ On **Windows**:
 
 #### Additional Resources
 
-- Learn enough  [Command line tutorial](https://www.learnenough.com/command-line-tutorial)
+- Learn enough [Command line tutorial](https://www.learnenough.com/command-line-tutorial)
 - Codecademy course [Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line) (offers a free tier)
 - DataCampcourse [Introduction to Shell for Data Science](https://www.datacamp.com/courses/introduction-to-shell-for-data-science)
 
 
-### Package Management
+### Package Management {#pkg-mngt}
 
 <a class="btn btn-default" href="https://en.wikipedia.org/wiki/APT_(Debian)" role="button">Linux: already ships with `apt`</a>
 <a class="btn btn-info" href="https://brew.sh" role="button">macOS: install home`brew`</a>
@@ -276,14 +255,14 @@ Package managers solve this problem; they provide a clean and elegant way to ins
 Consider installing the below software via your package manager.
 Whether this is advisable or even possible for any given piece of software depends on the software and your operating system.
 Google around for advice.
-As a rule of thumb, "heavy" packages (such as LaTeX) are sometimes best installed "by hand".
+As a rule of thumb, "heavy" packages (such as LaTeX, Atom or R) are sometimes best installed "by hand".
 </div>
 
 Notice that LaTeX, Atom and R (all below) each have their own *internal* package managers (as do many other software ecosystems).
-If you're installing a package *for* either of those, use the corresponding ecosystem package manager, *not* your system-wide program.
+If you're installing a package *for* either of those, use the corresponding ecosystem package manager, *not* your system-wide program (= `brew`, `apt-get`, `cholocatey`).
 
 
-### Text Editor
+### Text Editor {#editor}
 
 <a class="btn btn-info" href="https://atom.io" role="button">Install Atom</a>
 
@@ -328,6 +307,7 @@ Here's a list of packages you might also want to install:
 - `merge-conflicts`
 - `minimap-split-diff`
 
+
 #### Resources
 
 - [Atom Getting Started Video](https://www.youtube.com/watch?v=U5POoGSrtGg)
@@ -350,7 +330,7 @@ We may, for now, not use R much by itself, but it can be easier to use all the o
 - RStudio [Cheat Sheet](https://www.rstudio.com/resources/cheatsheets/#ide)
 
 
-### Source Control Management (SCM)
+### Source Control Management (SCM) {#scm}
 
 <a class="btn btn-info" href="https://git-scm.com" role="button">Install Git</a>
 
@@ -383,7 +363,7 @@ You also need to *configure* git on your machine, and wherever else you are usin
 - [Free DataCamp Course](https://www.datacamp.com/courses/introduction-to-git-for-data-science)
 
 
-### Branching Model
+### Branching Model {#gitflow}
 
 <a class="btn btn-default" href="https://guides.github.com/introduction/flow/" role="button">GitHub Flow</a>
 
@@ -398,7 +378,7 @@ We will use it to learn the branch and pull-request model.
 - [Understanding the GitHub Flow](https://desktop.github.com)
 
 
-### Document Conversion
+### Document Conversion {#conversion}
 
 <a class="btn btn-info" href="https://pandoc.org" role="button">Install Pandoc</a>
 
@@ -418,7 +398,7 @@ You should *both* learn to *use* Pandoc at the CLI as well as to *write* in the 
 - *especially* [Pandoc's Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)
 
 
-### Typesetting
+### Typesetting {#typesetting}
 
 <a class="btn btn-info" href="https://www.latex-project.org" role="button">Install LaTeX</a>
 
@@ -436,7 +416,7 @@ Still, it is important to learn some of the basics of LaTeX to use it programmat
 - Overleaf [Learn LaTeX in 30 Minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
 
 
-### Bibliography Management
+### Bibliography Management {#bib}
 
 <a class="btn btn-info" href="https://github.com/jgm/pandoc-citeproc" role="button">Install Pandoc Citeproc</a>
 <a class="btn btn-default" href="https://en.wikipedia.org/wiki/Comparison_of_reference_management_software" role="button">Install a Bibliography Manager of Your Choice</a>
@@ -455,7 +435,9 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 - [Pandoc's Citeproc documentation](https://pandoc.org/MANUAL.html#citations)
 
 
-### R
+## Introductory R
+
+### "Base" R {#base-r}
 
 <a class="btn btn-info" href="https://www.r-project.org" role="button">Install R</a>
 
@@ -474,8 +456,7 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 - [Data Analysis with R](https://eu.udacity.com/course/data-analysis-with-r--ud651)
 
 
-
-### Literate Programming
+### Literate Programming {#literate}
 
 <a class="btn btn-info" href="https://yihui.name/knitr/" role="button">Install knitr</a>
 <a class="btn btn-info" href="https://rmarkdown.rstudio.com" role="button">Install RMarkdown</a>
@@ -488,24 +469,121 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 - Yihui Xie et al.: [The definitive RMarkdown guide](https://bookdown.org/yihui/rmarkdown/)
 
 
-### Tidyverse
+## Intermediate R {#intermediate-r}
 
-<a class="btn btn-info" href="https://www.tidyverse.org" role="button">Install all tidyverse packages</a>
+### Tidyverse R
+
+<a class="btn btn-info" href="https://www.tidyverse.org" role="button">Install dplyr, tidyr, readr, tibble, purrr and stringr</a>
 
 
 #### Resources
 
+- Documentation for the above packages.
 - List of [resources here](https://www.tidyverse.org/learn/).
+- Hadley Wickham and Garrett Grolemund's [R for Data Science](https://r4ds.had.co.nz) (read only the chapters that you are interested in).
 
 
-### Continous Integration & Development (CI/CD)
+### Plots
+
+<a class="btn btn-info" href="https://ggplot2.tidyverse.org" role="button">Install ggplot2</a>
+
+
+#### Resources
+
+- Documentation for [ggplot2](https://ggplot2.tidyverse.org).
+
+
+## Interactive R (#interactive-r)
+
+
+### HTML, JS & CSS (*optional*)
+
+The below packages for (web) interactivity in R try to abstract away as much as possible the underlying web technologies (HTML, JavaScript and CSS).
+You can use them without knowing anything about this stack, but you can accomplish more and understand them in a deeper way if you have at least a cursory understanding of how these technologies work.
+
+Covering them in any depth, or even listing good resources (of which there are gazillions) is beyond the scope of this class, so these should be considered mere starting points.
+
+- very [gentle introduction](https://internetingishard.com/html-and-css/introduction) by some webpage
+- [w3schools tutorials](https://www.w3schools.com): doesn't look like much, but covers it pretty much all.
+- free [udacity intro to html and css](https://in.udacity.com/course/intro-to-html-and-css--ud304).
+- [list of links from quora](https://www.quora.com/What-is-the-best-way-to-learn-HTML-CSS-and-JavaScript)
+
+
+### Interactive Graphics
+
+<a class="btn btn-info" href="https://plot.ly/r/" role="button">Install plotly for R</a>
+<a class="btn btn-info" href="http://www.htmlwidgets.org" role="button">Install htmlwidgets</a>
+<a class="btn btn-info" href="https://rmarkdown.rstudio.com/flexdashboard/" role="button">Install flexdashboard</a>
+
+
+#### Resources
+
+- [Plotly documentation](https://plot.ly/r/)
+- [HTML Widgets documentation](http://www.htmlwidgets.org)
+- [flexdashboard documentation](https://rmarkdown.rstudio.com/flexdashboard/)
+
+
+#### Additional Resources
+
+- [Crosstalk documentation](http://rstudio.github.io/crosstalk/)
+
+
+### Interactive Webapps
+
+<a class="btn btn-info" href="https://shiny.rstudio.com" role="button">Install shiny</a>
+
+
+#### Resources
+
+- [Free DataCamp course](https://www.datacamp.com/?tap_a=5644-dce66f&tap_s=213387-418a02)
+- Any of the materials featured on [shiny.rstudio.com](https://shiny.rstudio.com) -- whatever works best for you.
+
+
+## Advanced R {#adv-r}
+
+- Really "just" Hadley Wickham's [Advanced R](https://adv-r.hadley.nz)
+
+
+## Cloud Computing with R {#cloud}
+
+
+### Continuous Integration & Development (CI/CD)
 
 <a class="btn btn-info" href="https://travis-ci.com" role="button">Sign up to Travis CI</a>
+
 
 #### Resources
 
 - Julia Silge's [Beginners Guide](https://juliasilge.com/blog/beginners-guide-to-travis/)
 - Travis CI: [Building an R Project](https://docs.travis-ci.com/user/languages/r/)
+
+### The Cloudyr Project
+
+tba.
+
+
+### Containerisation
+
+tba.
+
+
+
+## Reproducible Research
+
+
+### Defensive Computing
+
+tba.
+
+
+### Storing Datasets
+
+tba.
+
+
+### Publishing results
+
+tba.
 
 
 ### Dependency Management
@@ -513,31 +591,6 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 <a class="btn btn-info" href="https://rstudio.github.io/packrat/" role="button">Install packrat</a>
 
 
-## Moving to Linux
+## Package development
 
-Installation and usage may be easier on Unix-compatible operating systems, including macOS and Linux.
-Getting Windows to play nicely with open source software can be harder, and some convenient system utilities (such as a package manager) are often missing.
-It *is* technically possible to use most, if not all, of the tools above on Windows, but they may behave slightly differently, and supporting them may be more involved.
-
-If you are using a Windows machine, you may consider the following alternatives to get a more Unix-compatible operating system, roughly ranked from easiest to most involved:
-
-1. Replace your existing operating system with, say, [Ubuntu](https://tutorials.ubuntu.com/tutorial/tutorial-install-ubuntu-desktop#0), a frequently used Linux distribution.
-  Before you do this, make sure that your hardware has good Linux support.
-  This would also delete all of your data and applications, and you might have to choose and use new replacement applications.
-2. Same as 1, but with a [dual boot setup](https://opensource.com/article/18/5/dual-boot-linux).
-  This way, you can retain both your old operating system, and a new Linux install.
-  However, you always have to restart to switch between the two systems.
-3. Same as 2, but in a [virtual machine](https://itsfoss.com/install-linux-in-virtualbox/) which can run alongside and *inside* your Windows install.
-  ([Here](https://www.lifewire.com/install-ubuntu-linux-windows-10-steps-2202108) are alternative instructions).
-  Apparently, if your computer and Windows 10 version support it, there is also now a fancier/more efficient way to do this via [Hyper-V](https://www.windowscentral.com/how-run-linux-distros-windows-10-using-hyper-v).
-  Carries some performance penalty.
-4. [Install the Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10).
-  This solution is available only for recent versions of Windows 10.
-  It seems pretty elegant, but has some limitations (no GUIs) and may be quite involved.
-5. Buy an x86 Chromebook and use [crouton](https://github.com/dnschneid/crouton) or (better, but still in beta?) [crostini](https://www.zdnet.com/article/how-to-add-linux-to-your-chromebook/) to run Linux on your Chromebook.
-6. Rent a virtual machine (VM, same as 3), but on a rented cloud host.
-  You can access everything through a browser, but there is a (small) fee, depending on your setup.
-
-There is no guarantee that any of these alternatives or links will work for you; you will have to research them on your own.
-
-
+- Really "just" Hadley Wickham's [R Packages](http://r-pkgs.had.co.nz)

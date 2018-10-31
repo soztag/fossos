@@ -28,6 +28,11 @@ bibliography: library.bib
   </sub></small></p>
 </div>
 
+```{r setup, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
 ```{r readme, child="README.rmd"}
 ```
 

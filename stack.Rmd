@@ -7,6 +7,10 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
 bibliography: library.bib
 ---
 
+```{r setup, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
 Here's the software and services stack we'll be using.
 
 This is by no means the *only* way to do open science or data science with open source software, and recommended packages are likely to change over time.
@@ -19,8 +23,16 @@ Relying on, or pushing proprietary services, especially in an education context,
 For some aspects of open source software development and open science, proprietary services -- especially GitHub and the [StackExchange network](https://stackoverflow.com) -- for better or for worse just *are* the only game in town.
 In any event, *most* of what students will learn in this class is in free and open source software, and the remaining proprietary usage should easily translate to other, competing or open services. 
 
-<div class="alert alert-primary role="alert">
+<div class="alert alert-info" role="alert">
 The stack is listed below in the **approximate order** in which software is covered in this class, and together with **mandatory study material** and **tasks**.
+
+The first couple of topics and tools should be covered by everyone.
+Later, more advanced topics can be chosen by students according to their interest, as illustrated in the below flowchart.
+
+```{r}
+DiagrammeR::mermaid(diagram = "topics.mmd")
+```
+
 </div>
 
 
@@ -494,7 +506,7 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 - Documentation for [ggplot2](https://ggplot2.tidyverse.org).
 
 
-## Interactive R (#interactive-r)
+## Interactive R {#interactive-r}
 
 
 ### HTML, JS & CSS (*optional*)

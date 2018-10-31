@@ -1,0 +1,11 @@
+graph TD
+  intro(Introduction) --> sc(Software Carpentry)
+  sc --> baser(Introductory R)
+  baser --> tidy(Intermediate R)
+  tidy --> shiny(Interactive <br> R)
+  tidy --> advr(Advanced <br> R)
+  tidy --> repr(Reproducible <br> Research)
+  tidy --> rpkgs(Package <br> Development)
+  tidy --> cloud(Cloud <br> Computing)
+  shiny --helps--> cloud
+  advr --helps--> rpkgs

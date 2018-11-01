@@ -262,6 +262,8 @@ On **Windows**:
 - [Command Line for Beginners](https://learntocodewith.me/getting-started/topics/command-line/)
 - Viking Code School [Command Line crash course](http://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course)
 - Shell chapter form [Happywithgitr](http://happygitwithr.com/shell.html)
+- If you're on windows: [how to access ubuntu bash files in windows](https://www.howtogeek.com/261383/how-to-access-your-ubuntu-bash-files-in-windows-and-your-windows-system-drive-in-bash/)
+- Video: [Linux Terminal commands and navigation](https://www.youtube.com/watch?v=AO0jzD1hpXc)
 
 
 #### Additional Resources

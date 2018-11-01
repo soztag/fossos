@@ -2,13 +2,28 @@ name: cupi
 navbar:
   title: FOSSOS
   left:
-  - text: Syllabus
+  - icon: fa-home
+    text: Syllabus
     href: index.html
-  - text: Stack
+  - icon: fa-code
+    text: Stack
     href: stack.html
-  - text: Instructor
+  - icon: fa-chalkboard-teacher
+    text: Instructor
     href: http://www.maxheld.de
   right:
+  - icon: fa-comments
+    text: Discussion
+    href: https://github.com/orgs/soztag/teams/fossos-18-ws
+  - icon: fa-tasks
+    text: Issues
+    href: https://github.com/soztag/fossos/issues
+  - icon: fa-trello
+    text: Kanban
+    href: https://github.com/soztag/fossos/projects/2
+  - icon: fa-github
+    text: Source
+    href: https://github.com/maxheld83/fossos
   - icon: fa-university
     menu:
     - text: UnivIS
@@ -21,8 +36,6 @@ navbar:
       href: https://www.soziologie.phil.fau.de)
     - text: Nuremberg Campus of Technology
       href: https://www.ncatec.de
-  - icon: fa-github
-    href: https://github.com/maxheld83/fossos
 output:
   html_document:
     theme: cosmo

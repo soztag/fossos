@@ -234,6 +234,26 @@ Please also make sure that:
 </div>
 
 
+## Digital Places
+
+We're going to use a few digital tools to get organised in this class, all based on GitHub.
+
+- Static information will be at http://maxheld.de/fossos/, the **class website**.
+  You can find all the resources (~ readings) and software links on http://maxheld.de/fossos/stack.
+- Pretty much all *individual* activity (i.e. to be done by one or a few students) is tracked as issues on our class repository **issue tracker** at https://github.com/soztag/fossos/issues.
+  If you have a question, have an idea to work on, or are looking for inspiration for a task, this is your place.
+  Issues are organised using labels and assignees.
+  Milestones are currently not in use.
+- A (currently relevant) subset of these issues are also listed on our **Kanban board** at https://github.com/soztag/fossos/projects/2.
+  This board gives you an overview what we will be working on in the current and coming sessions.
+  You can move your "own" issues around the board as appropriate, and you can also add issues that you want to see addressed.
+- For more loosely defined conversation (not in the form of a closable issue), there is also a **discussion board** at https://github.com/orgs/soztag/teams/fossos-18-ws.
+
+These venues are also linked from the top bar of the class website, so you can always easily find them.
+
+You can (and should) cross-reference issues and discussions between all of these venues.
+
+
 ## Assessment
 
 Assessments are an unfortunate, tedious and arguably needless part of teaching -- but here we are, so we are going to make the best of it.

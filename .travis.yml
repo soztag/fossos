@@ -5,10 +5,9 @@ cache:
 script:
 - Rscript -e "rmarkdown::render_site()"
 deploy:
-  provider: pages
+  provider: script
   skip_cleanup: true
-  local-dir: _site/
-  github-token: "$GITHUB_TOKEN"
+  script: rsync -r --delete-after _site pfs400wm@karli.rrze.uni-erlangen.de:/proj/websource/docs/FAU/fakultaet/phil/www.datascience.phil.fau.de/websource
   on:
     branch: master
 notifications:

@@ -127,6 +127,11 @@ Here's a sensible set of defaults:
 - [How to write good issues](https://wiredcraft.com/blog/how-we-write-our-github-issues)
 
 
+#### Tasks
+
+- Sign up to GitHub and say hi [in the course discussion board](https://github.com/orgs/soztag/teams/fossos-18-ws)
+
+
 ### Community & Help {#help}
 
 <a class="btn btn-primary" href="https://stackoverflow.com" role="button">Sign up to StackOverflow</a>
@@ -154,6 +159,14 @@ A lot of volunteers spend a lot of time on these sites, so it is very important 
 - SE: [Making a great R reprex](https://stackoverflow.com/questions/5963269/how-to-make-a-great-r-reproducible-example)
 - Tidyverse: [reprex package](https://reprex.tidyverse.org)
 - code.likeagirl.io: [How to find a newcomer-friendly open source project](https://code.likeagirl.io/the-new-developers-guide-to-open-source-228ca257dd68)
+
+
+#### Tasks
+
+- Sign up to StackOverflow and post your profile to the [course discussion board](https://github.com/orgs/soztag/teams/fossos-18-ws)
+- Find an interesting question an StackOverflow and post it to the [course discussion board](https://github.com/orgs/soztag/teams/fossos-18-ws)
+- Sign up to RStudio community and post your profile to the [course discussion board](https://github.com/orgs/soztag/teams/fossos-18-ws)
+- Find and interesting discussion on RStudio community and post it to the [course discussion board](https://github.com/orgs/soztag/teams/fossos-18-ws)
 
 
 #### Additional Resources

@@ -557,11 +557,22 @@ There is no guarantee that any of these alternatives or links will work for you;
 
 ## Schedule
 
-The schedule will be evolving throughout the semester, as we see how much progress we make.
+Because students will learn at different speeds, and from different starting points, there is not *a* schedule for the class.
+We will, however, progress through the [stack](/stack) in the order in which software (and resources) are listed.
 
-The current schedule is listed on the [github issue tracker for this class](https://github.com/maxheld83/fossos/issues).
-Milestones will be used as class dates.
-The resources are listed in the respective section of the [stack](/stack).
+Students can work through this material at their own pace.
+Likewise, some students may wish to cover a lot of breadth (at shallow depth), while others want to dig in on a particular topic.
+This is all fine, but students should ensure that they learn *something* at a *useful* level to solve real-world problems, as will also be required for the assessment.
+If in doubt, ask the instructor for guidance.
+
+Every student should first become competent in the practices and tools covered in "Software Carpentry"; these are required for all later topics.
+
+As a lower bound, *every* student should cover at least *one* top-level heading ("Software Carpentry", "Intermediate R", etc.) per semester.
+
+You can find out whatever will be worked on during the next session(s) by consulting the [kanban board](https://github.com/soztag/fossos/projects/2).
+
+During the earlier sessions, we will also cover some topics *together* in class.
+These topics will also be listed on the [kanban board](https://github.com/soztag/fossos/projects/2).
 
 
 ## Venue {.alert .alert-warning}

@@ -150,6 +150,8 @@ A lot of volunteers spend a lot of time on these sites, so it is very important 
 #### Resources
 
 - SE: [How to ask a good question](https://stackoverflow.com/help/how-to-ask)
+- SE [How to create a Minimal, Complete, and Verifiable example](https://stackoverflow.com/help/mcve) (that's a **reprex**)
+- [R Bloggers tips for good reprexes](https://www.r-bloggers.com/three-tips-for-posting-good-questions-to-r-help-and-stack-overflow/)
 - wikiHow: [How to ask a question...](https://www.wikihow.com/Ask-a-Question-on-Stack-Overflow)
 - SE: [Code of conduct](https://stackoverflow.com/help/behavior)
 - SE: [How not to be a spammer](https://stackoverflow.com/help/promotion)
@@ -259,6 +261,7 @@ On **Windows**:
 
 - [Command Line for Beginners](https://learntocodewith.me/getting-started/topics/command-line/)
 - Viking Code School [Command Line crash course](http://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course)
+- Shell chapter form [Happywithgitr](http://happygitwithr.com/shell.html)
 
 
 #### Additional Resources
@@ -266,6 +269,8 @@ On **Windows**:
 - Learn enough [Command line tutorial](https://www.learnenough.com/command-line-tutorial)
 - Codecademy course [Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line) (offers a free tier)
 - DataCampcourse [Introduction to Shell for Data Science](https://www.datacamp.com/courses/introduction-to-shell-for-data-science)
+- [The Unix shell](https://swcarpentry.github.io/shell-novice/02-filedir/index.html)
+
 
 
 ### Package Management {#pkg-mngt}
@@ -354,6 +359,11 @@ We may, for now, not use R much by itself, but it can be easier to use all the o
 #### Resources
 
 - RStudio [Cheat Sheet](https://www.rstudio.com/resources/cheatsheets/#ide)
+- Using [Projects in RStudio](https://r4ds.had.co.nz/workflow-projects.html)
+- [Connecting RStudio and Git](http://happygitwithr.com/rstudio-git-github.html)
+- [RStudio Projects documentation](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
+- [Good enough practices](https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/)
+- [The panes in RStudio](https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=5)
 
 
 ### Source Control Management (SCM) {#scm}
@@ -382,6 +392,8 @@ You also need to *configure* git on your machine, and wherever else you are usin
 - [Why you should use version control](https://stackoverflow.com/questions/1408450/why-should-i-use-version-control)
 - [Version control for the solo analyst](https://stackoverflow.com/questions/2712421/r-and-version-control-for-the-solo-data-analyst)
 - [Git/Github Guide from Karl Broman](http://kbroman.org/github_tutorial/)
+- [Setting up a gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)
+- Jenny Bryan's ["Excuse me ..." article](https://peerj.com/preprints/3159/)
 
 
 #### Additional Resources
@@ -401,7 +413,10 @@ We will use it to learn the branch and pull-request model.
 
 #### Resources
 
+- [How to fork](https://guides.github.com/activities/forking/)
 - [Understanding the GitHub Flow](https://desktop.github.com)
+- [Resolving a Merge Conflict](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
+- [Comparing Commits accross time](https://help.github.com/articles/comparing-commits-across-time/)
 
 
 ### Document Conversion {#conversion}
@@ -440,6 +455,7 @@ Still, it is important to learn some of the basics of LaTeX to use it programmat
 #### Resources:
 
 - Overleaf [Learn LaTeX in 30 Minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
+- [LaTeX cheat sheet](http://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf)
 
 
 ### Bibliography Management {#bib}
@@ -491,8 +507,11 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 #### Resources
 
 - Yihui Xie [knitr website](https://yihui.name/knitr/)
+- Introduction to [R Markdown](https://rmarkdown.rstudio.com/lesson-1.html)
 - RStudio [R Markdown](https://rmarkdown.rstudio.com)
 - Yihui Xie et al.: [The definitive RMarkdown guide](https://bookdown.org/yihui/rmarkdown/)
+- [R Markdown Cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) and [this](https://rmarkdown.rstudio.com/lesson-15.html)
+- 
 
 
 ## Intermediate R {#intermediate-r}

@@ -241,6 +241,41 @@ If you don't want to install something, [Github](https://github.com) (see below)
 We will be using different programs going forward.
 
 
+### Source Control Management (SCM) {#scm}
+
+<a class="btn btn-info" href="https://git-scm.com" role="button">Install Git</a>
+
+Git is just a CLI program.
+It offers all the functionality of git, but you may also install a Git graphical user interface (GUI).
+
+There plenty of those out there, but one of the easiest is the GitHub Desktop app from GitHub (available only for Windows and macOS).
+
+<a class="btn btn-info" href="https://desktop.github.com" role="button">Install GitHub Desktop</a>
+
+You also need to *configure* git on your machine, and wherever else you are using Git (such as a SaaS):
+
+- [Your local machine](https://help.github.com/articles/setting-your-username-in-git/)
+- RStudio
+- [RStudio Cloud](https://bren.zendesk.com/hc/en-us/articles/360015826731-How-to-connect-RStudio-Cloud-with-Github)
+
+
+#### Resources
+
+- [Try Git]((https://try.github.io/))
+- Jenny Bryan's [Happy Git With R](http://happygitwithr.com) (*yes, you should study this completely -- until Chapter 33*)
+- [Referencing issues in commit messages](https://help.github.com/articles/closing-issues-via-commit-messages)
+- [Why you should use version control](https://stackoverflow.com/questions/1408450/why-should-i-use-version-control)
+- [Version control for the solo analyst](https://stackoverflow.com/questions/2712421/r-and-version-control-for-the-solo-data-analyst)
+- [Git/Github Guide from Karl Broman](http://kbroman.org/github_tutorial/)
+- [Setting up a gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)
+- Jenny Bryan's ["Excuse me ..." article](https://peerj.com/preprints/3159/)
+
+
+#### Additional Resources
+
+- [Free DataCamp Course](https://www.datacamp.com/courses/introduction-to-git-for-data-science)
+
+
 ### Command Line Interface {#cli}
 
 <a class="btn btn-info" href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" role="button">Install Bash Shell</a>
@@ -366,41 +401,6 @@ We may, for now, not use R much by itself, but it can be easier to use all the o
 - [RStudio Projects documentation](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
 - [Good enough practices](https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/)
 - [The panes in RStudio](https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=5)
-
-
-### Source Control Management (SCM) {#scm}
-
-<a class="btn btn-info" href="https://git-scm.com" role="button">Install Git</a>
-
-Git is just a CLI program.
-It offers all the functionality of git, but you may also install a Git graphical user interface (GUI).
-
-There plenty of those out there, but one of the easiest is the GitHub Desktop app from GitHub (available only for Windows and macOS).
-
-<a class="btn btn-info" href="https://desktop.github.com" role="button">Install GitHub Desktop</a>
-
-You also need to *configure* git on your machine, and wherever else you are using Git (such as a SaaS):
-
-- [Your local machine](https://help.github.com/articles/setting-your-username-in-git/)
-- RStudio
-- [RStudio Cloud](https://bren.zendesk.com/hc/en-us/articles/360015826731-How-to-connect-RStudio-Cloud-with-Github)
-
-
-#### Resources
-
-- [Try Git]((https://try.github.io/))
-- Jenny Bryan's [Happy Git With R](http://happygitwithr.com) (*yes, you should study this completely -- until Chapter 33*)
-- [Referencing issues in commit messages](https://help.github.com/articles/closing-issues-via-commit-messages)
-- [Why you should use version control](https://stackoverflow.com/questions/1408450/why-should-i-use-version-control)
-- [Version control for the solo analyst](https://stackoverflow.com/questions/2712421/r-and-version-control-for-the-solo-data-analyst)
-- [Git/Github Guide from Karl Broman](http://kbroman.org/github_tutorial/)
-- [Setting up a gitignore](https://www.atlassian.com/git/tutorials/saving-changes/gitignore)
-- Jenny Bryan's ["Excuse me ..." article](https://peerj.com/preprints/3159/)
-
-
-#### Additional Resources
-
-- [Free DataCamp Course](https://www.datacamp.com/courses/introduction-to-git-for-data-science)
 
 
 ### Branching Model {#gitflow}

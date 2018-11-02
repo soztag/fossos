@@ -2,6 +2,8 @@ language: r
 warnings_are_errors: false
 cache:
   packages: true
+addons:
+  ssh_known_hosts: karli.rrze.uni-erlangen.de
 install:
   - echo AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFHJVSekYKuF5pMKyHe1jS9mUkXMWoqNQe0TTs2sY1OQj379e6eqVSqGZe+9dKWzL5MRFpIiySRKgvxuHhaPQU4= >> $HOME/.ssh/known_hosts
 # this is to establish karli as known host, but protecting against man-in-the-middle, as per https://docs.travis-ci.com/user/ssh-known-hosts/

@@ -25,7 +25,7 @@ navbar:
     text: Source
     href: https://github.com/maxheld83/fossos
   - icon: fa-chalkboard
-    text: GH-Clasroom
+    text: GH-Classroom
     href: https://classroom.github.com/classrooms/20667305-fossos
   - icon: fa-university
     menu:

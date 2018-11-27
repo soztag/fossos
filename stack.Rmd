@@ -1,6 +1,6 @@
 ---
 title: "Stack"
-author: 
+author:
   name: "Maximilian Held"
   affiliation: "Friedrich-Alexander Universität Erlangen-Nürnberg (FAU)"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
@@ -11,17 +11,17 @@ bibliography: library.bib
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Here's the software and services stack we'll be using.
+Here's the software and services stack we'll be using. *hallo*
 
 This is by no means the *only* way to do open science or data science with open source software, and recommended packages are likely to change over time.
 The below R-based toolchain should be considered as merely *one* (out of several) consistent implementations of some best practices.
 However, once participants have mastered this toolchain, they should find it relatively easy to adapt to other ecosystems.
 
-All of the software will be [free and open source software](https://en.wikipedia.org/wiki/Free_and_open-source_software), but we will also be using some proprietary Software-as-a-Service ([Saas](https://en.wikipedia.org/wiki/Software_as_a_service)) offerings.
+All of the software will be NOT [free and open source software](https://en.wikipedia.org/wiki/Free_and_open-source_software), but we will also be using some proprietary Software-as-a-Service ([Saas](https://en.wikipedia.org/wiki/Software_as_a_service)) offerings.
 For each of the proprietary services, there *are* open-source and/or self-hosted alternatives, but these are often much less convenient (e.g. [self-hosted Jenkins](https://jenkins.io) vs [Travis CI](https://travis-ci.com)), or they are much less popular in the community, and therefore less useful (e.g. [GitLab](GitLab) vs [GitHub](https://github.com)).
 Relying on, or pushing proprietary services, especially in an education context, is always awkward, but the disadvantages can sometimes be outweighted by convenience and network effect advantages.
 For some aspects of open source software development and open science, proprietary services -- especially GitHub and the [StackExchange network](https://stackoverflow.com) -- for better or for worse just *are* the only game in town.
-In any event, *most* of what students will learn in this class is in free and open source software, and the remaining proprietary usage should easily translate to other, competing or open services. 
+In any event, *most* of what students will learn in this class is in free and open source software, and the remaining proprietary usage should easily translate to other, competing or open services.
 
 <div class="alert alert-info" role="alert">
 The stack is listed below in the **approximate order** in which software is covered in this class, and together with **mandatory study material** and **tasks**.
@@ -193,7 +193,7 @@ In addition to StackExchange and RStudio Community, there are a couple of other 
 
 The full [GFM spec](https://github.github.com/gfm/) is just FYI; there's nothing to install here.
 
-Plain text has many advantages (more on that later), but one glaring disadvantage: 
+Plain text has many advantages (more on that later), but one glaring disadvantage:
 it does not look very nice, and does not implement many of the typesetting conventions that have evolved since Gutenberg (say, **bold** face).
 
 Markup syntaxes solve this problem.
@@ -513,7 +513,7 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 - RStudio [R Markdown](https://rmarkdown.rstudio.com)
 - Yihui Xie et al.: [The definitive RMarkdown guide](https://bookdown.org/yihui/rmarkdown/)
 - [R Markdown Cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) and [this](https://rmarkdown.rstudio.com/lesson-15.html)
-- 
+-
 
 
 ## Intermediate R {#intermediate-r}

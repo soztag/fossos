@@ -1,6 +1,6 @@
-name: cupi
+name: R etc.
 navbar:
-  title: FOSSOS
+  title: R etc.
   left:
   - icon: fa-home
     text: Syllabus

@@ -7,6 +7,14 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
 bibliography: library.bib
 ---
 
+```{r setup, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r readme, child="README.md"}
+```
+
 <div class="jumbotron" style="color:white; background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(img/keyboard-keys-2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
   <h2>Free and Open Source Software for Open Science</h1>
   <p>... because learning from hackers is learning to win?</p>
@@ -27,14 +35,6 @@ bibliography: library.bib
     Image Credit: Red Alt [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) [hjl](https://www.flickr.com/photos/hjl/8205547070/in/photolist-dv6zgu-nffY2e)
   </sub></small></p>
 </div>
-
-```{r setup, echo = FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
-
-```{r readme, child="README.md"}
-```
 
 ---
 

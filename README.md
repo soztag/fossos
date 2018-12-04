@@ -11,3 +11,4 @@ hallo
 This repository houses the resources for the class, and all class-related activities are tracked in the above issues.
 
 Foo bar.
+hallo

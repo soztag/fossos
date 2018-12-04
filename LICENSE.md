@@ -8,6 +8,7 @@ Attribution-ShareAlike 4.0 International
 
 *I can see it in your smile!!*
 
+By *..i dont remember the name of the artist. Im sorry!!*
 
 Creative Commons Corporation ("Creative Commons") is not a law firm and
 does not provide legal services or legal advice. Distribution of

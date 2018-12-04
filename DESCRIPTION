@@ -2,6 +2,6 @@ Package: fossos
 Type: Book
 Title: Does not matter.change5
 Version: 0.0.1
-Imports: 
+Imports:
   rmarkdown,
   DiagrammeR

@@ -3,7 +3,8 @@ Attribution-ShareAlike 4.0 International
 =======================================================================
 
 **HELLO**
-*is it me you looking for??
+*is it me you looking for??*
+*I can see it in your eyes*
 
 Creative Commons Corporation ("Creative Commons") is not a law firm and
 does not provide legal services or legal advice. Distribution of
@@ -15,7 +16,6 @@ terms and conditions, or any related information. Creative Commons
 disclaims all liability for damages resulting from their use to the
 fullest extent possible.
 
-Using Creative Commons Public Licenses hahaha
 
 Creative Commons public licenses provide a standard set of terms and
 conditions that creators and other rights holders may use to share

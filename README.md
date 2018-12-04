@@ -11,5 +11,5 @@ title: About
 "Free and Open Source Software for Open Science" is an undergraduate seminar taught by [Max Held](http://www.maxheld.de) at [Friedrich-Alexander Universität Erlangen-Nürnberg (FAU)](https://www.fau.de) in the 2018 fall term.
 I write this **sentence** to check, if I can push.
 
-Just a new change to check. GitHub, Repository, gitstatus, git push - so many new stuff..
+Just a new change to check. GitHub, Repository, gitstatus, git push - so much new stuff..
 This repository houses the resources for these classes, and all class-related activities are tracked in the above issues.

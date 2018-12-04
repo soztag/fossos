@@ -1,6 +1,10 @@
 Package: fossos
 Type: Book
+<<<<<<< HEAD
 Title: babu.
+=======
+Title: Does not matter.change5
+>>>>>>> origin/adele_branch_by_thomas
 Version: 0.0.1
 Imports: 
   rmarkdown,

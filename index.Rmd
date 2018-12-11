@@ -221,7 +221,7 @@ No worries, we'll bring everyone up to speed in no time.
 ## Expectations
 
 Happily, there are a *lot* of great resources for learning data science tools out there, many of them free, some of them even open source themselves.
-We will be reusing a lot of these resources, and I (the instuctor) do not have to reinvent an (inferior) wheel.
+We will be reusing a lot of these resources, and I (the instructor) do not have to reinvent an (inferior) wheel.
 There is no *one* curriculum that's quite right for us, so I have cobbled together material from different sources.
 
 All resources are listed along with the [syllabus](/syllabus).

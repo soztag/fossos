@@ -239,7 +239,7 @@ Please also make sure that:
 We're going to use a few digital tools to get organised in this class, all based on GitHub.
 
 - Static information will be at https://datascience.phil.fau.de/fossos/, the **class website**.
-  You can find all the resources (~ readings) and software links on https://datascience.phil.fau.de/fossos/stack.
+  You can find all the resources (~ readings) and software links on [help](/stack.html#help).
 - Pretty much all *individual* activity (i.e. to be done by one or a few students) is tracked as issues on our class repository **issue tracker** at https://github.com/soztag/fossos/issues.
   If you have a question, have an idea to work on, or are looking for inspiration for a task, this is your place.
   Issues are organised using labels and assignees.
@@ -314,7 +314,7 @@ A well-formulated question, in the context of open source development is often a
 This means that you should provide a code snippet (or, if not applicable, a very precise description of steps) that will *allow any other user to reproduce the behavior in question, with no additional resources*.
 Producing this can be harder than it sounds, and just narrowing down a problem like that may often help you solve it.
 
-Make sure to read and adhere to all the resources listed [community and help](https://www.maxheld.de/fossos/stack.html#community__help).
+Make sure to read and adhere to all the resources listed [community and help](/stack.html#community__help).
 
 The three target platforms can be listed roughly in ascending order of precision of the question:
 
@@ -558,7 +558,7 @@ There is no guarantee that any of these alternatives or links will work for you;
 ## Schedule
 
 Because students will learn at different speeds, and from different starting points, there is not *a* schedule for the class.
-We will, however, progress through the [stack](/stack) in the order in which software (and resources) are listed.
+We will, however, progress through the [stack](https://datascience.phil.fau.de/fossos/stack.html) in the order in which software (and resources) are listed.
 
 Students can work through this material at their own pace.
 Likewise, some students may wish to cover a lot of breadth (at shallow depth), while others want to dig in on a particular topic.

@@ -250,7 +250,7 @@ It offers all the functionality of git, but you may also install a Git graphical
 
 There plenty of those out there, but one of the easiest is the GitHub Desktop app from GitHub (available only for Windows and macOS).
 
-<a class="btn btn-info" href="https://desktop.github.com" role="button">Install GitHub Desktop</a>
+<i class="fab fa-github fa-3x fa-pull-left"></i>  <a class="btn btn-info" href="https://desktop.github.com" role="button">Install GitHub Desktop</a>
 
 You also need to *configure* git on your machine, and wherever else you are using Git (such as a SaaS):
 

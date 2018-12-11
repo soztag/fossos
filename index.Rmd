@@ -306,7 +306,7 @@ Before working on these issues, students should *assign themselves*, to avoid us
 
 Students who want to receive a grade on the class also have to complete a couple of issues tagged with `graded-x`.
 
-The numbers next to the labels roughly indicate the **estimated work and difficulty** of a task (also known as "story points" in agile development).
+The numbers next to the labels roughly indicate the **estimated workload and difficulty** of a task (also known as "story points" in agile development).
 Estimates are frequently wrong, and these points can be adjusted in consultation with the instructor, if some task turns out to be much harder or easier than expected.
 These story points correspond to ECTS credit points; if you are taking this as a "Proseminar", you will need to have owned and closed issues worth 5 story points.
 

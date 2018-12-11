@@ -273,7 +273,7 @@ You can (and should) cross-reference issues and discussions between all of these
 
 Assessments are an unfortunate, tedious and arguably needless part of teaching -- but here we are, so we are going to make the best of it.
 
-Instead of some *make belief* work or hobby project, for the most part, assignments in this class are designed to be *actually useful* to other people.
+Instead of some *make belief* work or hobby project, assignments in this class are, for the most part, designed to be *actually useful* to other people.
 This can be motivating, but it also means that other people are relying upon our work: 
 it has to be delivered by the time, and in the quality expected.
 

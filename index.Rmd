@@ -2,7 +2,7 @@
 title: "Syllabus"
 author:
   name: "Maximilian Held"
-  affiliation: "Friedrich-Alexander Universität Erlangen-Nürnberg (FAU)"
+  affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 bibliography: library.bib
 ---

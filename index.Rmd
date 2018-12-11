@@ -629,7 +629,7 @@ Instead, we will focus on broader open source practices and paradigms, using R a
 You do not *need* to also attend the "Introduction to R seminar"", but participation in both may give you a deeper understanding and command of a more fully-fledged stack.
 
 
-## German Title {.alert .alert-info}
+## Language requirements: {.alert .alert-info}
 
 Depending on who will be attending the class, instruction may also occur in english or german.
 In any event, all of the readings and other course material are all in english, and participants are expected to be proficient in reading and writing english technical documents.

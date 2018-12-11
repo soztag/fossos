@@ -2,7 +2,7 @@
 title: "Syllabus"
 author:
   name: "Maximilian Held"
-  affiliation: "Friedrich-Alexander Universität Erlangen-Nürnberg (FAU)"
+  affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 bibliography: library.bib
 ---
@@ -37,6 +37,21 @@ knitr::opts_chunk$set(echo = FALSE)
 </div>
 
 ---
+
+## New Dates {.alert .alert-warning}
+
+Starting on Dec 5, 2018 and or the remainder of the fall semester 2018/2019, the class will convene for daylong sessions ("Blockseminar") at the Nuremberg Campus of Technology (NCT) in *Nuremberg* (see [below](#venue) for directions).
+
+The times and dates are (also on [univIS](http://univis.uni-erlangen.de)):
+
+- Tuesday, Dec 11, 2018 09-18:00
+- Thursday, Jan 10, 2018 09-18:00
+- Thursday, Jan 17, 2018 09-18:00
+- Saturday, Jan 19, 2018 10-19:00
+- Friday, Feb 1, 2018 09-18:00
+
+You do not have to attend all meetings (though you are welcome to), **but everyone should attend at least 3 full days worth of seminar, and earlier dates are strictly preferable (don't push this off)**.
+
 
 <div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dU1xS07N-FA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -75,7 +90,7 @@ The goal of this series of seminars is therefore to train participants in a cohe
   - Using leading community resources and services to troubleshoot issues.
   - Writing text in a lightweight markup language (markdown).
   - The world of UNIX-style command-line interface (CLI) programs ...
-  - ... and package managers, such as homebrew or APT.
+  - ... and package managers, such as Homebrew or APT.
   - Establishing an efficient plain-text workflow using editors and an Integrated Development Environment (IDE), including Atom and RStudio.
   - Source control management (SCM) and massively collaborative development using Git and GitHub.
   - Separating content and presentation using plain-text formats for technical and scientific writing, including LaTeX, Pandoc Markdown and RMarkdown and rendering results in a variety of formats (Word, HTML, PDF).
@@ -206,7 +221,7 @@ No worries, we'll bring everyone up to speed in no time.
 ## Expectations
 
 Happily, there are a *lot* of great resources for learning data science tools out there, many of them free, some of them even open source themselves.
-We will be reusing a lot of these resources, and I (the instuctor) do not have to reinvent an (inferior) wheel.
+We will be reusing a lot of these resources, and I (the instructor) do not have to reinvent an (inferior) wheel.
 There is no *one* curriculum that's quite right for us, so I have cobbled together material from different sources.
 
 All resources are listed along with the [syllabus](/syllabus).
@@ -258,7 +273,7 @@ You can (and should) cross-reference issues and discussions between all of these
 
 Assessments are an unfortunate, tedious and arguably needless part of teaching -- but here we are, so we are going to make the best of it.
 
-Instead of some *make belief* work or hobby project, for the most part, assignments in this class are designed to be *actually useful* to other people.
+Instead of some *make belief* work or hobby project, assignments in this class are, for the most part, designed to be *actually useful* to other people.
 This can be motivating, but it also means that other people are relying upon our work: 
 it has to be delivered by the time, and in the quality expected.
 
@@ -291,7 +306,7 @@ Before working on these issues, students should *assign themselves*, to avoid us
 
 Students who want to receive a grade on the class also have to complete a couple of issues tagged with `graded-x`.
 
-The numbers next to the labels roughly indicate the **estimated work and difficulty** of a task (also known as "story points" in agile development).
+The numbers next to the labels roughly indicate the **estimated workload and difficulty** of a task (also known as "story points" in agile development).
 Estimates are frequently wrong, and these points can be adjusted in consultation with the instructor, if some task turns out to be much harder or easier than expected.
 These story points correspond to ECTS credit points; if you are taking this as a "Proseminar", you will need to have owned and closed issues worth 5 story points.
 
@@ -601,7 +616,9 @@ NCT
     | 90429 Nuremberg
     </address>
     
-    (The building can be hard to find; see [here](http://www.ncatec.de/nct/wir-ueber-uns/lageplan.html) for directions).
+    
+    
+    (The building can be hard to find; see [here](http://datascience.phil.fau.de/fossos/img/directions.pdf) for directions).
 
 
 ## Related Class: Introduction to R {.alert .alert-success}
@@ -612,7 +629,7 @@ Instead, we will focus on broader open source practices and paradigms, using R a
 You do not *need* to also attend the "Introduction to R seminar"", but participation in both may give you a deeper understanding and command of a more fully-fledged stack.
 
 
-## German Title {.alert .alert-info}
+## Language requirements: {.alert .alert-info}
 
 Depending on who will be attending the class, instruction may also occur in english or german.
 In any event, all of the readings and other course material are all in english, and participants are expected to be proficient in reading and writing english technical documents.

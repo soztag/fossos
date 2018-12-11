@@ -90,7 +90,7 @@ The goal of this series of seminars is therefore to train participants in a cohe
   - Using leading community resources and services to troubleshoot issues.
   - Writing text in a lightweight markup language (markdown).
   - The world of UNIX-style command-line interface (CLI) programs ...
-  - ... and package managers, such as homebrew or APT.
+  - ... and package managers, such as Homebrew or APT.
   - Establishing an efficient plain-text workflow using editors and an Integrated Development Environment (IDE), including Atom and RStudio.
   - Source control management (SCM) and massively collaborative development using Git and GitHub.
   - Separating content and presentation using plain-text formats for technical and scientific writing, including LaTeX, Pandoc Markdown and RMarkdown and rendering results in a variety of formats (Word, HTML, PDF).

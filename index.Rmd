@@ -38,6 +38,21 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ---
 
+## New Dates {.alert .alert-warning}
+
+Starting on Dec 5, 2018 and or the remainder of the fall semester 2018/2019, the class will convene for daylong sessions ("Blockseminar") at the Nuremberg Campus of Technology (NCT) in *Nuremberg* (see [below](#venue) for directions).
+
+The times and dates are (also on [univIS](http://univis.uni-erlangen.de)):
+
+- Tuesday, Dec 11, 2018 09-18:00
+- Thursday, Jan 10, 2018 09-18:00
+- Thursday, Jan 17, 2018 09-18:00
+- Saturday, Jan 19, 2018 10-19:00
+- Friday, Feb 1, 2018 09-18:00
+
+You do not have to attend all meetings (though you are welcome to), **but everyone should attend at least 3 full days worth of seminar, and earlier dates are strictly preferable (don't push this off)**.
+
+
 <div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dU1xS07N-FA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
@@ -75,7 +90,7 @@ The goal of this series of seminars is therefore to train participants in a cohe
   - Using leading community resources and services to troubleshoot issues.
   - Writing text in a lightweight markup language (markdown).
   - The world of UNIX-style command-line interface (CLI) programs ...
-  - ... and package managers, such as homebrew or APT.
+  - ... and package managers, such as Homebrew or APT.
   - Establishing an efficient plain-text workflow using editors and an Integrated Development Environment (IDE), including Atom and RStudio.
   - Source control management (SCM) and massively collaborative development using Git and GitHub.
   - Separating content and presentation using plain-text formats for technical and scientific writing, including LaTeX, Pandoc Markdown and RMarkdown and rendering results in a variety of formats (Word, HTML, PDF).
@@ -291,7 +306,7 @@ Before working on these issues, students should *assign themselves*, to avoid us
 
 Students who want to receive a grade on the class also have to complete a couple of issues tagged with `graded-x`.
 
-The numbers next to the labels roughly indicate the **estimated work and difficulty** of a task (also known as "story points" in agile development).
+The numbers next to the labels roughly indicate the **estimated workload and difficulty** of a task (also known as "story points" in agile development).
 Estimates are frequently wrong, and these points can be adjusted in consultation with the instructor, if some task turns out to be much harder or easier than expected.
 These story points correspond to ECTS credit points; if you are taking this as a "Proseminar", you will need to have owned and closed issues worth 5 story points.
 
@@ -601,7 +616,9 @@ NCT
     | 90429 Nuremberg
     </address>
     
-    (The building can be hard to find; see [here](http://www.ncatec.de/nct/wir-ueber-uns/lageplan.html) for directions).
+    
+    
+    (The building can be hard to find; see [here](http://datascience.phil.fau.de/fossos/img/directions.pdf) for directions).
 
 
 ## Related Class: Introduction to R {.alert .alert-success}

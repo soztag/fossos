@@ -523,7 +523,7 @@ It is *your* responsibility to maintain your own computer and operating system (
 
 As a backup plan to using your own operating system, you may use [RStudio Cloud](https://rstudio.cloud), a data science Software-as-a-Service (SaaS).
 RStudio Cloud furnishes you with a ready RStudio session in a virtual machine with all necessary system dependencies.
-You will still have sign up to all of the *services* in the below, but none of the client *software*.
+You will still have to sign up to all of the *services* in the below, but none of the client *software*.
 
 RStudio Cloud is still in *alpha* and may not be always reliable.
 Once out of alpha, it will also be a paid service, for which you may have to pay yourself.

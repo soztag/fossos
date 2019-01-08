@@ -294,6 +294,9 @@ On **Windows**:
   However this is a *separate* system inside your Windows installation, and the programs installed inside it may (as of 2019-01) *not* be used "normal" windows GUI programs. 
   If you don't know what this means, do not install the WSL; it can be very confusing.
 
+If you like a fancier shell, you might want to look at the [oh-my-zsh](https://ohmyz.sh) project, which has some pretty cool features.
+However this is strictly optional, will not be supported in class.
+
 
 #### Resources
 

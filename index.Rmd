@@ -57,10 +57,10 @@ You do not have to attend all meetings (though you are welcome to), **but everyo
 </div>
 
 > *[Coding – ] it’s the next best thing we have to a superpower.*
-> -– [Drew Houston](@drewhouston) via [code.org](https://code.org)
+> -- [Drew Houston](@drewhouston) via [code.org](https://code.org)
 
 > *The bad news is that whenever you learn a new skill, you’re going to suck.*
-> -– [Hadley Wickham](http://hadley.nz)
+> -- [Hadley Wickham](http://hadley.nz)
 
 > *Computers ... a bicycle for the mind*
 > -- [Steven Jobs](https://www.brainpickings.org/2011/12/21/steve-jobs-bicycle-for-the-mind-1990/)
@@ -75,7 +75,7 @@ Digitisation has created both new challenges and yet unrealised potentials for e
 Larger, and often streamed datasets require more programmatic and dynamic statistical analyses. 
 Existing commercial programs with graphical user interfaces (GUIs) are expensive, and analyses can easily become intransparent, sometimes contributing to a crisis of reproducibility in the social sciences and beyond [e.g., @MairThouShaltBe2016] or even propagating outright bugs [e.g., @ReinhartGrowthTimeDebt2010].
 
-Happily, the open source community has already pioneered a set of technologies and conventions for their software development efforts, that have proven useful in solving these problems in many academic fields. 
+Happily, the open source community has already pioneered a set of technologies and conventions for their software development efforts that have proven useful in solving these problems in many academic fields. 
 Additionally, open source software offers new ways to analyse and visualize data, as well as to present interactive results.
 
 Together, these tools promise a radically open and participatory approach to science, and productive yet skeptical use of emerging data streams.
@@ -162,8 +162,8 @@ This course (with a slightly different name) will therefore be taught *every sem
 Students can join the class every semester, and take the class for however many semesters they wish (if they still have new things to learn).
 
 By implication, the group of students in the class in any *given* semester will be *heterogeneous*, working at different levels.
-For example, some students may already have taken a course in series previously, while others are just starting out.
-Because the previous experiences and learning speed of students varies greatly anyway, this is not a significance (additional) hindrance.
+For example, some students may already have taken a course in the series previously, while others are just starting out.
+Because the previous experiences and learning speed of students vary greatly anyway, this is not a significant (additional) hindrance.
 Tasks, expectations and material covered will accordingly differ for each student, depending on the background.
 
 
@@ -223,7 +223,7 @@ Happily, there are a *lot* of great resources for learning data science tools ou
 We will be reusing a lot of these resources, and I (the instructor) do not have to reinvent an (inferior) wheel.
 There is no *one* curriculum that's quite right for us, so I have cobbled together material from different sources.
 
-All resources are listed along with the [syllabus](/syllabus).
+All resources are listed, in roughly advisable chronological order, along with the [stack](/stack).
 
 The good news is that there are no academic papers or books for this class and everything students need is available online.
 There is, however, still a lot of material to work through (to the tune of hours per week), though it is written in a hopefully more accessible style than many academic documents.
@@ -237,14 +237,15 @@ Additional resources are optional.
 </div>
 
 <div class="alert alert-success role="alert">
-Whenever your run into a problem, or have a question, raise an issue on our [github issue tracker](https://github.com/soztag/fossos/issues).
+Whenever your run into a problem, or have a question, raise an issue on our <a href="https://github.com/soztag/fossos/issues">github issue tracker</a>. 
 Please also make sure that:
 
-- the issue does not *already exist* (always **search first!**)
-- the issue is properly *labelled* (so we can all navigate through the issues)
-- the issue is *answerable*, *actionable* and *closable*.
-  Good issues are framed in such a way that they *can* be closed.
-  For broader, more open-ended discussions, use the [class discussion board](https://github.com/orgs/soztag/teams/fossos-18-ws).
+- the issue does not <em>already exist</em> (always <em>search first!</em>)
+- the issue is properly <em>labelled</em> (so we can all navigate through the issues)
+- the issue is <em>answerable</em>, <em>actionable</em> and <em>closable</em>.
+  Good issues are framed in such a way that they <em>can</em> be closed.
+
+For broader, more open-ended discussions, use the <a href="https://github.com/orgs/soztag/teams/fossos-18-ws">class discussion board</a>
 </div>
 
 
@@ -292,7 +293,7 @@ Students should assign themselves to tasks they will be working on, and report /
 
 ### Pass/Fail
 
-**All students**, including those who **just want a "Sitzschein" (pass/fail option) must contribute to a number of issues labelled as [`pass/fail`](https://github.com/soztag/fossos/labels/pass%2Ffail).
+**All students**, including those who **just want a "Sitzschein" (pass/fail option)** must contribute to a number of issues labelled as [`pass/fail`](https://github.com/soztag/fossos/labels/pass%2Ffail).
 These are issues that are smaller in scale and scope.
 
 There is no straightfoward minimum metric (say, number of closed issues) to pass the class.
@@ -438,7 +439,7 @@ This rubric measures the student's ability to produce an assignment that *works 
     <td>Evaluator had to spend some time to get the raw submission to work correctly</td>
     <td></td> 
     <td>Evaluator had to make an obvious, small, quick fix to get things working or the wrong file format was submitted</td> 
-    <td>The submission is self-contained and works flawlessly; it just works (in anybody's hands). <br></br> The student did not forget to include all the files in the submission. <br></br> Any necessary libraries to install are either included or are installed by a script, or are made obvious that that the evaluator must install them. <br></br> Student used the asked for file format. All assignment instructions were followed.</td>
+    <td>The submission is self-contained and works flawlessly; it just works (in anybody's hands). <br></br> The student did not forget to include all the files in the submission. <br></br> Any necessary libraries to install are either included or are installed by a script, or are made obvious that that the evaluator must install them. <br></br> Student used the asked for file format. All assignment instructions were followed.
 <br/><br/>
 All files were put in a repository, in a reasonable place, with reasonable names; any source files (.tex, .Rmd) are rendered to a readable output format (e.g. .pdf), all figures are included, there is a README file indicating where to find the different aspects of the assignment, etc.
     </td>
@@ -534,7 +535,7 @@ Otherwise:
 <a class="btn btn-primary" href="https://rstudio.cloud" role="button">Sign up to RStudio Cloud</a>
 
 <div class="alert alert-warning role="alert">
-It's best to sign up with your GitHub account, but this *does not* give your RStudio Cloud instance read or write privileges to your repos.
+It's best to sign up with your GitHub account, but this <em>does not</em> give your RStudio Cloud instance read or write privileges to your repos.
 Remember to also configure <a href="https://maurolepore.github.io/cloudgithub/">RStudio Cloud with your git credentials</a>.
 </div>
 

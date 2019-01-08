@@ -45,12 +45,11 @@ Starting on Dec 5, 2018 and or the remainder of the fall semester 2018/2019, the
 The times and dates are (also on [univIS](http://univis.uni-erlangen.de)):
 
 - Tuesday, Dec 11, 2018 09-18:00
-- Thursday, Jan 10, 2018 10-16:00
-- Thursday, Jan 17, 2018 09-18:00
-- Saturday, Jan 19, 2018 10-19:00
-- Friday, Feb 1, 2018 09-18:00
+- Thursday, Jan 10, 2019 10-17:00
+- Saturday, Jan 19, 2019 10-18:00
+- Sunday, Jan 20, 2019 10-18:00
 
-You do not have to attend all meetings (though you are welcome to), **but everyone should attend at least 3 full days worth of seminar, and earlier dates are strictly preferable (don't push this off)**.
+You do not have to attend all meetings (though you are welcome to), **but everyone should attend at least 2 full days worth of seminar, and earlier dates are strictly preferable (don't push this off)**.
 
 
 <div class="embed-responsive embed-responsive-16by9">

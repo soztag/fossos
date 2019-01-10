@@ -92,7 +92,7 @@ If you feel like you need to brush up on some basic computing skills, these reso
 
 ### Project Management {#pm}
 
-<a class="btn btn-primary" href="https://github.com" role="button">Sign up to GitHub.com</a>
+<i class="fab fa-github fa-3x fa-pull-left"></i>  <a class="btn btn-primary" href="https://github.com" role="button">Sign up to GitHub.com</a>  
 
 GitHub is a collaboration platform, code repository and git host (more on all of below) *along with some helpful project management tools*.
 
@@ -134,7 +134,7 @@ Here's a sensible set of defaults:
 
 ### Community & Help {#help}
 
-<a class="btn btn-primary" href="https://stackoverflow.com" role="button">Sign up to StackOverflow</a>
+<i class="fab fa-stack-overflow fa-3x fa-pull-left"></i> <a class="btn btn-primary" href="https://stackoverflow.com" role="button">Sign up to StackOverflow</a>
 <a class="btn btn-primary" href="http://community.rstudio.com" role="button">Sign up to RStudio community</a>
 
 <div class="alert alert-info" role="alert">
@@ -243,14 +243,14 @@ We will be using different programs going forward.
 
 ### Source Control Management (SCM) {#scm}
 
-<a class="btn btn-info" href="https://git-scm.com" role="button">Install Git</a>
+<i class="fas fa-code-branch fa-3x fa-rotate-180 fa-flip-vertical fa-pull-left"></i><a class="btn btn-info" href="https://git-scm.com" role="button">Install Git</a>
 
 Git is just a CLI program.
 It offers all the functionality of git, but you may also install a Git graphical user interface (GUI).
 
 There plenty of those out there, but one of the easiest is the GitHub Desktop app from GitHub (available only for Windows and macOS).
 
-<a class="btn btn-info" href="https://desktop.github.com" role="button">Install GitHub Desktop</a>
+<i class="fab fa-github fa-3x fa-pull-left"></i>  <a class="btn btn-info" href="https://desktop.github.com" role="button">Install GitHub Desktop</a>
 
 You also need to *configure* git on your machine, and wherever else you are using Git (such as a SaaS):
 
@@ -338,7 +338,7 @@ If you're installing a package *for* either of those, use the corresponding ecos
 
 ### Text Editor {#editor}
 
-<a class="btn btn-info" href="https://atom.io" role="button">Install Atom</a>
+<i class="fab fa-react fa-3x fa-pull-left"></i> <a class="btn btn-info" href="https://atom.io" role="button">Install Atom</a>
 
 Whenever we write something in this class, it will be in [plain text](http://en.wikipedia.org/wiki/Plain_text).
 Plain text, roughly speaking, consists *directly* and only of letters, encoded in an open standard.
@@ -440,7 +440,7 @@ We will use it to learn the branch and pull-request model.
 
 ### Document Conversion {#conversion}
 
-<a class="btn btn-info" href="https://pandoc.org" role="button">Install Pandoc</a>
+<i class="far fa-file-alt fa-3x fa-pull-left"></i> <a class="btn btn-info" href="https://pandoc.org" role="button">Install Pandoc</a>
 
 We'll often want to convert documents from and to different markup formats.
 For that purpose, we'll use pandoc.
@@ -460,7 +460,7 @@ You should *both* learn to *use* Pandoc at the CLI as well as to *write* in the 
 
 ### Typesetting {#typesetting}
 
-<a class="btn btn-info" href="https://www.latex-project.org" role="button">Install LaTeX</a>
+<i class="far fa-file-alt fa-3x fa-pull-left"></i> <a class="btn btn-info" href="https://www.latex-project.org" role="button">Install LaTeX</a>
 
 [(La)TeX](http://www.latex-project.org) is strictly speaking a *typesetting* program, which can create beautiful documents.
 It has extensive support for all sorts of domain-specific typographic niceties, and is used a lot by academics, especially in math and sciences because.

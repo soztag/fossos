@@ -332,7 +332,7 @@ If you're installing a package *for* either of those, use the corresponding ecos
 
 ### Text Editor {#editor}
 
-<a class="btn btn-info" href="https://atom.io" role="button">Install Atom</a>
+<i class="fab fa-react fa-3x fa-pull-left"></i><a class="btn btn-info" href="https://atom.io" role="button">Install Atom</a>
 
 Whenever we write something in this class, it will be in [plain text](http://en.wikipedia.org/wiki/Plain_text).
 Plain text, roughly speaking, consists *directly* and only of letters, encoded in an open standard.

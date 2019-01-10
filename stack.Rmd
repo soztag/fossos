@@ -243,7 +243,7 @@ We will be using different programs going forward.
 
 ### Source Control Management (SCM) {#scm}
 
-<i class="fas fa-code-branch fa-3x fa-rotate-180 fa-pull-left"></i><a class="btn btn-info" href="https://git-scm.com" role="button">Install Git</a>
+<i class="fas fa-code-branch fa-3x fa-rotate-180 fa-flip-vertical fa-pull-left"></i><a class="btn btn-info" href="https://git-scm.com" role="button">Install Git</a>
 
 Git is just a CLI program.
 It offers all the functionality of git, but you may also install a Git graphical user interface (GUI).

@@ -2,10 +2,18 @@
 title: "Syllabus"
 author:
   name: "Maximilian Held"
-  affiliation: "Friedrich-Alexander Universität Erlangen-Nürnberg (FAU)"
+  affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 bibliography: library.bib
 ---
+
+```{r setup, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+
+```{r readme, child="README.md"}
+```
 
 <div class="jumbotron" style="color:white; background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(img/keyboard-keys-2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
   <h2>Free and Open Source Software for Open Science</h1>
@@ -28,31 +36,40 @@ bibliography: library.bib
   </sub></small></p>
 </div>
 
-```{r setup, echo = FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
-
-
-```{r readme, child="README.md"}
-```
-
 ---
+
+## New Dates {.alert .alert-warning}
+
+Starting on Dec 5, 2018 and or the remainder of the fall semester 2018/2019, the class will convene for daylong sessions ("Blockseminar") at the Nuremberg Campus of Technology (NCT) in *Nuremberg* (see [below](#venue) for directions).
+
+The times and dates are (also on [univIS](http://univis.uni-erlangen.de)):
+
+- Tuesday, Dec 11, 2018 09-18:00
+- Thursday, Jan 10, 2019 10-17:00
+- Saturday, Jan 19, 2019 10-18:00
+- Sunday, Jan 20, 2019 10-18:00
+
+You do not have to attend all meetings (though you are welcome to), **but everyone should attend at least 2 full days worth of seminar, and earlier dates are strictly preferable (don't push this off)**.
+
 
 <div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dU1xS07N-FA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
 
 > *[Coding – ] it’s the next best thing we have to a superpower.*
-> -– [Drew Houston](@drewhouston) via [code.org](https://code.org)
+> -- [Drew Houston](@drewhouston) via [code.org](https://code.org)
 
 > *The bad news is that whenever you learn a new skill, you’re going to suck.*
-> -– [Hadley Wickham](http://hadley.nz)
+> -- [Hadley Wickham](http://hadley.nz)
 
 > *Computers ... a bicycle for the mind*
 > -- [Steven Jobs](https://www.brainpickings.org/2011/12/21/steve-jobs-bicycle-for-the-mind-1990/)
 
 > *Think of free speech, not free beer.*
-> -- [Richard Stallman]()
+> -- [Richard Stallman](https://stallman.org/)
+
+> *Most learning is not the result of instruction. It is rather the result of unhampered participation in a meaningful setting.*
+> -- Ivan @Illich-1971
 
 
 ## Course Description
@@ -61,7 +78,7 @@ Digitisation has created both new challenges and yet unrealised potentials for e
 Larger, and often streamed datasets require more programmatic and dynamic statistical analyses. 
 Existing commercial programs with graphical user interfaces (GUIs) are expensive, and analyses can easily become intransparent, sometimes contributing to a crisis of reproducibility in the social sciences and beyond [e.g., @MairThouShaltBe2016] or even propagating outright bugs [e.g., @ReinhartGrowthTimeDebt2010].
 
-Happily, the open source community has already pioneered a set of technologies and conventions for their software development efforts, that have proven useful in solving these problems in many academic fields. 
+Happily, the open source community has already pioneered a set of technologies and conventions for their software development efforts that have proven useful in solving these problems in many academic fields. 
 Additionally, open source software offers new ways to analyse and visualize data, as well as to present interactive results.
 
 Together, these tools promise a radically open and participatory approach to science, and productive yet skeptical use of emerging data streams.
@@ -75,7 +92,7 @@ The goal of this series of seminars is therefore to train participants in a cohe
   - Using leading community resources and services to troubleshoot issues.
   - Writing text in a lightweight markup language (markdown).
   - The world of UNIX-style command-line interface (CLI) programs ...
-  - ... and package managers, such as homebrew or APT.
+  - ... and package managers, such as Homebrew or APT.
   - Establishing an efficient plain-text workflow using editors and an Integrated Development Environment (IDE), including Atom and RStudio.
   - Source control management (SCM) and massively collaborative development using Git and GitHub.
   - Separating content and presentation using plain-text formats for technical and scientific writing, including LaTeX, Pandoc Markdown and RMarkdown and rendering results in a variety of formats (Word, HTML, PDF).
@@ -148,8 +165,8 @@ This course (with a slightly different name) will therefore be taught *every sem
 Students can join the class every semester, and take the class for however many semesters they wish (if they still have new things to learn).
 
 By implication, the group of students in the class in any *given* semester will be *heterogeneous*, working at different levels.
-For example, some students may already have taken a course in series previously, while others are just starting out.
-Because the previous experiences and learning speed of students varies greatly anyway, this is not a significance (additional) hindrance.
+For example, some students may already have taken a course in the series previously, while others are just starting out.
+Because the previous experiences and learning speed of students vary greatly anyway, this is not a significant (additional) hindrance.
 Tasks, expectations and material covered will accordingly differ for each student, depending on the background.
 
 
@@ -206,10 +223,10 @@ No worries, we'll bring everyone up to speed in no time.
 ## Expectations
 
 Happily, there are a *lot* of great resources for learning data science tools out there, many of them free, some of them even open source themselves.
-We will be reusing a lot of these resources, and I (the instuctor) do not have to reinvent an (inferior) wheel.
+We will be reusing a lot of these resources, and I (the instructor) do not have to reinvent an (inferior) wheel.
 There is no *one* curriculum that's quite right for us, so I have cobbled together material from different sources.
 
-All resources are listed along with the [syllabus](/syllabus).
+All resources are listed, in roughly advisable chronological order, along with the [stack](/stack).
 
 The good news is that there are no academic papers or books for this class and everything students need is available online.
 There is, however, still a lot of material to work through (to the tune of hours per week), though it is written in a hopefully more accessible style than many academic documents.
@@ -223,14 +240,15 @@ Additional resources are optional.
 </div>
 
 <div class="alert alert-success role="alert">
-Whenever your run into a problem, or have a question, raise an issue on our [github issue tracker](https://github.com/soztag/fossos/issues).
+Whenever your run into a problem, or have a question, raise an issue on our <a href="https://github.com/soztag/fossos/issues">github issue tracker</a>. 
 Please also make sure that:
 
-- the issue does not *already exist* (always **search first!**)
-- the issue is properly *labelled* (so we can all navigate through the issues)
-- the issue is *answerable*, *actionable* and *closable*.
-  Good issues are framed in such a way that they *can* be closed.
-  For broader, more open-ended discussions, use the [class discussion board](https://github.com/orgs/soztag/teams/fossos-18-ws).
+- the issue does not <em>already exist</em> (always <em>search first!</em>)
+- the issue is properly <em>labelled</em> (so we can all navigate through the issues)
+- the issue is <em>answerable</em>, <em>actionable</em> and <em>closable</em>.
+  Good issues are framed in such a way that they <em>can</em> be closed.
+
+For broader, more open-ended discussions, use the <a href="https://github.com/orgs/soztag/teams/fossos-18-ws">class discussion board</a>
 </div>
 
 
@@ -258,7 +276,7 @@ You can (and should) cross-reference issues and discussions between all of these
 
 Assessments are an unfortunate, tedious and arguably needless part of teaching -- but here we are, so we are going to make the best of it.
 
-Instead of some *make belief* work or hobby project, for the most part, assignments in this class are designed to be *actually useful* to other people.
+Instead of some *make belief* work or hobby project, assignments in this class are, for the most part, designed to be *actually useful* to other people.
 This can be motivating, but it also means that other people are relying upon our work: 
 it has to be delivered by the time, and in the quality expected.
 
@@ -278,7 +296,7 @@ Students should assign themselves to tasks they will be working on, and report /
 
 ### Pass/Fail
 
-**All students**, including those who **just want a "Sitzschein" (pass/fail option) must contribute to a number of issues labelled as [`pass/fail`](https://github.com/soztag/fossos/labels/pass%2Ffail).
+**All students**, including those who **just want a "Sitzschein" (pass/fail option)** must contribute to a number of issues labelled as [`pass/fail`](https://github.com/soztag/fossos/labels/pass%2Ffail).
 These are issues that are smaller in scale and scope.
 
 There is no straightfoward minimum metric (say, number of closed issues) to pass the class.
@@ -291,7 +309,7 @@ Before working on these issues, students should *assign themselves*, to avoid us
 
 Students who want to receive a grade on the class also have to complete a couple of issues tagged with `graded-x`.
 
-The numbers next to the labels roughly indicate the **estimated work and difficulty** of a task (also known as "story points" in agile development).
+The numbers next to the labels roughly indicate the **estimated workload and difficulty** of a task (also known as "story points" in agile development).
 Estimates are frequently wrong, and these points can be adjusted in consultation with the instructor, if some task turns out to be much harder or easier than expected.
 These story points correspond to ECTS credit points; if you are taking this as a "Proseminar", you will need to have owned and closed issues worth 5 story points.
 
@@ -424,7 +442,7 @@ This rubric measures the student's ability to produce an assignment that *works 
     <td>Evaluator had to spend some time to get the raw submission to work correctly</td>
     <td></td> 
     <td>Evaluator had to make an obvious, small, quick fix to get things working or the wrong file format was submitted</td> 
-    <td>The submission is self-contained and works flawlessly; it just works (in anybody's hands). <br></br> The student did not forget to include all the files in the submission. <br></br> Any necessary libraries to install are either included or are installed by a script, or are made obvious that that the evaluator must install them. <br></br> Student used the asked for file format. All assignment instructions were followed.</td>
+    <td>The submission is self-contained and works flawlessly; it just works (in anybody's hands). <br></br> The student did not forget to include all the files in the submission. <br></br> Any necessary libraries to install are either included or are installed by a script, or are made obvious that that the evaluator must install them. <br></br> Student used the asked for file format. All assignment instructions were followed.
 <br/><br/>
 All files were put in a repository, in a reasonable place, with reasonable names; any source files (.tex, .Rmd) are rendered to a readable output format (e.g. .pdf), all figures are included, there is a README file indicating where to find the different aspects of the assignment, etc.
     </td>
@@ -508,7 +526,7 @@ It is *your* responsibility to maintain your own computer and operating system (
 
 As a backup plan to using your own operating system, you may use [RStudio Cloud](https://rstudio.cloud), a data science Software-as-a-Service (SaaS).
 RStudio Cloud furnishes you with a ready RStudio session in a virtual machine with all necessary system dependencies.
-You will still have sign up to all of the *services* in the below, but none of the client *software*.
+You will still have to sign up to all of the *services* in the below, but none of the client *software*.
 
 RStudio Cloud is still in *alpha* and may not be always reliable.
 Once out of alpha, it will also be a paid service, for which you may have to pay yourself.
@@ -520,7 +538,7 @@ Otherwise:
 <a class="btn btn-primary" href="https://rstudio.cloud" role="button">Sign up to RStudio Cloud</a>
 
 <div class="alert alert-warning role="alert">
-It's best to sign up with your GitHub account, but this *does not* give your RStudio Cloud instance read or write privileges to your repos.
+It's best to sign up with your GitHub account, but this <em>does not</em> give your RStudio Cloud instance read or write privileges to your repos.
 Remember to also configure <a href="https://maurolepore.github.io/cloudgithub/">RStudio Cloud with your git credentials</a>.
 </div>
 
@@ -601,7 +619,9 @@ NCT
     | 90429 Nuremberg
     </address>
     
-    (The building can be hard to find; see [here](http://www.ncatec.de/nct/wir-ueber-uns/lageplan.html) for directions).
+    
+    
+    (The building can be hard to find; see [here](http://datascience.phil.fau.de/fossos/img/directions.pdf) for directions).
 
 
 ## Related Class: Introduction to R {.alert .alert-success}
@@ -612,7 +632,7 @@ Instead, we will focus on broader open source practices and paradigms, using R a
 You do not *need* to also attend the "Introduction to R seminar"", but participation in both may give you a deeper understanding and command of a more fully-fledged stack.
 
 
-## German Title {.alert .alert-info}
+## Language requirements: {.alert .alert-info}
 
 Depending on who will be attending the class, instruction may also occur in english or german.
 In any event, all of the readings and other course material are all in english, and participants are expected to be proficient in reading and writing english technical documents.

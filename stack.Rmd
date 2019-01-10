@@ -261,7 +261,7 @@ You also need to *configure* git on your machine, and wherever else you are usin
 
 #### Resources
 
-- [Try Git]((https://try.github.io/))
+- [Try Git](https://try.github.io/)
 - Jenny Bryan's [Happy Git With R](http://happygitwithr.com) (*yes, you should study this completely -- until Chapter 33*)
 - [Referencing issues in commit messages](https://help.github.com/articles/closing-issues-via-commit-messages)
 - [Why you should use version control](https://stackoverflow.com/questions/1408450/why-should-i-use-version-control)
@@ -288,8 +288,14 @@ On **macOS**, **Linux**: Nothing to install, ships with bash.
 
 On **Windows**:
 
-- If your version is >= Windows 10 Anniversary Update: Install [Install the Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and use the [Windows 10 Bash Shell](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/).
-- Otherwise, install [Git for Windows](https://gitforwindows.org) because that comes with at least a git shell
+- Install [Git for Windows](https://gitforwindows.org) because that comes with at least a git shell.
+  Choose **git bash emulation** on install. 
+- If your version is >= Windows 10 Anniversary Update you can also install [Install the Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and use the [Windows 10 Bash Shell](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/).
+  However this is a *separate* system inside your Windows installation, and the programs installed inside it may (as of 2019-01) *not* be used "normal" windows GUI programs. 
+  If you don't know what this means, do not install the WSL; it can be very confusing.
+
+If you like a fancier shell, you might want to look at the [oh-my-zsh](https://ohmyz.sh) project, which has some pretty cool features.
+However this is strictly optional, will not be supported in class.
 
 
 #### Resources
@@ -392,6 +398,17 @@ Here's a list of packages you might also want to install:
 We may, for now, not use R much by itself, but it can be easier to use all the other tools inside of RStudio, rather than separately.
 </div>
 
+Aside from *text editors*, there are also *integrated development environments* (IDE) (though this distinction has recently been blurring with the arrival of [Atom-IDE](https://ide.atom.io) and others).
+IDEs are a little like text editors, in that they mostly let you edit plain text files, but they offer a lot of "training wheels" for programming and are often geared towards particular programming languages.
+
+The leading IDE for R is called RStudio, by, confusingly, a company called RStudio.
+We will be using the open source variant of RStudio (the IDE), but RStudio (the company) also sells commercial licenses to the IDE and other products.
+
+If you are already deeply invested in an IDE or Editor (especially [vim](https://www.vim.org) or [emacs](https://www.gnu.org/software/emacs/)) you may also trick out that program to support R.
+The [Emacs speaks statistics](https://ess.r-project.org) project has great support for R, but Emacs has a steep learning curve.
+
+For most everyone, RStudio will therefore be the strongly recommended choice.
+
 
 #### Resources
 
@@ -430,7 +447,7 @@ For that purpose, we'll use pandoc.
 
 [Pandoc](https://pandoc.org) is, originally, a kind of swiss army knife for text document formats, such as, say, between Microsoft Word and HTML.
 
-But as part of this work, Pandoc has *also* defined its own extension (flavor) to Markdown (largey compatible with GFM), including such features as footnotes, captions, references, and other aspects important for technical and scientific writing.
+But as part of this work, Pandoc has *also* defined its own extension (flavor) to Markdown (largely compatible with GFM), including such features as footnotes, captions, references, and other aspects important for technical and scientific writing.
 
 You should *both* learn to *use* Pandoc at the CLI as well as to *write* in the corresponding Pandoc's Markdown style.
 
@@ -513,7 +530,6 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 - RStudio [R Markdown](https://rmarkdown.rstudio.com)
 - Yihui Xie et al.: [The definitive RMarkdown guide](https://bookdown.org/yihui/rmarkdown/)
 - [R Markdown Cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf) and [this](https://rmarkdown.rstudio.com/lesson-15.html)
-- 
 
 
 ## Intermediate R {#intermediate-r}

@@ -134,7 +134,7 @@ Here's a sensible set of defaults:
 
 ### Community & Help {#help}
 
-<a class="btn btn-primary" href="https://stackoverflow.com" role="button">Sign up to StackOverflow</a>
+<i class="fab fa-stack-overflow fa-3x fa-pull-left"></i> <a class="btn btn-primary" href="https://stackoverflow.com" role="button">Sign up to StackOverflow</a>
 <a class="btn btn-primary" href="http://community.rstudio.com" role="button">Sign up to RStudio community</a>
 
 <div class="alert alert-info" role="alert">
@@ -423,7 +423,7 @@ We will use it to learn the branch and pull-request model.
 
 ### Document Conversion {#conversion}
 
-<a class="btn btn-info" href="https://pandoc.org" role="button">Install Pandoc</a>
+<i class="far fa-file-alt fa-3x fa-pull-left"></i> <a class="btn btn-info" href="https://pandoc.org" role="button">Install Pandoc</a>
 
 We'll often want to convert documents from and to different markup formats.
 For that purpose, we'll use pandoc.
@@ -443,7 +443,7 @@ You should *both* learn to *use* Pandoc at the CLI as well as to *write* in the 
 
 ### Typesetting {#typesetting}
 
-<a class="btn btn-info" href="https://www.latex-project.org" role="button">Install LaTeX</a>
+<i class="far fa-file-alt fa-3x fa-pull-left"></i> <a class="btn btn-info" href="https://www.latex-project.org" role="button">Install LaTeX</a>
 
 [(La)TeX](http://www.latex-project.org) is strictly speaking a *typesetting* program, which can create beautiful documents.
 It has extensive support for all sorts of domain-specific typographic niceties, and is used a lot by academics, especially in math and sciences because.

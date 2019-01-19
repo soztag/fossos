@@ -5,7 +5,7 @@ cache:
 addons:
   apt:
     packages:
-      - python 3.7
+      - "python3.7"
 script:
 - python contribs.py
 - Rscript -e "rmarkdown::render_site()"

@@ -254,7 +254,7 @@ Please also make sure that:
 We're going to use a few digital tools to get organised in this class, all based on GitHub.
 
 - Static information will be at https://datascience.phil.fau.de/fossos/, the **class website**.
-  You can find all the resources (~ readings) and software links on https://datascience.phil.fau.de/fossos/stack.
+  You can find all the resources (~ readings) and software links on https://datascience.phil.fau.de/fossos/stack.html.
 - Pretty much all *individual* activity (i.e. to be done by one or a few students) is tracked as issues on our class repository **issue tracker** at https://github.com/soztag/fossos/issues.
   If you have a question, have an idea to work on, or are looking for inspiration for a task, this is your place.
   Issues are organised using labels and assignees.

@@ -2,7 +2,12 @@ language: r
 warnings_are_errors: false
 cache:
   packages: true
+addons:
+  apt:
+    packages:
+      - python3.7
 script:
+- python contribs.py
 - Rscript -e "rmarkdown::render_site()"
 after_success:
 - curl -OL http://raw.githubusercontent.com/soztag/fau_deploy/master/deploy2karli.sh

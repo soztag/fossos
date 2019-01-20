@@ -59,10 +59,13 @@ names(unnamed_vec) <- c("one", "two")
 # below separate vectors are scary, because the ordering might change and links between same individuals might get confused
 # indeces are individuals in the below, but this is not visible or properly stored
 df <- data.frame(
+  # DATA (this gets filled into the ... argument)
   shoesize = c(39, 42, 45),
   age = c(21, 19, 24),
   gender = c("female", "other", "male"),
   name = c("Lisa", "Alex", "Peter"),
+
+  # OTHER ARGUMENTS
   stringsAsFactors = FALSE
   # what is a data frame?
     # list of vectors each with the same length
@@ -70,6 +73,7 @@ df <- data.frame(
     # list elements (which become df columns) are vectors
       # (later on, columns also be lists or matrices)
 )
+df
 
 # question: how to find row based on some value in a cell
 df

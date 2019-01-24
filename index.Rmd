@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 <div class="jumbotron" style="color:white; background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(img/keyboard-keys-2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-  <h2>Free and Open Source Software for Open Science</h1>
+  <h2>Advanced R and Open Social Data Science</h1>
   <p>... because learning from hackers is learning to win?</p>
   <p> <span class="label label-default">
   #DataScience
@@ -38,20 +38,6 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ---
 
-## New Dates {.alert .alert-warning}
-
-Starting on Dec 5, 2018 and or the remainder of the fall semester 2018/2019, the class will convene for daylong sessions ("Blockseminar") at the Nuremberg Campus of Technology (NCT) in *Nuremberg* (see [below](#venue) for directions).
-
-The times and dates are (also on [univIS](http://univis.uni-erlangen.de)):
-
-- Tuesday, Dec 11, 2018 09-18:00
-- Thursday, Jan 10, 2019 10-17:00
-- Saturday, Jan 19, 2019 10-18:00
-- Sunday, Jan 20, 2019 10-18:00
-
-You do not have to attend all meetings (though you are welcome to), **but everyone should attend at least 2 full days worth of seminar, and earlier dates are strictly preferable (don't push this off)**.
-
-
 <div class="embed-responsive embed-responsive-16by9">
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/dU1xS07N-FA?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 </div>
@@ -70,6 +56,138 @@ You do not have to attend all meetings (though you are welcome to), **but everyo
 
 > *Most learning is not the result of instruction. It is rather the result of unhampered participation in a meaningful setting.*
 > -- Ivan @Illich-1971
+
+
+## Prerequisites {.alert .alert-success}
+
+*Everyone* is welcome to this seminar,
+This is *not* a "proper" computer science class, and participants do *not* need any background in CS, statistics or math.
+
+You should just be curious and ready to:
+
+- learn to use specialised command-line software and open-source tools for collaboration,
+- read and write technical documents in simple, readable english and
+- collaborate intensively using (perhaps unfamiliar) web-based tools.
+
+No worries, we'll bring everyone up to speed in no time.
+
+You do *not* need to have completed a prior version of this class, or any other class.
+If you *have* some prior training, you will start the class at a different level.
+
+
+## Time and Place (Summer Term 2019) {.alert .alert-warning}
+
+*Students should attend >= 3 full days to guarantee successful participation.
+Below dates include backup dates.*
+
+The times and dates are (also on [univIS](http://univis.uni-erlangen.de)).
+
+
+### Preparatory Meeting
+
+Wednesday, April 4th, 2019 18:15-19:45 at the Kochstraße.
+
+
+### Main Dates: Ascension Day Extended Weekend (Christi Himmelfahrt)
+
+**Thursday, May 30th through Sunday, June 2nd, 10-18:00** at the Nuremberg Campus of Technology (NCT) in *Nuremberg* (see [below](#venue) for directions).
+
+
+### Backup: Corpus Christi Extended Weekend (Fronleichnam)
+
+**Thursday, June 20th through Sunday, June 23rd, 10-18:00** at the Nuremberg Campus of Technology (NCT) in *Nuremberg* (see [below](#venue) for directions).
+The backup date will be used if the main dates have to be cancelled for some reason.
+
+
+### Venue
+
+Classes will take place in one of two FAU locations:
+
+IFS (Preparatory Meeting only)
+
+: 
+    <address>
+    | Institut für Soziologie
+    | Room 05.012
+    | Kochstraße 4
+    | 91054 Erlangen
+    </address>
+
+
+NCT (all other meetings)
+
+: 
+    <address>
+    | Nuremberg Campus of Technology
+    | "Auf AEG" Haus 11
+    | Room 11.2.2
+    | Fürther Straße 246c
+    | 90429 Nuremberg
+    </address>
+    
+    
+    
+    (The building can be hard to find; see [here](http://datascience.phil.fau.de/fossos/img/directions.pdf) for directions).
+
+
+## Language requirements
+
+Depending on who will be attending the class, instruction may also occur in english or german.
+In any event, all of the readings and other course material are all in english, and participants are expected to be proficient in reading and writing english technical documents.
+
+
+## A Multi-Semester Series {.alert .alert-info}
+
+It is obviously impossible (for most students) to cover all of the material in this course in *one* semester.
+
+This course (with a slightly different name) will therefore be taught *every semester*, in a non-consecutive series.
+Students can join the class every semester, and take the class for however many semesters they wish (if they still have new things to learn).
+Do not be confused by the name this class takes in some semester (say, "Advanced R ...") -- you can still join as a beginner.
+Depending on the listing (see below) students can also take this class for credit *multiple times*.
+
+By implication, the group of students in the class in any *given* semester will be *heterogeneous*, working at different levels.
+For example, some students may already have taken a course in the series previously, while others are just starting out.
+Because the previous experiences and learning speed of students vary greatly anyway, this is not a significant (additional) hindrance.
+Tasks, expectations and material covered will accordingly differ for each student, depending on the background.
+
+
+## Credits and Listings
+
+You can generally take this class as an undergraduate (Bachelor) lower-divison seminar (**Proseminar**) worth 5 ECTS points, or an upper-division seminar (**Hauptseminar**) worth 7.5 ECTS points.
+The workload will be adjusted accordingly.
+
+Depending on your major, you may also take the class to fulfill requirements for a *Masters* program.
+Please be in touch to discuss the details.
+
+This class was/is listed as:
+
+- 2018/2019 Winter Term: ["Open Source Werkzeuge für die wissenschaftliche Datenverarbeitung"](https://univis.uni-erlangen.de/form?__s=2&dsc=anew/lecture_view&lvs=phil/dsp/isoz/zentr/openso&anonymous=1&founds=phil/dsp/isoz/zentr/openso&sem=2018w&__e=920) (the original *FOSSOS*), crosslisted in the following modules:
+  - Bachelor Sociology
+    - Sociological Methods (Module `SOZ M`, [Soziologische Methodenlehre](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/methoden-der-empirischen-sozialforschung/))
+    - Labor and Organisation (Module `Soz Qf4`, [Arbeit und Organisation](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/arbeit-und-organisation/))
+  - Bachelor Digital Humanities and Social Sciences ("BA Zweitfach")
+    - Elective (Wahlpflichtbereich FPO 2018)
+    - Elective (Wahlpflichtbereich FPO 2016)
+- 2019 Summer Term: ["Advanced R and Open Social Data Science"](https://univis.uni-erlangen.de/form?__s=2&dsc=anew/lecture_view&lvs=phil/dsp/isoz/zentr/advanc&anonymous=1&founds=phil/dsp/isoz/zentr/advanc&sem=2019s&__e=920)
+  - Bachelor Sociology
+    - Sociological Methods (Module `SOZ M1`, `SOZ M2` [Soziologische Methodenlehre](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/methoden-der-empirischen-sozialforschung/))
+  - Bachelor Digital Humanities and Social Sciences ("BA Zweitfach")
+    - Elective (Wahlpflichtbereich FPO 2018)
+    - Elective (Wahlpflichtbereich FPO 2016)
+  - "Soft Skills" (Schlüsselqualifikationen)
+
+
+## Related Classes
+
+[Daniel Lemmer](https://www.pol.phil.fau.eu/person/daniel-lemmer/) is (again) offering an [introduction to R](https://univis.uni-erlangen.de/form?__s=2&dsc=anew/lecture_view&lvs=phil/dsp/isoz/zentr/einfhr_0&anonymous=1&founds=phil/dsp/ipowi/zentr/dieeur,/dieusa,/politi_4,/spanie,///isoz/zentr/einfhr_0&sem=2019s&__e=920) (in german) as a seminar in the summer term 2019.
+Daniel's introduction to R is a great complement to *FOSSOS*, though it is *not* a prequisite (and the same holds vice-versa).
+You may take the introducion *before* or *after* attending *FOSSOS*, but you may also take the two classes *concurrently* (the dates do not clash).
+If you *have* (or are currently) taking Daniel's introduction to R, you may move on to more advanced R training in *FOSSOS* (such as using the [tidyverse](https://www.tidyverse.org) domain specific language (DSL) and the [r-lib](https://github.com/r-lib) partial reimplementation).
+
+If you have *not* taken (or will not) Daniel's (or another) introduction to R, you will probably spend your time in *FOSSOS* learning the broader open source tooling (["Software Carpentry"](https://datascience.phil.fau.de/fossos/stack.html#software_carpentry)) around R, which is still plenty of exciting material to keep you busy for a semester.
+
+Daniel is *also* kindly hosting an open working group to learn statistics from first principles.
+Contact [Daniel Lemmer](https://www.pol.phil.fau.eu/person/daniel-lemmer/) if you'd like to attend.
 
 
 ## Course Description
@@ -157,19 +275,6 @@ Teaching teaching R (and the broader ecosystem) at FAU sociology (as most other 
 To meet these constraints, this course will be held as a **non-consecutive multi-semester series of seminars**, and will, for the most part, operate on a **flipped classroom model**.
 
 
-## A Multi-Semester Series {.alert .alert-info}
-
-It is obviously impossible (for most students) to cover all of the material in this course in *one* semester.
-
-This course (with a slightly different name) will therefore be taught *every semester*, in a non-consecutive series.
-Students can join the class every semester, and take the class for however many semesters they wish (if they still have new things to learn).
-
-By implication, the group of students in the class in any *given* semester will be *heterogeneous*, working at different levels.
-For example, some students may already have taken a course in the series previously, while others are just starting out.
-Because the previous experiences and learning speed of students vary greatly anyway, this is not a significant (additional) hindrance.
-Tasks, expectations and material covered will accordingly differ for each student, depending on the background.
-
-
 ## Flipped Classroom
 
 Because students will learn at different speeds, and from different starting points -- among other reasons -- teacher-centered teaching will be minimal in this class.
@@ -185,39 +290,6 @@ What the class offers is:
 - A carefully curated list of external learning resources, organised in a (somewhat) linear syllabus.
 - A social setting (the class settings) and electronic fora (github repo) to keep organised, motivated and to help one another.
 - Guidance and assistance by the instructor for each *individual* student.
-
-
-## Credits and Listings {.alert .alert-success}
-
-This class is currently (winter term 2018/2019) listed as an undergraduate (Bachelor), lower-division seminar (**Proseminar**) worth 5 ECTS points.
-However, you can *also* take the class as an upper-division seminar (**Hauptseminar**) worth 7.5 ECTS points.
-The workload will be adjusted accordingly.
-
-Depending on your major, you may also take the class to fulfill requirements for a *Masters* program.
-Please be in touch to discuss the details.
-
-The class is currently crosslisted in the following modules:
-
-- Bachelor Sociology
-  - Sociological Methods (Module `SOZ M`, [Soziologische Methodenlehre](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/methoden-der-empirischen-sozialforschung/))
-  - Labor and Organisation (Module `Soz Qf4`, [Arbeit und Organisation](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/arbeit-und-organisation/))
-- Bachelor Digital Humanities and Social Sciences ("BA Zweitfach")
-  - Elective (Wahlpflichtbereich FPO 2018)
-  - Elective (Wahlpflichtbereich FPO 2016)
-
-
-## Prerequisites
-
-*Everyone* is welcome to this seminar,
-This is *not* a "proper" computer science class, and participants do *not* need any background in CS or math.
-
-You should just be curious and ready to:
-
-- learn to use specialised command-line software and open-source tools for collaboration,
-- read and write technical documents in simple, readable english and
-- collaborate intensively using (perhaps unfamiliar) web-based tools.
-
-No worries, we'll bring everyone up to speed in no time.
 
 
 ## Expectations
@@ -250,6 +322,26 @@ Please also make sure that:
 
 For broader, more open-ended discussions, use the <a href="https://github.com/orgs/soztag/teams/fossos-18-ws">class discussion board</a>
 </div>
+
+
+## Schedule
+
+Because students will learn at different speeds, and from different starting points, there is not *a* schedule for the class.
+We will, however, progress through the [stack](/stack) in the order in which software (and resources) are listed.
+
+Students can work through this material at their own pace.
+Likewise, some students may wish to cover a lot of breadth (at shallow depth), while others want to dig in on a particular topic.
+This is all fine, but students should ensure that they learn *something* at a *useful* level to solve real-world problems, as will also be required for the assessment.
+If in doubt, ask the instructor for guidance.
+
+Every student should first become competent in the practices and tools covered in "Software Carpentry"; these are required for all later topics.
+
+As a lower bound, *every* student should cover at least *one* top-level heading ("Software Carpentry", "Intermediate R", etc.) per semester.
+
+You can find out whatever will be worked on during the next session(s) by consulting the [kanban board](https://github.com/soztag/fossos/projects/2).
+During the earlier sessions, we will also cover some topics *together* in class.
+These topics will also be listed on the [kanban board](https://github.com/soztag/fossos/projects/2).
+
 
 
 ## Digital Places
@@ -486,7 +578,7 @@ All files were put in a repository, in a reasonable place, with reasonable names
 ## Attendance
 
 Attendance is not mandatory, as per university policy.
-However, students are *highly* recommended to attend the seminar regularly (no more than 2 missed sessions), and to thoroughly study the assigned material.
+However, students are *highly* recommended to attend the seminar regularly, and to thoroughly study the assigned material.
 It is highly unlikely that you will be able to receive passing grades on the assignments otherwise.
 
 Even though technical in nature, this class is no "rocket science", and we will get everyone up to speed, no matter the prior knowledge.
@@ -571,75 +663,6 @@ If you are using a Windows machine, you may consider the following alternatives 
   You can access everything through a browser, but there is a (small) fee, depending on your setup.
 
 There is no guarantee that any of these alternatives or links will work for you; you will have to research them on your own.
-
-
-## Schedule
-
-Because students will learn at different speeds, and from different starting points, there is not *a* schedule for the class.
-We will, however, progress through the [stack](/stack) in the order in which software (and resources) are listed.
-
-Students can work through this material at their own pace.
-Likewise, some students may wish to cover a lot of breadth (at shallow depth), while others want to dig in on a particular topic.
-This is all fine, but students should ensure that they learn *something* at a *useful* level to solve real-world problems, as will also be required for the assessment.
-If in doubt, ask the instructor for guidance.
-
-Every student should first become competent in the practices and tools covered in "Software Carpentry"; these are required for all later topics.
-
-As a lower bound, *every* student should cover at least *one* top-level heading ("Software Carpentry", "Intermediate R", etc.) per semester.
-
-You can find out whatever will be worked on during the next session(s) by consulting the [kanban board](https://github.com/soztag/fossos/projects/2).
-
-During the earlier sessions, we will also cover some topics *together* in class.
-These topics will also be listed on the [kanban board](https://github.com/soztag/fossos/projects/2).
-
-
-## Venue {.alert .alert-warning}
-
-Classes will take place in one of two FAU locations:
-
-IFS
-
-: 
-    <address>
-    | Institut für Soziologie
-    | Room 05.012
-    | Kochstraße 4
-    | 91054 Erlangen
-    </address>
-
-
-NCT
-
-: 
-    <address>
-    | Nuremberg Campus of Technology
-    | "Auf AEG" Haus 11
-    | Room 11.2.2
-    | Fürther Straße 246c
-    | 90429 Nuremberg
-    </address>
-    
-    
-    
-    (The building can be hard to find; see [here](http://datascience.phil.fau.de/fossos/img/directions.pdf) for directions).
-
-
-## Related Class: Introduction to R {.alert .alert-success}
-
-Daniel Lemmer is offering an [introduction to R](http://univis.fau.de/form?__s=2&dsc=anew/lecture_view&lvs=phil/dsp/isoz/zentr/einfhr_4&anonymous=1&founds=phil/dsp/ipowi/zentr/argent,/spanie,///isoz/zentr/einfhr_4&sem=2018w&__e=808) (in german) as a seminar in this winter term 2018.
-In this class (*fossos*), we will be using R, but we will *not* include (nor require) a full introduction to (especially base) R.
-Instead, we will focus on broader open source practices and paradigms, using R as an example, but also covering recent developments in [tidyverse](https://www.tidyverse.org) R.
-You do not *need* to also attend the "Introduction to R seminar"", but participation in both may give you a deeper understanding and command of a more fully-fledged stack.
-
-
-## Language requirements: {.alert .alert-info}
-
-Depending on who will be attending the class, instruction may also occur in english or german.
-In any event, all of the readings and other course material are all in english, and participants are expected to be proficient in reading and writing english technical documents.
-
-Here, for the sake of completeness, is the german title:
-
-> Open Source Werkzeuge für die wissenschaftliche Datenverarbeitung
 
 
 ## References

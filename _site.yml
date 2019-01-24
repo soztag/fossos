@@ -1,6 +1,6 @@
-name: R etc.
+name: FOSSOS
 navbar:
-  title: R etc.
+  title: FOSSOS
   left:
   - icon: fa-home
     text: Syllabus
@@ -33,8 +33,6 @@ navbar:
       href: http://univis.fau.de/
     - text: meincampus
       href: https://www.campus.uni-erlangen.de/
-    - text: studOn
-      href: https://www.studon.fau.de/crs2139506.html
     - text: Institut für Soziologie
       href: https://www.soziologie.phil.fau.de)
     - text: Nuremberg Campus of Technology

@@ -11,7 +11,7 @@ bibliography: library.bib
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Here's the software and services stack we'll be using.
+Here's the software stack we'll be using.
 
 This is by no means the *only* way to do open science or data science with open source software, and recommended packages are likely to change over time.
 The below R-based toolchain should be considered as merely *one* (out of several) consistent implementations of some best practices.

@@ -60,7 +60,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 ## Prerequisites {.alert .alert-success}
 
-*Everyone* is welcome to this seminar,
+*Everyone* is welcome to this seminar.
 This is *not* a "proper" computer science class, and participants do *not* need any background in CS, statistics or math.
 
 You should just be curious and ready to:

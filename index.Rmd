@@ -161,14 +161,14 @@ Please be in touch to discuss the details.
 
 This class was/is listed as:
 
-- 2018/2019 Winter Term: ["Open Source Werkzeuge für die wissenschaftliche Datenverarbeitung"](https://univis.uni-erlangen.de/form?__s=2&dsc=anew/lecture_view&lvs=phil/dsp/isoz/zentr/openso&anonymous=1&founds=phil/dsp/isoz/zentr/openso&sem=2018w&__e=920) (the original *FOSSOS*), crosslisted in the following modules:
+- 2018/2019 Winter Term: "Open Source Werkzeuge für die wissenschaftliche Datenverarbeitung" (the original *FOSSOS*), crosslisted in the following modules:
   - Bachelor Sociology
     - Sociological Methods (Module `SOZ M`, [Soziologische Methodenlehre](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/methoden-der-empirischen-sozialforschung/))
     - Labor and Organisation (Module `Soz Qf4`, [Arbeit und Organisation](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/arbeit-und-organisation/))
   - Bachelor Digital Humanities and Social Sciences ("BA Zweitfach")
     - Elective (Wahlpflichtbereich FPO 2018)
     - Elective (Wahlpflichtbereich FPO 2016)
-- 2019 Summer Term: ["Advanced R and Open Social Data Science"](https://univis.uni-erlangen.de/form?__s=2&dsc=anew/lecture_view&lvs=phil/dsp/isoz/zentr/advanc&anonymous=1&founds=phil/dsp/isoz/zentr/advanc&sem=2019s&__e=920)
+- 2019 Summer Term: "Advanced R and Open Social Data Science"
   - Bachelor Sociology
     - Sociological Methods (Module `SOZ M1`, `SOZ M2` [Soziologische Methodenlehre](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/methoden-der-empirischen-sozialforschung/))
   - Bachelor Digital Humanities and Social Sciences ("BA Zweitfach")

@@ -11,11 +11,7 @@ bibliography: library.bib
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-
-```{r readme, child="README.md"}
-```
-
-## Bibliography Managers  {.alert .alert-success}
+## Bibliography Managers
 Bibliography managers are important to keep all the literature you work with well organized.
 This page will help you understand pros and cons of different bibliography managers as well as help you set up Zotero, a free and open-source bibliography manager.
 
@@ -43,6 +39,4 @@ To get started with Zotero, there are some components that should be set up:
     - Prerequisite: Zotero
 
 ## Using Zotero
-This should be pretty straightforward. To learn about the available functions, have a look at the [Zotero Quick Start Guide](https://www.zotero.org/support/quick_start_guide) 
-
-## References
+This should be pretty straightforward. To learn about the available functions, have a look at the [Zotero Quick Start Guide](https://www.zotero.org/support/quick_start_guide)

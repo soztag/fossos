@@ -40,3 +40,9 @@ To get started with Zotero, there are some components that should be set up:
 
 ## Using Zotero
 This should be pretty straightforward. To learn about the available functions, have a look at the [Zotero Quick Start Guide](https://www.zotero.org/support/quick_start_guide)
+
+## Finalizing a document
+Navigate with command prompt / bash to the folder your .md document (and in this example, also the .bib file) is stored. The following command will generate a new file in HTML format:
+pandoc .\homework.md --bibliography=mybib.bib -o .\Outputs\output.html
+- `-o` defines the output location to be a subfolder of the current location.
+- The default format is HTML, so this is what will be generated.

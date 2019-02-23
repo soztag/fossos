@@ -28,18 +28,16 @@ While the following paragraphs will cover Zotero, please feel free to use any of
 
 ## Zotero setup
 To get started with Zotero, there are some components that should be set up:
--Zotero itself
-  -via chocolatey package manager (recommended)
+- install Zotero itself
+  - via chocolatey package manager (recommended)  
     Run in bash or command line: `choco install zotero`
-  -download and install via the [Zotero website](https://www.zotero.org/)
--the BetterBibTex Addon for Zotero.
-  Among other things, this enables an automatic export of the bib file.
-  Prerequisite: Zotero.
-  You can find the installation instructions [Here](https://retorque.re/zotero-better-bibtex/installation/).
--the Zotero-picker Addon for Atom
-  It enables you to quote and cite directly in Atom.
-  Prerequisites: Zotero, BetterBibTex Addon
-  The installation instructions are [Here](https://atom.io/packages/zotero-picker).
+  - download and install via the [Zotero website](https://www.zotero.org/)
+- the BetterBibTex Addon for Zotero. [installation instructions](https://retorque.re/zotero-better-bibtex/installation/)
+    - Among other things, this enables an automatic export of the bib file.
+    - Prerequisite: Zotero.
+- the Zotero-picker Addon for Atom. [installation instructions](https://atom.io/packages/zotero-picker)
+    - It enables you to quote and cite directly in Atom.
+    - Prerequisites: Zotero, BetterBibTex Addon
 
 
 ## References

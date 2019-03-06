@@ -50,7 +50,17 @@ pandoc .\homework.md --bibliography=mybib.bib -o .\Outputs\output.html
 ## Linux distributions (distros)
 Looking at Linux distributions and deciding for one can be a daunting task if this is new to you.
 Keep in mind that while there are notable differences between distros, making an informed choice is very difficult. So just taking a distro and trying it out (it's free!) might be the better choice.
+Here are some key differences between distributions:
+- _Release Model_
+The release model decides how frequently updates reach your system. Frequent smaller updates are called rolling release. If only very big updates are released, it is a major release model.
+- _Basis_
+
+
 Anyway, here are some resources to help you with the first steps.
 - [DistroWatch](http://distrowatch.org/). This page has all the distros and sorts them by popularity. You will find key information about the distros and userratings here.
 - [A beginner's guide article by PCWorld](https://www.pcworld.com/article/2918397/how-to-get-started-with-linux-a-beginners-guide.html)
+- [best linux distros 2019](https://linoxide.com/linux-how-to/what-are-best-linux-distros/)
 - And many more, just use your favourite search engine.
+
+
+The following recommendations will be based on Manjaro, the top-trending distro of the last 12 month (citation)  

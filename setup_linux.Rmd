@@ -29,14 +29,15 @@ Each distro has its own principles. Some try to be as beginner-friendly as possi
 - _User interface_
 This is might be the most surprising aspect about linux and it is a big difference to other operating systems. Looking at a distro, you see its Desktop Environment. In the Linux world, this is just like another package you can install or remove anytime. So if you find a distro that has everything you need, but does not look pleasing to you, there is a good chance you can install a different Desktop Environment and have the same system with different looks.
 
-Summing it up, there are quite substantial differences between the linux distributions. Since it is impossible to understand every linux distro in the necessary detail to make an informed decision, think about what you really need and then just get started
+Summing it up, there are quite substantial differences between the linux distributions. Since it is impossible to understand every linux distro in the necessary detail to make an informed decision, think about what you really need and then just get started.
 
+###Resources
 Here are some resources to help you with the first steps.
 - [DistroWatch](http://distrowatch.org/). This page has all the distros and sorts them by popularity. You will find key information about the distros and useful user ratings here.
 - [A linux beginner's guide article](https://www.pcworld.com/article/2918397/how-to-get-started-with-linux-a-beginners-guide.html)
 - [Overview about the best linux distros 2019](https://linoxide.com/linux-how-to/what-are-best-linux-distros/)
 - [Choose the best linux distro for your need](https://www.lifewire.com/choose-best-linux-distro-for-needs-2201172)
-- And many more, just use your favourite search engine.
+- [Choose the best linux distro for beginners in 2019](https://techlog360.com/linux-distro-beginners/)
 
 ## Tools
 Software should ideally be installed via the package manager that comes with your distro.  Using package managers is more secure and faster than downloading the software from some website. So package managers should always be the starting point for installing software.

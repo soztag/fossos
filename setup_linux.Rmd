@@ -56,5 +56,17 @@ Some examples for package managers are pacman, octopi and APT
 Backups are essential. No matter if a system error was caused by an update or misconfiguration by the user, having a backup can save a lot of hassle.
   - Software: *Timeshift*, [Link to GitHub Project](https://github.com/teejee2008/timeshift)
   - Functionality: Timeshift makes it easy to create and restore backups. By default it saves the system configuration, but it can also be configured to backup configuration and all your files.
+  While Timeshift offers a graphical interface, you may also use it via bash. Frequent commands could be `timeshift --check` which will give you an overview about your existing backups as well as create one if needed. Using the `--restore` function, you can restore an earlier state of your PC. Knowing about restoring via bash is essential in case the GUI does not work anymore.
+  Calling `timeshift --help` will get you an overview about all the functions you may call.
+  
   - Comment: Put the Timeshift backups on an external medium, e.g. a USB-drive. In case something goes horribly wrong, the backups won't be affected.
   Also, having a "rescue system" ready can be helpful to restore these backups. A rescue system can be e.g. a USB-Drive or even a disk with a bootable linux distribution on it. Instructions how to create a bootable medium can be found on the website of most distros.
+  
+  
+### Keyboard shortcuts 
+CTRL+ALT+F1 to F12 switch virtual consoles. This means that with e.g. CTRL+ALT+F3 you get no graphical user interface, but only bash. This can help in combination with bash restoring of backups if your system breaks.
+
+### Resources
+[Cheat sheet for essential linux commands](http://www.unixguide.net/linux/linuxshortcuts.shtml)
+
+

@@ -12,8 +12,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Linux distributions (distros)
-Looking at Linux distributions and deciding for one can be a daunting task if this is new to you.
-Keep in mind that while there are notable differences between distros, making an informed choice is very difficult. So just taking a distro and trying it out (it's free!) might be the better choice.
+Looking at Linux distributions and deciding for one can be a daunting task for newcomers.
 Here are some key differences between distributions:
 - _Release Model_
 The release model decides how frequently updates reach your system. Frequent smaller updates are called rolling release. If only very big updates are released, it is a point or major release model.

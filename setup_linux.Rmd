@@ -16,12 +16,12 @@ Looking at Linux distributions and deciding for one can be a daunting task if th
 Keep in mind that while there are notable differences between distros, making an informed choice is very difficult. So just taking a distro and trying it out (it's free!) might be the better choice.
 Here are some key differences between distributions:
 - _Release Model_
-The release model decides how frequently updates reach your system. Frequent smaller updates are called rolling release. If only very big updates are released, it is a point or major release model. 
+The release model decides how frequently updates reach your system. Frequent smaller updates are called rolling release. If only very big updates are released, it is a point or major release model.
 Also, distros can either focus on well-tested and known software, while others focus on the bleeding edge.
 - _Basis and forks_
-This is where a lot of names are being dropped, e.g. Arch, Debian, RedHat. While it is not important to remember every name in the beginning, it is important to understand the concept. 
-If a distribution derives from another distribution, it is called a fork (similar to the git concept). The basis of a distribution defines e.g. which system tools you have available and thereby also which software packages you can install in general. 
-[See this image](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) to make out which distro forked from where.
+This is where a lot of names are being dropped, e.g. Arch, Debian, RedHat. While it is not important to remember every name in the beginning, it is important to understand the concept.
+If a distribution derives from another distribution, it is called a fork (similar to the git concept). The basis of a distribution defines e.g. which system tools you have available and thereby also which software packages you can install in general.
+[See this image](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) to make out which distro forked from where. This is unfortunately a little outdated since the timeline ends with 2012.
 Example:
 Manjaro Linux is based on Arch Linux. Therefore, it is a fork of Arch. And while it has its own software repository, due to being derived from Arch it can also install software packages from the Arch User Repository. However, it is not related to Ubuntu, a fork of Debian. So it is basically not possible to install Debian packages in Manjaro. Keep in mind there are almost always ways to work around such limitations.
 - _Design principles_
@@ -33,20 +33,17 @@ Summing it up, there are quite substantial differences between the linux distrib
 
 Here are some resources to help you with the first steps.
 - [DistroWatch](http://distrowatch.org/). This page has all the distros and sorts them by popularity. You will find key information about the distros and useful user ratings here.
-- [A linux beginner's guide article by PCWorld](https://www.pcworld.com/article/2918397/how-to-get-started-with-linux-a-beginners-guide.html)
+- [A linux beginner's guide article](https://www.pcworld.com/article/2918397/how-to-get-started-with-linux-a-beginners-guide.html)
 - [Overview about the best linux distros 2019](https://linoxide.com/linux-how-to/what-are-best-linux-distros/)
+- [Choose the best linux distro for your need](https://www.lifewire.com/choose-best-linux-distro-for-needs-2201172)
 - And many more, just use your favourite search engine.
 
-## Tools 
-The following tools were tested on Manjaro (fork of Arch Linux), but might also work on other distros.
-Keep in mind that software should ideally be installed via the package manager that comes with your distro. For Manjaro, it is Octopi or pacman. Using package managers is more secure and faster than downloading the software from some website. So package managers should always be the starting point for installing software.
+## Tools
+Software should ideally be installed via the package manager that comes with your distro.  Using package managers is more secure and faster than downloading the software from some website. So package managers should always be the starting point for installing software.
+Some examples for package managers are pacman, octopi and APT
 - Backup
-Backups are essential. No matter if an error was caused by an update or misconfiguration by the user, having a backup can save a lot of hassle. 
+Backups are essential. No matter if an error was caused by an update or misconfiguration by the user, having a backup can save a lot of hassle.
   - Software: *Timeshift*, [Link to GitHub Project](https://github.com/teejee2008/timeshift)
-  - Functionality: Timeshift makes it easy to create and restore backups. By default it saves the system configuration, but it can also be configured to backup configuration and all your files. 
-  - Comment: Put the Timeshift backups on an external medium, e.g. a USB-drive. In case something goes horribly wrong, the backups won't be affected. 
+  - Functionality: Timeshift makes it easy to create and restore backups. By default it saves the system configuration, but it can also be configured to backup configuration and all your files.
+  - Comment: Put the Timeshift backups on an external medium, e.g. a USB-drive. In case something goes horribly wrong, the backups won't be affected.
   Also, having a "rescue system" ready can be helpful to restore these backups. A rescue system can be e.g. a USB-Drive or even a disk with a bootable linux distribution on it. Instructions how to create a bootable medium can be found on the website of most distros.
-
-
-
-

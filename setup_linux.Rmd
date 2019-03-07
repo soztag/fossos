@@ -21,9 +21,11 @@ Also, distros can either focus on well-tested and known software, while others f
 - _Basis and forks_
 This is where a lot of names are being dropped, e.g. Arch, Debian, RedHat. While it is not important to remember every name in the beginning, it is important to understand the concept.
 If a distribution derives from another distribution, it is called a fork (similar to the git concept). The basis of a distribution defines e.g. which system tools you have available and thereby also which software packages you can install in general.
-[See this image](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) to make out which distro forked from where. This is unfortunately a little outdated since the timeline ends with 2012.
+[See the linux distribution timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) to make out which distro forked from where. This is unfortunately a little outdated since the timeline ends with 2012.
 Example:
-Manjaro Linux is based on Arch Linux. Therefore, it is a fork of Arch. And while it has its own software repository, due to being derived from Arch it can also install software packages from the Arch User Repository. However, it is not related to Ubuntu, a fork of Debian. So it is basically not possible to install Debian packages in Manjaro. Keep in mind there are almost always ways to work around such limitations.
+Manjaro Linux is based on Arch Linux. Therefore, it is a fork of Arch. And while it has its own software repository, due to being derived from Arch it can also install software packages from the Arch User Repository. However, it is not related to Ubuntu, a fork of Debian. Refer to the distro timeline image to see how distros are related.
+
+Related distros have similar tools and may install the same packages. So it is basically not possible to install Debian packages in Manjaro, since they are not related. Luckily there are almost always ways to work around such limitations.
 - _Design principles_
 Each distro has its own principles. Some try to be as beginner-friendly as possible (e.g. Ubuntu) and take a lot of choices from the user, while others encourage users to really learn the system (e.g. Arch). Pick a distro and read a little about it to find one that you believe suits your needs.
 - _User interface_

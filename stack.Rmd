@@ -657,3 +657,10 @@ tba.
 ## Package development
 
 - Really "just" Hadley Wickham's [R Packages](http://r-pkgs.had.co.nz)
+
+
+## Open Science resources
+
+- _Unpaywall_ [link](https://unpaywall.org/)
+
+Finding the perfect article only to notice it is behind a paywall can be frustrating. Unpaywall is a browser extension that checks if the document can be obtained from a free and legal alternative source.

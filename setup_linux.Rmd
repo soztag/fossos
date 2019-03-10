@@ -45,6 +45,7 @@ Here are some resources to help you with the first steps.
 - [Overview about the best linux distros 2019](https://linoxide.com/linux-how-to/what-are-best-linux-distros/)
 - [Choose the best linux distro for your need](https://www.lifewire.com/choose-best-linux-distro-for-needs-2201172)
 - [Choose the best linux distro for beginners in 2019](https://techlog360.com/linux-distro-beginners/)
+-[Great and easy-to-understand comparison between several distros](https://haydenjames.io/best-linux-distro/)
 
 ## Tools
 Software should ideally be installed via the package manager that comes with your distro.  Using package managers is more secure and faster than downloading the software from some website. So package managers should always be the starting point for installing software.

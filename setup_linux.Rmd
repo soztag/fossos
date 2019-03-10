@@ -22,7 +22,7 @@ Also, distros can either focus on well-tested and known software, while others f
 ### Basis and forks
 This is where a lot of names are being dropped, e.g. Arch, Debian, RedHat. While it is not important to remember every name in the beginning, it is important to understand the concept.
 If a distribution derives from another distribution, it is called a fork (similar to the git concept). The basis of a distribution defines e.g. which system tools you have available and thereby also which software packages you can install in general.
-[See the linux distribution timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) to make out which distro forked from where. This is unfortunately a little outdated since the timeline ends with 2012.
+[See the linux distribution timeline](https://upload.wikimedia.org/wikipedia/commons/1/1b/Linux_Distribution_Timeline.svg) to make out which distro forked from where.
 Example:
 Manjaro Linux is based on Arch Linux. Therefore, it is a fork of Arch. And while it has its own software repository, due to being derived from Arch it can also install software packages from the Arch User Repository. However, it is not related to Ubuntu, a fork of Debian. Refer to the distro timeline image to see how distros are related.
 

@@ -17,36 +17,43 @@ This page will help you understand pros and cons of different bibliography manag
 
 ## Comparison
 There are many different bibliography managers available, e.g. Citavi, Colwiz, EndNote, JabRef, Mendeley, Zotero and ZoteroBib.
-Since we focus on open-source software, software like Citavi and EndNote are out of question.
+While any reference manager producing clean .bib files will be OK, open-source software will enable you to use the programs for years/decades.
+In any case, you can get your data out of the tool since it is stored in a transparent way.
 Of the named software, only JabRef, Zotero and ZoteroBib are free and open source.
 For a detailed feature comparison, you may want to look [here (german)](https://ub.fau.de/schreiben-publizieren/literaturverwaltung/) or [here (english)](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software).
-While the following paragraphs will cover Zotero, please feel free to use any of the other open source bibliography managers. As long as they can handle the [BibTex format](https://de.wikipedia.org/wiki/BibTeX) it should be all fine.
+While the following paragraphs will cover Zotero, please feel free to use any of the other open source bibliography managers.
+As long as they can handle the [BibTex format](https://de.wikipedia.org/wiki/BibTeX) it should be all fine.
 
 ## Zotero setup
 To get started with Zotero, there are some components that should be set up:
 
 ### Zotero itself
-Windows: 
-Best way is to install via chocolatey package manager. Run in command line: `choco install zotero`
+*Linux:
+   Best way is to use the included package manager.
+   Most likely you can find it there.
 
-Linux:
-use the included package manager, there is very likely it is already there.
+*Mac:
+   Download from the Zotero website or `brew cask install zotero`.
 
-Alternative: download and install via the [Zotero website](https://www.zotero.org/)
+*Windows:
+   Best way is to install via chocolatey package manager. Run in command line `choco install zotero`
 
+*Alternative way for all supported platforms:
+   Download and install via the [Zotero website](https://www.zotero.org/)
 
 ### BetterBibTex Addon for Zotero [installation instructions](https://retorque.re/zotero-better-bibtex/installation/)
 Prerequisite: Zotero needs to be set up before.
 This enables an automatic export of the bib file, among several other features.
-    
+During a first manual export via BetterBibTex you can setup automatic exporting and forget about it.
+Check [this page](https://retorque.re/zotero-better-bibtex/push-and-pull/) for more information.
+
 ### Zotero-picker Addon for Atom. [installation instructions](https://atom.io/packages/zotero-picker)
 Prerequisites: Zotero, BetterBibTex Addon
 It enables you to quote and cite directly in Atom.
-    
+
 ### (optional, recommended) Zotero connector for your browser [installation instructions](https://www.zotero.org/download/connectors)
-Prerequisite: Zotero    
+Prerequisite: Zotero
 This enables you to add the websites or PDFs you view in your browser directly to your bibliography. And as much as possible will be automatically tagged.
-    
 
 ## Using Zotero
 This should be pretty straightforward. To learn about the available functions, have a look at the [Zotero Quick Start Guide](https://www.zotero.org/support/quick_start_guide)

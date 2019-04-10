@@ -85,7 +85,7 @@ The times and dates are (also on [univIS](http://univis.uni-erlangen.de)).
 
 ### Preparatory Meeting
 
-Wednesday, April 4th, 2019 18:15-19:45 at the Kochstraße.
+Wednesday, April 24th, 2019 18:15-19:45 at the Nuremberg Campus of Technology (NCT) in *Nuremberg* (see [below](#venue) for directions).
 
 
 ### Main Dates: Ascension Day Extended Weekend (Christi Himmelfahrt)
@@ -101,20 +101,7 @@ The backup date will be used if the main dates have to be cancelled for some rea
 
 ### Venue
 
-Classes will take place in one of two FAU locations:
-
-IFS (Preparatory Meeting only)
-
-: 
-    <address>
-    | Institut für Soziologie
-    | Room 05.012
-    | Kochstraße 4
-    | 91054 Erlangen
-    </address>
-
-
-NCT (all other meetings)
+Classes will take place here:
 
 : 
     <address>
@@ -124,7 +111,6 @@ NCT (all other meetings)
     | Fürther Straße 246c
     | 90429 Nuremberg
     </address>
-    
     
     
     (The building can be hard to find; see [here](http://datascience.phil.fau.de/fossos/img/directions.pdf) for directions).

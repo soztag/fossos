@@ -1,0 +1,117 @@
+---
+title: "Bibliography Setup"
+author:
+  - name: "Thomas Roppelt"
+    affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
+  - name: "Maximilian Held"
+    affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
+date: "`r format(file.info('biblio.Rmd')$mtime, '%d %B, %Y')`"
+bibliography: library.bib
+---
+
+```{r setup, echo = FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Bibliography managers (also known as reference management software) are important to keep all the literature you work with well organized.
+These programs help you keep bibliographic metadata (author, year, etc.) in a small database, sometimes also including links to full-text PDFs or your own annotations.
+
+This page will help you understand pros and cons of different bibliography managers as well as help you set up Zotero, a free and open-source bibliography manager.
+
+
+## Comparison
+
+There are many different bibliography managers available, including Citavi, Colwiz, EndNote, JabRef, Mendeley, Zotero and ZoteroBib.
+Any reference manager that is capable of exporting clean `.bib` files, plain text files adhering to the [BibTex format](https://de.wikipedia.org/wiki/BibTeX), will work with a pandoc-based toolchain (such as ours).
+
+However, you may want to consider using one of the open source reference managers.
+Reference collections are an investment (of your time) you might want to use for a long time (years or even decades), and the best way to ensure that is to a) use an open source program with b) an easy way to get out your data if you want to use a different tool.
+
+Of the named software, only JabRef, Zotero and ZoteroBib are free and open source.
+For a detailed feature comparison, you may want to look [here (german)](https://ub.fau.de/schreiben-publizieren/literaturverwaltung/) or [here (english)](https://en.wikipedia.org/wiki/Comparison_of_reference_management_software).
+While the following paragraphs will cover Zotero, please feel free to use any of the other open source bibliography managers.
+
+
+## Zotero setup
+
+To get started with Zotero, there are some components that should be set up:
+
+
+### [Zotero](https://www.zotero.org/)
+
+*Linux:
+   Best way is to use the included package manager.
+   Most likely you can find it there.
+
+*Mac:
+   Download from the Zotero website or using [homebrew](brew.sh) `brew cask install zotero`.
+
+*Windows:
+   Best way is to install via chocolatey package manager.
+   Run `choco install zotero` in the command line.
+
+*Alternative way for all supported platforms:
+   Download and install via the [Zotero website](https://www.zotero.org/)
+
+
+### [Better BibTex Add-on](https://retorque.re/zotero-better-bibtex/installation/)
+
+This add-on makes it easier to work with plain-text based authoring formats such as Markdown and LaTeX.
+You should [install](https://retorque.re/zotero-better-bibtex/installation/) it *after* installing Zotero.
+
+
+### Automatically Export `.bib`
+
+Zotero maintains only *one* database for your entire system or Zotero user account.
+This makes a lot of sense, because you'll often want to *reuse* references across different projects.
+
+However, remember that every *single* project (say, a git repository with some `* rmd`s) will require it's *own* exported copy of that system-wide database, or a subset thereof.
+This is because *pandoc*, or any other command-line conversion program (such as *rmarkdown*, or *LaTeX*) will expect the references in a plain text `.bib` file, *not* the database that Zotero is using.
+Programs other than Zotero actually cannot read or write to that database (which is a good thing).
+Additionally, if you're using git (as you should) with some CI/CD, *all* files necessary to render a project to output formats *must be present in that project directory*.
+
+This problem is easily solved by *exporting* your entire library (or parts of it, if you like), to `.bib` using the above Better BibTex add-on.
+Get to the below menu by clicking File > Export Library, and then save the file to your project root.
+
+```{r zotero_export, fig.cap="Zotero Export", out.width='100%'}
+knitr::include_graphics(path = "img/zotero-export.png")
+```
+
+Happily you can *also* have Zotero automatically *refresh* this `.bib`, whenever your (system wide) bibliography changes.
+If you're using git, this will cause diffs from your `.bib`, which you'll have to add and commit by hand.
+
+If you're adventurous, you can also set up Better BibTex to *automatically* [add, commit and push these changes for you](https://retorque.re/zotero-better-bibtex/push-and-pull/), but this isn't recommended.
+Git commits should always be deliberate, human interactions, not scripted artefacts.
+
+
+### Zotero Pickers
+
+There are also various pickers (or autocomplete plugins) that will make it easier for you to insert citekeys in your text editor of choice.
+
+- [Zotero picker Addon for Atom](https://atom.io/packages/zotero-picker)
+
+
+### [Zotero Connector for Your Browser](https://www.zotero.org/download/connectors) (optional, recommended)
+
+This enables you to add the websites or PDFs you view in your browser directly to your bibliography. 
+The connector will extract and add as much of the metadata as possible.
+
+
+## Using Zotero
+
+This should be pretty straightforward. 
+To learn about the available functions, have a look at the [Zotero Quick Start Guide](https://www.zotero.org/support/quick_start_guide)
+
+
+## Rendering Your Bibliography
+
+Pandoc and other command-line text conversion tools will accept your `.bib` file as an additional input, pass that to one of several bibliography *generation* programs (such as BibTex, Pandoc Citeproc or Biber) and insert the results into your output formats of choice.
+
+For example, in pandoc, you might run
+
+```
+pandoc homework.md --bibliography=mybib.bib -o .\Outputs\output.html
+```
+
+where `--bibliography=mybib.bib` specifies that you want to use your `mybib.bib`, expected at the project root.
+This would be the file that you'd have exported from Zotero.

@@ -118,6 +118,10 @@ Classes will take place here:
 
 ## Language requirements
 
+```{r}
+checkmate::assert_integer(x = 1.5)
+```
+
 Depending on who will be attending the class, instruction may also occur in english or german.
 In any event, all of the readings and other course material are all in english, and participants are expected to be proficient in reading and writing english technical documents.
 

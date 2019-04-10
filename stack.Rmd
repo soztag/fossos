@@ -466,6 +466,8 @@ We will use it to learn the branch and pull-request model.
 - [Comparing Commits accross time](https://help.github.com/articles/comparing-commits-across-time/)
 
 
+## Technical & Scientific Authoring {#sciwri}
+
 ### Document Conversion {#conversion}
 
 <i class="far fa-file-alt fa-3x fa-pull-left"></i> <a class="btn btn-info" href="https://pandoc.org" role="button">Install Pandoc</a>
@@ -508,9 +510,9 @@ Still, it is important to learn some of the basics of LaTeX to use it programmat
 ### Bibliography Management {#bib}
 
 <a class="btn btn-info" href="https://github.com/jgm/pandoc-citeproc" role="button">Install Pandoc Citeproc</a>
-<a class="btn btn-default" href="https://en.wikipedia.org/wiki/Comparison_of_reference_management_software" role="button">Install a Bibliography Manager of Your Choice</a>
+<a class="btn btn-default" href="biblio.html" role="button">Install Zotero</a>
 
-Bibliography management is *not* the focus of this class.
+Bibliography management is *not* the focus of this class, but you can learn more about it [here](biblio.html).
 
 It is also one of those tools, where there is no strong reason to standardize on any one program, so as long as the bibliography manager exports to one of the formats [that pandoc can ingest](https://pandoc.org/MANUAL.html#citations).
 

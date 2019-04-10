@@ -639,6 +639,8 @@ You should also study the [RStudio Cloud guide](https://rstudio.cloud/learn/guid
 
 ### Moving to Linux
 
+<a class="btn btn-info" href="linux.html" role="button">Learn More</a>
+
 Installation and usage may be easier on Unix-compatible operating systems, including macOS and Linux.
 Getting Windows to play nicely with open source software can be harder, and some convenient system utilities (such as a package manager) are often missing.
 It *is* technically possible to use most, if not all, of the tools above on Windows, but they may behave slightly differently, and supporting them may be more involved.

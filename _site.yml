@@ -8,6 +8,13 @@ navbar:
   - icon: fa-code
     text: Stack
     href: stack.html
+  - icon: fa-cogs
+    text: More
+    menu:
+    - text: Bibliography Management
+      href: biblio.html
+    - text: Going Linux
+      href: linux.html
   - icon: fa-chalkboard-teacher
     text: Instructor
     href: http://www.maxheld.de

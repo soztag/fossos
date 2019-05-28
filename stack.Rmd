@@ -49,7 +49,9 @@ Here's the corresponding [slide deck](https://speakerdeck.com/hadley/you-cant-do
 
 ### Installation {.alert .alert-info}
 
-Participants should also install all of the below software and sign up for all the below services **before the first class**.
+Participants should install all of the below software and sign up for all the below services **before the first class**.
+
+If you are using Docker, *some* of the software is already contained in the image, though "local" installation may still be advisable.
 
 The steps required for installation will depend on your platform and system setup.
 
@@ -129,7 +131,7 @@ Here's a sensible set of defaults:
 
 #### Tasks
 
-- Sign up to GitHub and say hi [in the course discussion board](https://github.com/orgs/soztag/teams/fossos-18-ws)
+- Sign up to GitHub and say hi [in the welcome issue](https://github.com/soztag/fossos/issues/143)
 
 
 ### Community & Help {#help}
@@ -241,6 +243,66 @@ If you don't want to install something, [Github](https://github.com) (see below)
 We will be using different programs going forward.
 
 
+### Containerisation {#docker}
+
+<i class="fab fa-docker fa-3x fa-rotate-180 fa-flip-vertical fa-pull-left"></i><a class="btn btn-info" href="https://www.docker.com/products/docker-desktop" role="button">Install Docker Desktop</a>
+
+Docker is an open-source industry standard to define, provision and share computing environments, known as *containers*. 
+Containers allow you to run computing environments on other computers.
+Containers are similar to virtual machines (a computer inside a computer), but slimmer and generally neater.
+
+We are using it in this class to reduce the burden of local installations, but it is also generally a helpful tool.
+
+
+#### Resources
+
+- Install Docker Deskop for [Windows](https://docs.docker.com/docker-for-windows/install/) or [macOS](https://docs.docker.com/docker-for-mac/) or [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+- [Docker Overview](https://docs.docker.com/engine/docker-overview/)
+- [Get Started](https://docs.docker.com/get-started/)
+    (You only need subsections 1 and 2)
+- [Docker Introduction](https://www.freecodecamp.org/news/a-beginner-friendly-introduction-to-containers-vms-and-docker-79a9e3e119b/)
+- [Another Docker introduction](https://medium.com/@kelvin_sp/docker-introduction-what-you-need-to-know-to-start-creating-containers-8ffaf064930a)
+- [Rocker Project](https://rocker-project.org)
+
+
+#### Tasks
+
+- Install and run a docker image:
+  
+  1. Download and install [Docker Desktop Community](https://www.docker.com/products/docker-desktop).
+    You need to set up a docker ID as part of the download, and you should remember your account credentials.
+  2. Launch Docker Desktop.
+    A small whale symbol will show up in your task bar, but not much else.
+  3. Launch a system shell and type in
+    
+    ```
+    docker run -e PASSWORD=yourpassword --rm -p 8787:8787 rocker/verse
+    ```
+    
+    On macOS and Linux, your default system shell is an application called "Terminal".
+    On Windows, you can use the "command prompt" or "PowerShell" applications. 
+    If you already have git installed on Windows, you can also use the git bash emulator.
+    
+    Depending on how fast your internet connection is, this process will take a while to complete.
+  4. Open a webbrowser and point it to `http://localhost:8787`.
+    You should see the login window for the RStudio IDE.
+    You are in the browser, but are using running all computations on *your* machine through Docker.
+    This will also work if you are offline.
+  5. Type in `rstudio` as a username and your `PASSWORD` given in the above as a password.
+  6. You are now in the RStudio IDE.
+  7. To shut down, close the browser window and type `ctrl + c` in your shell.
+- Learn the difference between a `Dockerfile`, an image and a container in the context of Docker.
+
+
+#### Additional Resources
+
+- [Docker for R and Reproducibility](https://colinfay.me/docker-r-reproducibility/)
+- [Dockerfile reference](https://docs.docker.com/engine/reference/builder/)
+- [Environment Management with Docker](https://environments.rstudio.com/docker)
+- [Docker Command Line](https://docs.docker.com/engine/reference/commandline/cli/)
+- Using [bind mounts](https://docs.docker.com/storage/bind-mounts/) and [volumes](https://docs.docker.com/storage/volumes/).
+
+
 ### Source Control Management (SCM) {#scm}
 
 <i class="fas fa-code-branch fa-3x fa-rotate-180 fa-flip-vertical fa-pull-left"></i><a class="btn btn-info" href="https://git-scm.com" role="button">Install Git</a>
@@ -251,6 +313,8 @@ It offers all the functionality of git, but you may also install a Git graphical
 There plenty of those out there, but one of the easiest is the GitHub Desktop app from GitHub (available only for Windows and macOS).
 
 <i class="fab fa-github fa-3x fa-pull-left"></i>  <a class="btn btn-info" href="https://desktop.github.com" role="button">Install GitHub Desktop</a>
+
+**You should install Git and GitHub Desktop even if you are using Docker**.
 
 You also need to *configure* git on your machine, and wherever else you are using Git (such as a SaaS):
 
@@ -278,14 +342,14 @@ You also need to *configure* git on your machine, and wherever else you are usin
 
 ### Command Line Interface {#cli}
 
-<a class="btn btn-info" href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)" role="button">Install Bash Shell</a>
-
 A shell is a command-line interface (CLI) to your computer (as opposed to a point-and-click graphical user interface, or GUI).
 You may also know this as "the console", or "the terminal".
 
 There are technically different *kinds* of shells, though the `bash` shell is the most widespread, and is often used interchangeably with *the* shell.
 
 A lot of programs that we'll be using only run at the CLI, so it's important to know how to use it.
+
+You can use the (Linux) shell that ships with our Docker container, but you should also know your way around the shell that ships with your OS (to, among other things, spin up a Docker image).
 
 On **macOS**, **Linux**: Nothing to install, ships with bash.
 
@@ -353,6 +417,8 @@ You won't need this starting out.
 Installing and upgrading a lot of command line tools and their dependencies gets old quickly.
 Package managers solve this problem; they provide a clean and elegant way to install (CLI) programs, and even allow you to quickly upgrade everything.
 
+You will need to install a package manager independent of using the Docker image.
+
 <div class="alert alert-warning" role="alert">
 Consider installing the below software via your package manager.
 Whether this is advisable or even possible for any given piece of software depends on the software and your operating system.
@@ -390,6 +456,8 @@ Playing off the advantages of plain text files, everyone can use what works best
 
 You are therefore free to choose your own text editor.
 
+You can use the RStudio IDE that comes with our Docker image, but other editors are more fully featured.
+
 Atom has the advantage of being relatively easy to use, free and open source and relatively widely supported.
 It also comes with some nice Git(Hub) integration.
 
@@ -425,6 +493,8 @@ Here's a list of packages you might also want to install:
 *Before* installing RStudio, you must first install R (see below).
 We may, for now, not use R much by itself, but it can be easier to use all the other tools inside of RStudio, rather than separately.
 </div>
+
+If you are using the Docker container image, RStudio and R are already included.
 
 Aside from *text editors*, there are also *integrated development environments* (IDE) (though this distinction has recently been blurring with the arrival of [Atom-IDE](https://ide.atom.io) and others).
 IDEs are a little like text editors, in that they mostly let you edit plain text files, but they offer a lot of "training wheels" for programming and are often geared towards particular programming languages.
@@ -467,6 +537,9 @@ We will use it to learn the branch and pull-request model.
 
 
 ## Technical & Scientific Authoring {#sciwri}
+
+**All software in this section is included in the Docker image.**
+
 
 ### Document Conversion {#conversion}
 
@@ -528,6 +601,8 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 
 ## Introductory R
 
+**All software in this section is included in the Docker image.**
+
 ### "Base" R {#base-r}
 
 <a class="btn btn-info" href="https://www.r-project.org" role="button">Install R</a>
@@ -564,6 +639,9 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 
 ## Intermediate R {#intermediate-r}
 
+**All software in this section is included in the Docker image.**
+
+
 ### Tidyverse R
 
 <a class="btn btn-info" href="https://www.tidyverse.org" role="button">Install dplyr, tidyr, readr, tibble, purrr and stringr</a>
@@ -587,6 +665,8 @@ If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`
 
 
 ## Interactive R {#interactive-r}
+
+**All software in this section is included in the Docker image.**
 
 
 ### HTML, JS & CSS (*optional*)
@@ -653,12 +733,6 @@ Covering them in any depth, or even listing good resources (of which there are g
 ### The Cloudyr Project
 
 tba.
-
-
-### Containerisation
-
-tba.
-
 
 
 ## Reproducible Research

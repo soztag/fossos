@@ -148,19 +148,19 @@ Please be in touch to discuss the details.
 This class was/is listed as:
 
 - 2018/2019 Winter Term: "Open Source Werkzeuge für die wissenschaftliche Datenverarbeitung" (the original *FOSSOS*), crosslisted in the following modules:
-  - Bachelor Sociology
-    - Sociological Methods (Module `SOZ M`, [Soziologische Methodenlehre](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/methoden-der-empirischen-sozialforschung/))
-    - Labor and Organisation (Module `Soz Qf4`, [Arbeit und Organisation](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/arbeit-und-organisation/))
-  - Bachelor Digital Humanities and Social Sciences ("BA Zweitfach")
-    - Elective (Wahlpflichtbereich FPO 2018)
-    - Elective (Wahlpflichtbereich FPO 2016)
+    - Bachelor Sociology
+        - Sociological Methods (Module `SOZ M`, [Soziologische Methodenlehre](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/methoden-der-empirischen-sozialforschung/))
+        - Labor and Organisation (Module `Soz Qf4`, [Arbeit und Organisation](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/arbeit-und-organisation/))
+    - Bachelor Digital Humanities and Social Sciences ("BA Zweitfach")
+        - Elective (Wahlpflichtbereich FPO 2018)
+        - Elective (Wahlpflichtbereich FPO 2016)
 - 2019 Summer Term: "Advanced R and Open Social Data Science"
-  - Bachelor Sociology
-    - Sociological Methods (Module `SOZ M1`, `SOZ M2` [Soziologische Methodenlehre](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/methoden-der-empirischen-sozialforschung/))
-  - Bachelor Digital Humanities and Social Sciences ("BA Zweitfach")
-    - Elective (Wahlpflichtbereich FPO 2018)
-    - Elective (Wahlpflichtbereich FPO 2016)
-  - "Soft Skills" (Schlüsselqualifikationen)
+    - Bachelor Sociology
+        - Sociological Methods (Module `SOZ M1`, `SOZ M2` [Soziologische Methodenlehre](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/methoden-der-empirischen-sozialforschung/))
+    - Bachelor Digital Humanities and Social Sciences ("BA Zweitfach")
+        - Elective (Wahlpflichtbereich FPO 2018)
+        - Elective (Wahlpflichtbereich FPO 2016)
+    - "Soft Skills" (Schlüsselqualifikationen)
 
 
 ## Related Classes
@@ -192,38 +192,38 @@ Unfortunately, learning these tools takes more time than is usually available un
 The goal of this series of seminars is therefore to train participants in a coherent set of leading tools and best practices, including:
 
 - Software Carpentry
-  - Open source issue trackers to manage projects and their learning.
-  - Using leading community resources and services to troubleshoot issues.
-  - Writing text in a lightweight markup language (markdown).
-  - The world of UNIX-style command-line interface (CLI) programs ...
-  - ... and package managers, such as Homebrew or APT.
-  - Establishing an efficient plain-text workflow using editors and an Integrated Development Environment (IDE), including Atom and RStudio.
-  - Source control management (SCM) and massively collaborative development using Git and GitHub.
-  - Separating content and presentation using plain-text formats for technical and scientific writing, including LaTeX, Pandoc Markdown and RMarkdown and rendering results in a variety of formats (Word, HTML, PDF).
+    - Open source issue trackers to manage projects and their learning.
+    - Using leading community resources and services to troubleshoot issues.
+    - Writing text in a lightweight markup language (markdown).
+    - The world of UNIX-style command-line interface (CLI) programs ...
+    - ... and package managers, such as Homebrew or APT.
+    - Establishing an efficient plain-text workflow using editors and an Integrated Development Environment (IDE), including Atom and RStudio.
+    - Source control management (SCM) and massively collaborative development using Git and GitHub.
+    - Separating content and presentation using plain-text formats for technical and scientific writing, including LaTeX, Pandoc Markdown and RMarkdown and rendering results in a variety of formats (Word, HTML, PDF).
 - Introductory R
-  - Introduction to "base" R.
-  - Literate programming in R.
+    - Introduction to "base" R.
+    - Literate programming in R.
 - Intermediate R
-  - Importing, transforming and modeling data using tools from the R tidyverse ecosystem.
-  - Visualising data using ggplot2.
+    - Importing, transforming and modeling data using tools from the R tidyverse ecosystem.
+    - Visualising data using ggplot2.
 - Interactive R
-  - Interactive visualisations using leading JavaScript libraries (via plotly, htmlwidgets).
-  - Web dashboards using flexdashboard.
-  - Interactive webapps using shiny.
+    - Interactive visualisations using leading JavaScript libraries (via plotly, htmlwidgets).
+    - Web dashboards using flexdashboard.
+    - Interactive webapps using shiny.
 - Advanced R
-  - Types, functional programming, object oriented programming (only S3), metaprogramming and techniques, all following Hadley Wickham's [Advanced R](https://adv-r.hadley.nz)
+    - Types, functional programming, object oriented programming (only S3), metaprogramming and techniques, all following Hadley Wickham's [Advanced R](https://adv-r.hadley.nz)
 - Cloud Computing
-  - Offloading computationally intensive, or regularly automated tasks to cloud services.
-  - Using containerisation (docker).
-  - Applying continuous integration and deployment (CI/CD) tools such as Travis CI.
+    - Offloading computationally intensive, or regularly automated tasks to cloud services.
+    - Using containerisation (docker).
+    - Applying continuous integration and deployment (CI/CD) tools such as Travis CI.
 - Reproducible Research
-  - Improving code quality by applying assertions using checkmate.
-  - Storing datasets in public repositories such as the Harvard dataverse.
-  - Releasing, publishing and indexing finished research using GitHub releases and zenodo.
-  - Other tools and practices for open and reproducible science.
-  - Strenghening reproducibility and portability by using dependency management (packrat) and containerisation (docker).
+    - Improving code quality by applying assertions using checkmate.
+    - Storing datasets in public repositories such as the Harvard dataverse.
+    - Releasing, publishing and indexing finished research using GitHub releases and zenodo.
+    - Other tools and practices for open and reproducible science.
+    - Strenghening reproducibility and portability by using dependency management (packrat) and containerisation (docker).
 - Package Development
-  - Including documentation (roxygen2), defensive programming (checkmate), testing (testthat) and more best practices, all following Hadley Wickham's [R packages](http://r-pkgs.had.co.nz).
+    - Including documentation (roxygen2), defensive programming (checkmate), testing (testthat) and more best practices, all following Hadley Wickham's [R packages](http://r-pkgs.had.co.nz).
 
 Towards the end of each of the seminars, participants will be able to use (parts of) this toolchain to work on their own projects, or to contribute to existing free and open source software.
 
@@ -237,12 +237,13 @@ Rather, the emphasis is on what Drew Conway loosely called *hacking skills* in h
 While the course is *not* a proper computer science class, it should also be valuable to students with coding experience or a CS background who may be interested in the tooling and practices covered. 
 
 We will not cover the scaling and efficiency issues of proper “Big Data”, but confine ourselves to in-memory problems. 
-We also limit ourselves to the R ecosystem, though some tools and problems will be similar for other programming languages such as python.
+We also limit ourselves to the R ecosystem, though some tools and problems will be similar for other scripting languages such as python.
 
 An introduction to data science and open source may well open up new job opportunities, or serve as a first stepping stone to a career in tech, but that is arguably not the only reason why social scientists should be excited about it. 
 Instead, to learn the way of open source is perhaps to update the ideals of the scientific process for the modern day: 
 radical openness and rigorous reproducibility, maximal inclusivity and promised meritocracy, generous sharing and personal attribution. 
-Open source may also be a worthwhile exercise in participant observation for social scientists: here is a real, if surely flawed utopia, massively coordinating individuals beyond *both* market and state.
+Open source may also be a worthwhile exercise in participant observation for social scientists: 
+here is a real, if surely flawed utopia, massively coordinating individuals that is *neither* market nor state.
 
 Less loftily, but not least, the seminar also promises a starter dose of gratification from having built something that actually works, and is of some immediate use to our fellow human -- a good feeling sometimes hard to come by in the social sciences.
 
@@ -358,13 +359,12 @@ Instead of some *make belief* work or hobby project, assignments in this class a
 This can be motivating, but it also means that other people are relying upon our work: 
 it has to be delivered by the time, and in the quality expected.
 
-You can also work on pretty much anything you like -- improving this very class (and its repo), some existing project that you like or even your own new (or existing) project.
+You can work on pretty much anything you like -- improving this very class (and its repo), some existing project that you like or even your own new (or existing) project.
 The only conditions are:
 
 1. The work needs to be related to the tools and practices covered in class.
 2. The work needs to be on GitHub or otherwise transparent.
 3. The instructor needs to be able to assess the quality of the work, and advise you in your work.
-  (I may not be able to do that).
 
 We will begin with relatively easy, small tasks to serve other students in class, then address smaller issues with resources for the broader community, and eventually, fixing "real" bugs or enhancing functionality of open source data science software.
 
@@ -414,11 +414,14 @@ Make sure to read and adhere to all the resources listed [community and help](ht
 
 The three target platforms can be listed roughly in ascending order of precision of the question:
 
-1. http://community.rstudio.com: Is open to *relatively* open/vague questions, though you are absolutely expected to do your own research.
-2. http://stackoverflow.com: Questions should be very precise and reproducible, and be *definitively answerable*.
+1. http://community.rstudio.com: 
+  Open to *relatively* open/vague questions, though you are absolutely expected to do your own research.
+2. http://stackoverflow.com: 
+  Questions should be very precise and reproducible, and be *definitively answerable*.
   Not good for opiniated stuff.
   Consider the resources listed under [community and help](/stack.html#help).
-3. Bug report: *If* you're absolutely sure that you have run into a bug, then it can be a good idea to raise it on the repository in question.
+3. Bug report: 
+  *If* you're absolutely sure that you have run into a bug, then it can be a good idea to raise it on the repository in question.
   For most things, you should raise it on S-O or community.rstudio first, to be sure that it really *is* a bug.
 
 Here, as with all things open source, we must ensure that other people's time is well-spent engaging our question (or bug report).
@@ -451,7 +454,8 @@ This sounds quite challening, but it can be quite doable, especially if you're s
 
 To start contributing to open source, you might also find these resources helpful:
 
-- code.likeagirl.io: [How to find a newcomer-friendly open source project](https://code.likeagirl.io/the-new-developers-guide-to-open-source-228ca257dd68)
+- code.likeagirl.io: 
+  [How to find a newcomer-friendly open source project](https://code.likeagirl.io/the-new-developers-guide-to-open-source-228ca257dd68)
 - Look for open issues on projects that you like, labelled as "needs help", "good first issue" or similar.
   (Some maintainers will especially highlight starter issues.)
 
@@ -477,6 +481,7 @@ Students should contact the instructor, and also track their progress on their *
 
 The graded tasks (see above) will be graded using the below rubrics.
 The grading rubric is taken from the [University of British Columbia Master of Data Science program](http://ubc-mds.github.io) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/us/)).
+
 
 #### Accuracy
 
@@ -568,7 +573,7 @@ However, students are *highly* recommended to attend the seminar regularly, and 
 It is highly unlikely that you will be able to receive passing grades on the assignments otherwise.
 
 Even though technical in nature, this class is no "rocket science", and we will get everyone up to speed, no matter the prior knowledge.
-However, you have to work hard and thoroughly, otherwise it is very possible that you will simply fail the class, or receive a very low grade.
+However, you have to work hard and thoroughly, otherwise it is very possible that you will simply fail the class, or receive a poor grade.
 
 
 ## Technical Requirements {#reqs}
@@ -588,7 +593,7 @@ In particular, student laptops must:
 
 Emphatically, none of this requires a new, powerful or expensive device, let alone software.
 You can get a used laptop with / ready for Linux Ubuntu on EBay for well under €100 (if you buy a used computer, make sure that the hardware has good Linux support).
-With some [tweaking](https://leanpub.com/universities/courses/jhu/cbds-chromebook), you can even use an inexpensive (x86) Google Chromebook (which kinda runs on Linux).
+With some [tweaking](https://leanpub.com/universities/courses/jhu/cbds-chromebook), you can even use an inexpensive (`x86`) Google Chromebook (which runs on Linux).
 For more information, see [stack](/stack.html#moving_to_linux).
 
 If you are facing financial difficulties in obtaining a laptop for the class, please contact the instructor.
@@ -600,11 +605,34 @@ We'll figure something out for you.
 It is *your* responsibility to maintain your own computer and operating system (OS), as well as to figure out how to install the below software on your machine (though we will all help one another within reason).
 
 
-### Cloud Alternative
+### In-Browser Development
 
-As a backup plan to using your own operating system, you may use [RStudio Cloud](https://rstudio.cloud), a data science Software-as-a-Service (SaaS).
-RStudio Cloud furnishes you with a ready RStudio session in a virtual machine with all necessary system dependencies.
-You will still have to sign up to all of the *services* in the below, but none of the client *software*.
+For a ready-made development environment, you can use the  RStudio IDE (integrated development environment) *inside your web browser*.
+RStudio is best for R development, but has decent support for other languages and includes access to a terminal and version control.
+
+Using RStudio in the browser means that all the software you're using won't ever *really* be installed on your system, but only exist in a virtual image or online service.
+If you want to do serious development work or are facing edge cases, you may require a "real" installation on your client (see instructions in [stack](/stack.html#moving_to_linux)).
+However, in-browser development is a great way to have a standardized environment ready quickly.
+
+You can run the RStudio IDE in your webbrowser in two ways:
+
+
+#### `rocker/verse` Docker Image (Recommended)
+
+Docker is an open-source industry standard to define, provision and share computing environments, known as *containers*. 
+Containers allow you to run computing environments on other computers.
+Containers are similar to virtual machines (a computer inside a computer), but slimmer and generally neater.
+
+A lot of the software you need to run in this class is included in the `rocker/verse` image published by the [Rocker Project](https://rocker-project.org).
+For a list of things you *still* need to install "locally", consult the [stack](/stack.html).
+
+For installation instructions, see [here](/stack.html#docker)).
+
+
+### Cloud Alternative (Not Recommended)
+
+As a backup plan to using Docker on your own own operating system, you may use [RStudio Cloud](https://rstudio.cloud), a data science Software-as-a-Service (SaaS).
+RStudio Cloud furnishes you with a ready RStudio session in a Docker image similar to `rocker/verse` with all necessary system dependencies.
 
 RStudio Cloud is still in *alpha* and may not be always reliable.
 Once out of alpha, it will also be a paid service, for which you may have to pay yourself.
@@ -623,11 +651,11 @@ Remember to also configure <a href="https://maurolepore.github.io/cloudgithub/">
 You should also study the [RStudio Cloud guide](https://rstudio.cloud/learn/guide).
 
 
-### Moving to Linux
+### Linux
 
 <a class="btn btn-info" href="linux.html" role="button">Learn More</a>
 
-Installation and usage may be easier on Unix-compatible operating systems, including macOS and Linux.
+If you want to install the programs used in this class on your system, rather than use them through a (Docker) container, you may find it easier to do that on Unix-compatible operating systems, including macOS and Linux.
 Getting Windows to play nicely with open source software can be harder, and some convenient system utilities (such as a package manager) are often missing.
 It *is* technically possible to use most, if not all, of the tools above on Windows, but they may behave slightly differently, and supporting them may be more involved.
 

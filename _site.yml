@@ -19,9 +19,6 @@ navbar:
     text: Instructor
     href: http://www.maxheld.de
   right:
-  - icon: fa-comments
-    text: Discussion
-    href: https://github.com/orgs/soztag/teams/fossos-18-ws
   - icon: fa-tasks
     text: Issues
     href: https://github.com/soztag/fossos/issues
@@ -31,9 +28,6 @@ navbar:
   - icon: fa-github
     text: Source
     href: https://github.com/maxheld83/fossos
-  - icon: fa-chalkboard
-    text: GH-Classroom
-    href: https://classroom.github.com/classrooms/20667305-fossos
   - icon: fa-university
     menu:
     - text: UnivIS

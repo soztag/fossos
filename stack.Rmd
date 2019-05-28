@@ -256,7 +256,8 @@ We are using it in this class to reduce the burden of local installations, but i
 
 #### Resources
 
-- Install Docker Deskop for [Windows](https://docs.docker.com/docker-for-windows/install/) or [macOS](https://docs.docker.com/docker-for-mac/) or [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
+- Install Docker Deskop for [Windows](https://docs.docker.com/docker-for-windows/install/) or [macOS](https://docs.docker.com/docker-for-mac/) or [Linux](https://docs.docker.com/install/linux/docker-ce/ubuntu/).
+  **If you don't meet the system requirements (especially on Windows), you can install the legacy [Docker Toolbox](https://docs.docker.com/toolbox/overview/) (not recommended) (also see [#144](https://github.com/soztag/fossos/issues/144))**.
 - [Docker Overview](https://docs.docker.com/engine/docker-overview/)
 - [Get Started](https://docs.docker.com/get-started/)
     (You only need subsections 1 and 2)

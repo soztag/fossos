@@ -115,3 +115,39 @@ pandoc homework.md --bibliography=mybib.bib -o .\Outputs\output.html
 
 where `--bibliography=mybib.bib` specifies that you want to use your `mybib.bib`, expected at the project root.
 This would be the file that you'd have exported from Zotero.
+
+## Resources on How to Start Contributing to Open Source
+
+Mastering the entry into open source can be frightening. To make your contribution easier, a collection of links has been compiled here. First of all, it makes sense to spend a bit of time on blogs on this topic.
+
+### Blogs and Anchors
+
+A **First Timers Only: For absolute Newbies**
+
+A nice introduction to the topic is the initiative of *SHANSELMAN* and *KENTCDODDS*. 
+
+Start [here](https://github.com/shanselman/firsttimersonly). 
+**Appetizer** *We believe - and we hope you do too - that learning how to code, how to think, and how to contribute to open source can empower the next generation of coders and creators. We VALUE first time contributors and we want them to know that everyone started somewhere! We have gathered a list of resources to motivate and empower you to making that first step into becoming a contributor to the open source realm. If you are an OSS project owner, we have some tips for you to enable you to be instrumental in ushering a new batch of programmers into the community.*
+
+B **Quick and easy**
+
+A post by [Roshan Josey](https://opensource.com/article/18/3/First-Contributions-project) on [opensource.com](https://opensource.com) briefly describes why it pays to make a contribution in open source and what appeals to it.
+**Appetizer** *Contributing to open source projects comes with lots of benefits: You'll have fun, improve your skills, build a profile that could help your career, meet like-minded people, find terrific mentors, and more.*
+
+C **Ruby Garage: For Starters**
+
+If you have already had some programming experience and would describe yourself as a Junior Developer, [this article](https://rubygarage.org/blog/how-contribute-to-open-source-projects) will help you: How Junior Developers Can Contribute to Open Source Projects.
+**Appetizer** *Previously, we have discussed what are open source projects and why open source is good for your business. In this article, we'll explain why you should contribute to such projects, how to contribute, and what projects to choose. Who are just starting their career and would like to get involved with the community (and maybe become a coding genius).*
+
+D **Start your Open Source Carreer - 13 min read to go ahead**
+
+Ok. Now it’s time to start your Open Source Career. [This blog of Vincent Voyer](https://blog.algolia.com/start-your-open-source-career/) helps you getting your feet wet. It takes only 13 minutes to read.
+**Appetizer** *"I don’t have an idea” is a common complaint by developers who want to contribute to open source but think they don’t have any good ideas or good projects to share. Well, to that I say: that’s OK. There are opportunistic ways to contribute to open source. Many projects have started to list good contributions for first-timers via labels or tags.*
+
+E **First Contributions**
+
+So, if you want to start now, [this repository](https://github.com/firstcontributions/first-contributions) helps starting the first contributions.
+
+
+### Projects to Contribute
+work in progress

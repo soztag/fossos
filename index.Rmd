@@ -682,14 +682,14 @@ There is no guarantee that any of these alternatives or links will work for you;
 
 ## Contributors
 
-A big **Thank You** to all contributors (in alphabetical order by username:
+A big **Thank You** to all contributors (in alphabetical order by username):
 
 ```{r echo=FALSE,results="asis",message=FALSE, include=FALSE}
 contribs <- usethis::use_tidy_thanks()
 ```
 
 ```{r results='asis'}
-paste0("[",contribs,"]","(github.com/",contribs,")")
+cat(paste0(" [",contribs,"]","(github.com/",contribs,"), "))
 ```
 
 ## References

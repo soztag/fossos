@@ -485,6 +485,51 @@ The grading rubric is taken from the [University of British Columbia Master of D
 #### Accuracy
 
 ```{r}
+accuracy <- c(
+  `No attempt` = c(
+    "Did not attempt"
+  ),
+  Poor = c(
+    "Code fails to run, doesn't have clear output, or performs the wrong task."
+  ),
+  Unsatisfactory = c(
+    "Code performs only some of the correct tasks, the output is not easily understandable and the methods used to achieve the result are inefficient (if performance is a concern)."
+  ),
+  Satisfactory = c(
+    "Code performs most of the correct tasks, the output is understandable, however the methods used to achieve the result are inefficient (if performance is a concern)."
+  ),
+  Good = c(
+    "Code performs the correct tasks, the output is reasonably easy to understand, however the methods used to achieve the result are not the most efficient (if performance is a concern)."
+  ),
+  Excellent = c(
+    "Code runs correctly without crashing, the output is very clear, and the intended or suitably correct methods are employed to achieve the correct result.
+    Student has chosen the most efficient algorithm reasonable if performance is a concern."
+  )
+)
+
+mechanics <- c(
+  `No attempt` = accuracy["No attempt"],
+  Poor = c(
+    "Evaluator was unable to run/open/read assignment submission despite best efforts.<br/><br/>This may be because the student forgot to include certain files in the submission or tailored the software to only work on their local machine (e.g. the code only works when run from a certain directory on the student's machine, contains paths to files only on the student's machine, etc.), or they did not submit their assignment correctly or completely, or it was unclear where the relevant parts of the assignment are included in the submission."
+  ),
+  Unsatisfactory = c(
+    #TODO all below are wrong!
+    "Code performs only some of the correct tasks, the output is not easily understandable and the methods used to achieve the result are inefficient (if performance is a concern)."
+  ),
+  Satisfactory = c(
+    "Code performs most of the correct tasks, the output is understandable, however the methods used to achieve the result are inefficient (if performance is a concern)."
+  ),
+  Good = c(
+    "Code performs the correct tasks, the output is reasonably easy to understand, however the methods used to achieve the result are not the most efficient (if performance is a concern)."
+  ),
+  Excellent = c(
+    "Code runs correctly without crashing, the output is very clear, and the intended or suitably correct methods are employed to achieve the correct result.
+    Student has chosen the most efficient algorithm reasonable if performance is a concern."
+  )
+)
+
+
+
 Grade_Point <- c(
   "No attempt (0)","Poor (F)","Unsatisfactory (D)", "Satisfactory (C- to C+)","Good (B- to B+)","Excellent (A- to A+)"
   )

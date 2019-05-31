@@ -245,7 +245,7 @@ We will be using different programs going forward.
 
 ### Containerisation {#docker}
 
-<i class="fab fa-docker fa-3x fa-rotate-180 fa-flip-vertical fa-pull-left"></i><a class="btn btn-info" href="https://www.docker.com/products/docker-desktop" role="button">Install Docker Desktop</a>
+<i class="fab fa-docker fa-3x fa-pull-left"></i><a class="btn btn-info" href="https://www.docker.com/products/docker-desktop" role="button">Install Docker Desktop</a>
 
 Docker is an open-source industry standard to define, provision and share computing environments, known as *containers*. 
 Containers allow you to run computing environments on other computers.

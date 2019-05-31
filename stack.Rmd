@@ -277,7 +277,7 @@ We are using it in this class to reduce the burden of local installations, but i
   3. Launch a system shell and type in
     
     ```
-    docker run -e PASSWORD=yourpassword --rm --publish=8787:8787 rocker/verse
+    docker run --edit PASSWORD=yourpassword --rm --publish=8787:8787 rocker/verse
     ```
     
     On macOS and Linux, your default system shell is an application called "Terminal".

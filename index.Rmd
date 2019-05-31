@@ -344,7 +344,6 @@ We're going to use a few digital tools to get organised in this class, all based
 - A (currently relevant) subset of these issues are also listed on our **Kanban board** at https://github.com/soztag/fossos/projects/2.
   This board gives you an overview what we will be working on in the current and coming sessions.
   You can move your "own" issues around the board as appropriate, and you can also add issues that you want to see addressed.
-- For more loosely defined conversation (not in the form of a closable issue), there is also a **discussion board** at https://github.com/orgs/soztag/teams/fossos-18-ws.
 
 These venues are also linked from the top bar of the class website, so you can always easily find them.
 

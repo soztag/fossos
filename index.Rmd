@@ -680,5 +680,16 @@ If you are using a Windows machine, you may consider the following alternatives 
 
 There is no guarantee that any of these alternatives or links will work for you; you will have to research them on your own.
 
+## Contributors
+
+A big **Thank You** to all contributors (in alphabetical order by username:
+
+```{r echo=FALSE,results="asis",message=FALSE, include=FALSE}
+contribs <- usethis::use_tidy_thanks()
+```
+
+```{r results='asis'}
+paste0("[",contribs,"]","(github.com/",contribs,")")
+```
 
 ## References

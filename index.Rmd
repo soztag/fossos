@@ -9,6 +9,7 @@ bibliography: library.bib
 
 ```{r setup, echo = FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(printr)
 ```
 
 
@@ -684,12 +685,13 @@ There is no guarantee that any of these alternatives or links will work for you;
 
 A big **Thank You** to all contributors (in alphabetical order by username):
 
-```{r echo=FALSE,results="asis",message=FALSE, include=FALSE}
-contribs <- usethis::use_tidy_thanks()
-```
-
-```{r results='asis'}
-cat(paste0(" [",contribs,"]","(github.com/",contribs,"), "))
+```{r contribs, echo=FALSE, results='asis'}
+# wrappers are necessary to shut up chatty function
+# function apparently chats via cat, which cannot be disabled in chunk options
+invisible(capture.output(
+  contribs <- usethis::use_tidy_thanks()
+))
+cat(paste0(" [",contribs,"]","(https://www.github.com/",contribs,"), "))
 ```
 
 ## References

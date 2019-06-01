@@ -245,7 +245,7 @@ We will be using different programs going forward.
 
 ### Containerisation {#docker}
 
-<i class="fab fa-docker fa-3x fa-rotate-180 fa-flip-vertical fa-pull-left"></i><a class="btn btn-info" href="https://www.docker.com/products/docker-desktop" role="button">Install Docker Desktop</a>
+<i class="fab fa-docker fa-3x fa-pull-left"></i><a class="btn btn-info" href="https://www.docker.com/products/docker-desktop" role="button">Install Docker Desktop</a>
 
 Docker is an open-source industry standard to define, provision and share computing environments, known as *containers*. 
 Containers allow you to run computing environments on other computers.
@@ -277,7 +277,7 @@ We are using it in this class to reduce the burden of local installations, but i
   3. Launch a system shell and type in
     
     ```
-    docker run -e PASSWORD=yourpassword --rm --publish=8787:8787 rocker/verse
+    docker run --env=PASSWORD=yourpassword --rm --publish=8787:8787 rocker/verse
     ```
     
     On macOS and Linux, your default system shell is an application called "Terminal".

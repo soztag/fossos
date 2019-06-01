@@ -9,6 +9,7 @@ bibliography: library.bib
 
 ```{r setup, echo = FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(printr)
 ```
 
 
@@ -103,7 +104,7 @@ The backup date will be used if the main dates have to be cancelled for some rea
 
 Classes will take place here:
 
-: 
+:
     <address>
     | Nuremberg Campus of Technology
     | "Auf AEG" Haus 11
@@ -111,8 +112,8 @@ Classes will take place here:
     | Fürther Straße 246c
     | 90429 Nuremberg
     </address>
-    
-    
+
+
     (The building can be hard to find; see [here](http://datascience.phil.fau.de/fossos/img/directions.pdf) for directions).
 
 
@@ -178,11 +179,11 @@ Contact [Daniel Lemmer](https://www.pol.phil.fau.eu/person/daniel-lemmer/) if yo
 
 ## Course Description
 
-Digitisation has created both new challenges and yet unrealised potentials for empirical social sciences. 
-Larger, and often streamed datasets require more programmatic and dynamic statistical analyses. 
+Digitisation has created both new challenges and yet unrealised potentials for empirical social sciences.
+Larger, and often streamed datasets require more programmatic and dynamic statistical analyses.
 Existing commercial programs with graphical user interfaces (GUIs) are expensive, and analyses can easily become intransparent, sometimes contributing to a crisis of reproducibility in the social sciences and beyond [e.g., @MairThouShaltBe2016] or even propagating outright bugs [e.g., @ReinhartGrowthTimeDebt2010].
 
-Happily, the open source community has already pioneered a set of technologies and conventions for their software development efforts that have proven useful in solving these problems in many academic fields. 
+Happily, the open source community has already pioneered a set of technologies and conventions for their software development efforts that have proven useful in solving these problems in many academic fields.
 Additionally, open source software offers new ways to analyse and visualize data, as well as to present interactive results.
 
 Together, these tools promise a radically open and participatory approach to science, and productive yet skeptical use of emerging data streams.
@@ -234,15 +235,15 @@ knitr::include_graphics(path = "img/Data_Science_VD.png")
 This course will *not* focus on math and statistics knowledge or substantive domain expertise, though both are essential for solid data science work.
 Rather, the emphasis is on what Drew Conway loosely called *hacking skills* in his [Data Science Venn Diagram](http://drewconway.com/zia/2013/3/26/the-data-science-venn-diagram), that is, simply getting these tools to work together, to learn how to troubleshoot them, and -- aspirationally -- to absorb some best practices of open source development.
 
-While the course is *not* a proper computer science class, it should also be valuable to students with coding experience or a CS background who may be interested in the tooling and practices covered. 
+While the course is *not* a proper computer science class, it should also be valuable to students with coding experience or a CS background who may be interested in the tooling and practices covered.
 
-We will not cover the scaling and efficiency issues of proper “Big Data”, but confine ourselves to in-memory problems. 
+We will not cover the scaling and efficiency issues of proper “Big Data”, but confine ourselves to in-memory problems.
 We also limit ourselves to the R ecosystem, though some tools and problems will be similar for other scripting languages such as python.
 
-An introduction to data science and open source may well open up new job opportunities, or serve as a first stepping stone to a career in tech, but that is arguably not the only reason why social scientists should be excited about it. 
-Instead, to learn the way of open source is perhaps to update the ideals of the scientific process for the modern day: 
-radical openness and rigorous reproducibility, maximal inclusivity and promised meritocracy, generous sharing and personal attribution. 
-Open source may also be a worthwhile exercise in participant observation for social scientists: 
+An introduction to data science and open source may well open up new job opportunities, or serve as a first stepping stone to a career in tech, but that is arguably not the only reason why social scientists should be excited about it.
+Instead, to learn the way of open source is perhaps to update the ideals of the scientific process for the modern day:
+radical openness and rigorous reproducibility, maximal inclusivity and promised meritocracy, generous sharing and personal attribution.
+Open source may also be a worthwhile exercise in participant observation for social scientists:
 here is a real, if surely flawed utopia, massively coordinating individuals that is *neither* market nor state.
 
 Less loftily, but not least, the seminar also promises a starter dose of gratification from having built something that actually works, and is of some immediate use to our fellow human -- a good feeling sometimes hard to come by in the social sciences.
@@ -255,7 +256,7 @@ This course is a little different from most seminars.
 Teaching teaching R (and the broader ecosystem) at FAU sociology (as most other smaller, non-tech focused institutions) faces a couple of important constraints:
 
 - Participants will have vastly different levels of previous experience, and will learn at different speeds.
-- Given the relatively small number of interested students and complicated timetables, strictly consecutive seminars are difficult to organize. 
+- Given the relatively small number of interested students and complicated timetables, strictly consecutive seminars are difficult to organize.
   Too few students would ever meet the requirements (and schedule) to attend the advanced seminars.
 - There is already plenty of high quality teaching material out there, and there is little point in re-inventing (an inferior) wheel.
 
@@ -299,7 +300,7 @@ Additional resources are optional.
 </div>
 
 <div class="alert alert-success role="alert">
-Whenever your run into a problem, or have a question, raise an issue on our <a href="https://github.com/soztag/fossos/issues">github issue tracker</a>. 
+Whenever your run into a problem, or have a question, raise an issue on our <a href="https://github.com/soztag/fossos/issues">github issue tracker</a>.
 Please also make sure that:
 
 - the issue does not <em>already exist</em> (always <em>search first!</em>)
@@ -355,7 +356,7 @@ You can (and should) cross-reference issues and discussions between all of these
 Assessments are an unfortunate, tedious and arguably needless part of teaching -- but here we are, so we are going to make the best of it.
 
 Instead of some *make belief* work or hobby project, assignments in this class are, for the most part, designed to be *actually useful* to other people.
-This can be motivating, but it also means that other people are relying upon our work: 
+This can be motivating, but it also means that other people are relying upon our work:
 it has to be delivered by the time, and in the quality expected.
 
 You can work on pretty much anything you like -- improving this very class (and its repo), some existing project that you like or even your own new (or existing) project.
@@ -397,9 +398,9 @@ There are **different *kinds* of graded issues**:
 
 #### Reproducible Example
 
-Labels: 
+Labels:
 
-- `community.rstudio`, `stack-overflow` or `bug report`, 
+- `community.rstudio`, `stack-overflow` or `bug report`,
 - and `reprex`, and `question` respectively.
 
 Though it may also benefit yourself, a well-formulated question or bug report with a reproducible example can also serve the community.
@@ -413,13 +414,13 @@ Make sure to read and adhere to all the resources listed [community and help](ht
 
 The three target platforms can be listed roughly in ascending order of precision of the question:
 
-1. http://community.rstudio.com: 
+1. http://community.rstudio.com:
   Open to *relatively* open/vague questions, though you are absolutely expected to do your own research.
-2. http://stackoverflow.com: 
+2. http://stackoverflow.com:
   Questions should be very precise and reproducible, and be *definitively answerable*.
   Not good for opiniated stuff.
   Consider the resources listed under [community and help](/stack.html#help).
-3. Bug report: 
+3. Bug report:
   *If* you're absolutely sure that you have run into a bug, then it can be a good idea to raise it on the repository in question.
   For most things, you should raise it on S-O or community.rstudio first, to be sure that it really *is* a bug.
 
@@ -433,7 +434,7 @@ DiagrammeR::mermaid(diagram = "reprex.mmd", height = 1200, width = 800)
 
 #### Answer on S-O or community.rstudio
 
-Labels: 
+Labels:
 
 - `community.rstudio`, `stack-overflow`,
 -  `reprex`, and `answer` respectively.
@@ -453,7 +454,7 @@ This sounds quite challening, but it can be quite doable, especially if you're s
 
 To start contributing to open source, you might also find these resources helpful:
 
-- code.likeagirl.io: 
+- code.likeagirl.io:
   [How to find a newcomer-friendly open source project](https://code.likeagirl.io/the-new-developers-guide-to-open-source-228ca257dd68)
 - Look for open issues on projects that you like, labelled as "needs help", "good first issue" or similar.
   (Some maintainers will especially highlight starter issues.)
@@ -490,24 +491,24 @@ The grading rubric is taken from the [University of British Columbia Master of D
     <th>Poor (F)</th>
     <th>Unsatisfactory (D)</th>
     <th>Satisfactory (C- to C+)</th>
-    <th>Good (B- to B+)</th>  
+    <th>Good (B- to B+)</th>
     <th>Excellent (A- to A+)</th>
   </tr>
   <tr>
     <td>Did not attempt</td>
     <td>Code fails to run, doesn't have clear output, or performs the wrong task.</td>
     <td>Code performs only some of the correct tasks, the output is not easily understandable and the methods used to achieve the result are inefficient (if performance is a concern).</td>
-    <td>Code performs most of the correct tasks, the output is understandable, however the methods used to achieve the result are inefficient (if performance is a concern). </td>  
+    <td>Code performs most of the correct tasks, the output is understandable, however the methods used to achieve the result are inefficient (if performance is a concern). </td>
     <td>Code performs the correct tasks, the output is reasonably easy to understand, however the methods used to achieve the result are not the most efficient (if performance is a concern).</td>
     <td>Code runs correctly without crashing, the output is very clear, and the intended or suitably correct methods are employed to achieve the correct result. Student has chosen the most efficient algorithm reasonable if performance is a concern.</td>
   </tr>
-  
+
 </table>
 
 
 #### Mechanics
 
-This rubric measures the student's ability to produce an assignment that *works correctly*; 
+This rubric measures the student's ability to produce an assignment that *works correctly*;
 
 <table>
   <tr>
@@ -515,15 +516,15 @@ This rubric measures the student's ability to produce an assignment that *works 
     <th>Poor (F)</th>
     <th>Unsatisfactory (D)</th>
     <th>Satisfactory (C- to C+)</th>
-    <th>Good (B- to B+)</th>  
+    <th>Good (B- to B+)</th>
     <th>Excellent (A- to A+)</th>
   </tr>
   <tr>
     <td>Did not attempt</td>
     <td>Evaluator was unable to run/open/read assignment submission despite best efforts.<br/><br/>This may be because the student forgot to include certain files in the submission or tailored the software to only work on their local machine (e.g. the code only works when run from a certain directory on the student's machine, contains paths to files only on the student's machine, etc.), or they did not submit their assignment correctly or completely, or it was unclear where the relevant parts of the assignment are included in the submission. </td>
     <td>Evaluator had to spend some time to get the raw submission to work correctly</td>
-    <td></td> 
-    <td>Evaluator had to make an obvious, small, quick fix to get things working or the wrong file format was submitted</td> 
+    <td></td>
+    <td>Evaluator had to make an obvious, small, quick fix to get things working or the wrong file format was submitted</td>
     <td>The submission is self-contained and works flawlessly; it just works (in anybody's hands). <br></br> The student did not forget to include all the files in the submission. <br></br> Any necessary libraries to install are either included or are installed by a script, or are made obvious that that the evaluator must install them. <br></br> Student used the asked for file format. All assignment instructions were followed.
 <br/><br/>
 All files were put in a repository, in a reasonable place, with reasonable names; any source files (.tex, .Rmd) are rendered to a readable output format (e.g. .pdf), all figures are included, there is a README file indicating where to find the different aspects of the assignment, etc.
@@ -541,7 +542,7 @@ All files were put in a repository, in a reasonable place, with reasonable names
     <th>Poor (F)</th>
     <th>Unsatisfactory (D)</th>
     <th>Satisfactory (C- to C+)</th>
-    <th>Good (B- to B+)</th>  
+    <th>Good (B- to B+)</th>
     <th>Excellent (A- to A+)</th>
   </tr>
   <tr>
@@ -587,7 +588,7 @@ In particular, student laptops must:
 - have a current version of a web browser installed,
 - *not* be virus-infested or in some other borked-up state,
 - *not* be a mobile device (iOS or Android) (unless you can SSH into a Linux box or something),
-- and have ready access to one of the WiFi networks at FAU: `FAU-STUD`, `eduroam` or `FAU.fm`. 
+- and have ready access to one of the WiFi networks at FAU: `FAU-STUD`, `eduroam` or `FAU.fm`.
   (If you need help setting up your WiFi, consult the RRZE Website.)
 
 Emphatically, none of this requires a new, powerful or expensive device, let alone software.
@@ -618,7 +619,7 @@ You can run the RStudio IDE in your webbrowser in two ways:
 
 #### `rocker/verse` Docker Image (Recommended)
 
-Docker is an open-source industry standard to define, provision and share computing environments, known as *containers*. 
+Docker is an open-source industry standard to define, provision and share computing environments, known as *containers*.
 Containers allow you to run computing environments on other computers.
 Containers are similar to virtual machines (a computer inside a computer), but slimmer and generally neater.
 
@@ -679,5 +680,17 @@ If you are using a Windows machine, you may consider the following alternatives 
 
 There is no guarantee that any of these alternatives or links will work for you; you will have to research them on your own.
 
+## Contributors
+
+A big **Thank You** to all contributors (in alphabetical order by username):
+
+```{r contribs, echo=FALSE, results='asis'}
+# wrappers are necessary to shut up chatty function
+# function apparently chats via cat, which cannot be disabled in chunk options
+invisible(capture.output(
+  contribs <- usethis::use_tidy_thanks()
+))
+cat(paste0(" [",contribs,"]","(https://www.github.com/",contribs,"), "))
+```
 
 ## References

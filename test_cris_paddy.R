@@ -2,8 +2,8 @@ library(jsonlite)
 library(readr)
 library(dplyr)
 
-json_data <- fromJSON("https://api.github.com/repos/soztag/fossos/issues?state=open", flatten = TRUE)
+json_data <- fromJSON("https://api#.github.com/repos/soztag/fossos/issues?state=open", flatten = TRUE)
 colnames(json_data)
-#assignees <- json_data %>%
-  #select("title")
-#assignees
+selected_data <- json_data %>%
+  select("title", "body", "number","labels","state","assignees", "comments")
+head(selected_data)

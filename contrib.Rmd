@@ -3,8 +3,6 @@ title: "Contributing to Open Source"
 author:
   - name: "Dominik Bertram"
     affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
-  - name: "Maximilian Held"
-    affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
 date: "`r format(file.info('contrib.Rmd')$mtime, '%d %B, %Y')`"
 ---
 

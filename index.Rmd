@@ -717,7 +717,8 @@ selected_data <- json_data %>%
 labels <- selected_data %>%
   select("labels")
 
-summary(labels)
+l1 <- labels[[1]][1]
+l1
 ```
 
 ## References

@@ -1,44 +1,152 @@
 ---
-title: "Resources on How to Start Contributing to Open Source"
-output: html_document
+title: "Contributing to Open Source"
+author:
+  - name: "Dominik Bertram"
+    affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
+  - name: "Maximilian Held"
+    affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
+date: "`r format(file.info('contrib.Rmd')$mtime, '%d %B, %Y')`"
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Resources on How to Start Contributing to Open Source
+# How to Start
 
-Mastering the entry into open source can be frightening. To make your contribution easier, a collection of links has been compiled here. First of all, it makes sense to spend a bit of time on blogs on this topic.
+Mastering the entry into open source can be frightening. To make your contribution easier, a collection of links has been compiled here. 
 
-## Blogs and Anchors
+First of all, it makes sense to spend some time on blogs on this topic.
 
-### A **First Timers Only: For absolute Newbies**
+```{r water, fig.cap="Start Getting Your Feet Wet.", out.width='100%'}
+knitr::include_graphics(path = "img/water.jpg")
+```
 
-A nice introduction to the topic is the initiative of *SHANSELMAN* and *KENTCDODDS*. 
+> Are you experiencing a bug with an open source project? Dig in and don’t stop at your local workaround. Your solution can benefit others and lead you to more open source contributions. - [Vincent Voyer](https://github.com/vvo)
 
-Start [here](https://github.com/shanselman/firsttimersonly). 
-**Appetizer** *We believe - and we hope you do too - that learning how to code, how to think, and how to contribute to open source can empower the next generation of coders and creators. We VALUE first time contributors and we want them to know that everyone started somewhere! We have gathered a list of resources to motivate and empower you to making that first step into becoming a contributor to the open source realm. If you are an OSS project owner, we have some tips for you to enable you to be instrumental in ushering a new batch of programmers into the community.*
 
-### B **Quick and easy**
+## **Blogs and Anchors**
+
+### **A** The Basic One
+
+The introduction in nearly everything is the [Open Source Guide](https://opensource.guide/how-to-contribute/). So let's start reading!
+
+**#Appetizer**
+
+> Contributing to open source can be a rewarding way to learn, teach, and build experience in just about any skill you can imagine. Why do people contribute to open source? Plenty of reasons!
+
+### **B** First Timers Only: For absolute Newbies
+
+A nice introduction is the initiative of *SHANSELMAN* and *KENTCDODDS*. 
+
+Start [HERE](https://github.com/shanselman/firsttimersonly). 
+
+**#Appetizer** 
+
+> We believe - and we hope you do too - that learning how to code, how to think, and how to contribute to open source can empower the next generation of coders and creators. We VALUE first time contributors and we want them to know that everyone started somewhere! We have gathered a list of resources to motivate and empower you to making that first step into becoming a contributor to the open source realm. If you are an OSS project owner, we have some tips for you to enable you to be instrumental in ushering a new batch of programmers into the community.
+
+### **C** Quick and Easy
 
 A post by [Roshan Josey](https://opensource.com/article/18/3/First-Contributions-project) on [opensource.com](https://opensource.com) briefly describes why it pays to make a contribution in open source and what appeals to it.
-**Appetizer** *Contributing to open source projects comes with lots of benefits: You'll have fun, improve your skills, build a profile that could help your career, meet like-minded people, find terrific mentors, and more.*
 
-### C **Ruby Garage: For Starters**
+**#Appetizer** 
 
-If you have already had some programming experience and would describe yourself as a Junior Developer, [this article](https://rubygarage.org/blog/how-contribute-to-open-source-projects) will help you: How Junior Developers Can Contribute to Open Source Projects.
-**Appetizer** *Previously, we have discussed what are open source projects and why open source is good for your business. In this article, we'll explain why you should contribute to such projects, how to contribute, and what projects to choose. Who are just starting their career and would like to get involved with the community (and maybe become a coding genius).*
+> Contributing to open source projects comes with lots of benefits: You'll have fun, improve your skills, build a profile that could help your career, meet like-minded people, find terrific mentors, and more.
 
-### D **Start your Open Source Carreer - 13 min read to go ahead**
+### **D** Ruby Garage: For Starters
 
-Ok. Now it’s time to start your Open Source Career. [This blog of Vincent Voyer](https://blog.algolia.com/start-your-open-source-career/) helps you getting your feet wet. It takes only 13 minutes to read.
-**Appetizer** *"I don’t have an idea” is a common complaint by developers who want to contribute to open source but think they don’t have any good ideas or good projects to share. Well, to that I say: that’s OK. There are opportunistic ways to contribute to open source. Many projects have started to list good contributions for first-timers via labels or tags.*
+If you have already had some programming experience and would describe yourself as a Junior Developer, this [article](https://rubygarage.org/blog/how-contribute-to-open-source-projects) will help you: How Junior Developers Can Contribute to Open Source Projects.
 
-### E **First Contributions**
+**#Appetizer**
 
-So, if you want to start now, [this repository](https://github.com/firstcontributions/first-contributions) helps starting the first contributions.
+> Previously, we have discussed what are open source projects and why open source is good for your business. In this article, we'll explain why you should contribute to such projects, how to contribute, and what projects to choose. Who are just starting their career and would like to get involved with the community (and maybe become a coding genius).
+
+### **E ** Start your Open Source Carreer - 13 min read to go ahead
+
+Ok. Now it’s time to start your Open Source Career. This [blog](https://blog.algolia.com/start-your-open-source-career/) of Vincent Voyer helps you getting your feet wet. It takes only 13 minutes to read.
+
+**#Appetizer** 
+
+>"I don’t have an idea” is a common complaint by developers who want to contribute to open source but think they don’t have any good ideas or good projects to share. Well, to that I say: that’s OK. There are opportunistic ways to contribute to open source. Many projects have started to list good contributions for first-timers via labels or tags.
 
 
-### Projects to Contribute
-work in progress
+## Projects to Contribute
+
+So - ready, steady, go. You can use this [guide](https://opensource.guide/starting-a-project/) for starting a new project or this [repository](https://github.com/firstcontributions/first-contributions) for your first contributions.
+
+### Exploring Resources
+
+Some resources to help you discover and contribute new projects:
+
+- [GitHub Expolore](https://github.com/explore/)
+- [Up For Grabs](https://up-for-grabs.net/#/)
+- [Open Source Friday](https://opensourcefriday.com)
+- [Contributor-ninja](https://contributor.ninja)
+- [CodeTriage](https://www.codetriage.com)
+- [24 Pull Requests](https://24pullrequests.com)
+
+
+
+### Projects - A Selection 
+
+Finally some open source projects being high-rated on GitHub:
+
+#### Visual Studio Code
+
+**#WhatAbout**
+
+> Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.
+
+```{r visual-studio-code, fig.cap="[Visit them.](https://code.visualstudio.com)", out.width='15%'}
+knitr::include_graphics(path = "img/visual-studio-code.png")
+```
+
+#### React Native
+
+**#WhatAbout**
+
+> React Native is an open-source mobile application framework created by Facebook. It is used to develop applications for Android, iOS and UWP by enabling developers to use React along with native platform capabilities.
+
+```{r react-native, fig.cap="[Visit them.](https://facebook.github.io/react-native/)", out.width='25%'}
+knitr::include_graphics(path = "img/react-native.png")
+```
+  
+#### TensorFlow
+
+**#WhatAbout**
+
+> An open source machine learning library for research and production.
+
+```{r tensor-flow, fig.cap="[Visit them.](https://www.tensorflow.org)", out.width='20%'}
+knitr::include_graphics(path = "img/tensor-flow.png")
+```
+  
+#### Angular
+
+**#WhatAbout**
+
+> Angular is a platform for building mobile and desktop web applications.
+
+```{r angular, fig.cap="[Visit them.](https://angular.io)", out.width='20%'}
+knitr::include_graphics(path = "img/angular.png")
+```
+  
+#### Ansible
+
+**#WhatAbout**
+
+> Ansible is the simplest way to automate apps and IT infrastructure. 
+
+```{r ansible, fig.cap="[Visit them.](https://www.ansible.com)", out.width='15%'}
+knitr::include_graphics(path = "img/ansible.png")
+```
+  
+#### Kubernetes
+
+**#WhatAbout**
+
+> Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.
+
+```{r kubernetes, fig.cap="[Visit them.](https://kubernetes.io/de/)", out.width='35%'}
+knitr::include_graphics(path = "img/kubernetes.png")
+```

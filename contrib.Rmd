@@ -16,7 +16,7 @@ Mastering the entry into open source can be frightening. To make your contributi
 
 First of all, it makes sense to spend some time on blogs on this topic.
 
-```{r water, fig.cap="Start Getting Your Feet Wet.", out.width='100%'}
+```{r water, fig.cap="[Photo by Muneeb Syed on Unsplash](https://unsplash.com/photos/h9RLgKtwwwY).", out.width='100%'}
 knitr::include_graphics(path = "img/water.jpg")
 ```
 

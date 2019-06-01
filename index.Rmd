@@ -693,12 +693,33 @@ invisible(capture.output(
 cat(paste0(" [",contribs,"]","(https://www.github.com/",contribs,"), "))
 ```
 
-## References
-
 ## Work on display
 Here will be an interactive dashboard of the work in this class
-```{r}
-api_result <- "https://api#.github.com/repos/soztag/fossos/issues?state=open"
-json_data <- jsonlite::fromJSON(api_result, flatten = TRUE)
-paste(json_data)
+
+```{r dashboard, results='asis'}
+#load libraries
+library(jsonlite)
+library(dplyr)
+
+#getting the data from the github api
+json_data <- fromJSON("https://api.github.com/repos/soztag/fossos/issues?state=open", flatten = TRUE)
+#display column names
+#colnames(json_data)
+#select columns
+selected_data <- json_data %>%
+  select("title", "number", "labels","labels_url", "assignee.login", "url")
+#display head of selected data
+#selected_data
+#knitr::kable(head(selected_data), format="markdown")
+#summary of selected data
+#summary(selected_data)
+
+labels <- selected_data %>%
+  select("labels")
+
+summary(labels)
 ```
+
+## References
+
+

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title>Contributing to Open Source</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.0.13/css/fa-svg-with-js.css" rel="stylesheet" />
+<script src="site_libs/font-awesome-5.0.13/js/fontawesome-all.min.js"></script>
+<script src="site_libs/font-awesome-5.0.13/js/fa-v4-shims.min.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">FOSSOS</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">
+    <span class="fa fa-home"></span>
+     
+    Syllabus
+  </a>
+</li>
+<li>
+  <a href="stack.html">
+    <span class="fa fa-code"></span>
+     
+    Stack
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-cogs"></span>
+     
+    More
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="biblio.html">Bibliography Management</a>
+    </li>
+    <li>
+      <a href="linux.html">Going Linux</a>
+    </li>
+    <li>
+      <a href="contrib.html">Contributing to Open Source</a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="http://www.maxheld.de">
+    <span class="fa fa-chalkboard-teacher"></span>
+     
+    Instructor
+  </a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="https://github.com/soztag/fossos/issues">
+    <span class="fa fa-tasks"></span>
+     
+    Issues
+  </a>
+</li>
+<li>
+  <a href="https://github.com/soztag/fossos/projects/2">
+    <span class="fa fa-trello"></span>
+     
+    Kanban
+  </a>
+</li>
+<li>
+  <a href="https://github.com/maxheld83/fossos">
+    <span class="fa fa-github"></span>
+     
+    Source
+  </a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    <span class="fa fa-university"></span>
+     
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="http://univis.fau.de/">UnivIS</a>
+    </li>
+    <li>
+      <a href="https://www.campus.uni-erlangen.de/">meincampus</a>
+    </li>
+    <li>
+      <a href="https://www.soziologie.phil.fau.de)">Institut für Soziologie</a>
+    </li>
+    <li>
+      <a href="https://www.ncatec.de">Nuremberg Campus of Technology</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+<h1 class="title toc-ignore">Contributing to Open Source</h1>
+<h4 class="author"><em>Dominik Bertram</em></h4>
+<address class="author_afil">
+Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)<br><h4 class="date"><em>01 Juni, 2019</em></h4>
+
+</div>
+
+
+<div id="how-to-start" class="section level1">
+<h1>How to Start</h1>
+<p>Mastering the entry into open source can be frightening. To make your contribution easier, a collection of links has been compiled here.</p>
+<p>First of all, it makes sense to spend some time on blogs on this topic.</p>
+<div class="figure">
+<img src="img/water.jpg" alt="[Photo by Muneeb Syed on Unsplash](https://unsplash.com/photos/h9RLgKtwwwY)." width="100%" />
+<p class="caption">
+<a href="https://unsplash.com/photos/h9RLgKtwwwY">Photo by Muneeb Syed on Unsplash</a>.
+</p>
+</div>
+<blockquote>
+<p>Are you experiencing a bug with an open source project? Dig in and don’t stop at your local workaround. Your solution can benefit others and lead you to more open source contributions. - <a href="https://github.com/vvo">Vincent Voyer</a></p>
+</blockquote>
+<div id="blogs-and-anchors" class="section level2">
+<h2><strong>Blogs and Anchors</strong></h2>
+<div id="a-the-basic-one" class="section level3">
+<h3><strong>A</strong> The Basic One</h3>
+<p>The introduction in nearly everything is the <a href="https://opensource.guide/how-to-contribute/">Open Source Guide</a>. So let’s start reading!</p>
+<p><strong>#Appetizer</strong></p>
+<blockquote>
+<p>Contributing to open source can be a rewarding way to learn, teach, and build experience in just about any skill you can imagine. Why do people contribute to open source? Plenty of reasons!</p>
+</blockquote>
+</div>
+<div id="b-first-timers-only-for-absolute-newbies" class="section level3">
+<h3><strong>B</strong> First Timers Only: For absolute Newbies</h3>
+<p>A nice introduction is the initiative of <em>SHANSELMAN</em> and <em>KENTCDODDS</em>.</p>
+<p>Start <a href="https://github.com/shanselman/firsttimersonly">HERE</a>.</p>
+<p><strong>#Appetizer</strong></p>
+<blockquote>
+<p>We believe - and we hope you do too - that learning how to code, how to think, and how to contribute to open source can empower the next generation of coders and creators. We VALUE first time contributors and we want them to know that everyone started somewhere! We have gathered a list of resources to motivate and empower you to making that first step into becoming a contributor to the open source realm. If you are an OSS project owner, we have some tips for you to enable you to be instrumental in ushering a new batch of programmers into the community.</p>
+</blockquote>
+</div>
+<div id="c-quick-and-easy" class="section level3">
+<h3><strong>C</strong> Quick and Easy</h3>
+<p>A post by <a href="https://opensource.com/article/18/3/First-Contributions-project">Roshan Josey</a> on <a href="https://opensource.com">opensource.com</a> briefly describes why it pays to make a contribution in open source and what appeals to it.</p>
+<p><strong>#Appetizer</strong></p>
+<blockquote>
+<p>Contributing to open source projects comes with lots of benefits: You’ll have fun, improve your skills, build a profile that could help your career, meet like-minded people, find terrific mentors, and more.</p>
+</blockquote>
+</div>
+<div id="d-ruby-garage-for-starters" class="section level3">
+<h3><strong>D</strong> Ruby Garage: For Starters</h3>
+<p>If you have already had some programming experience and would describe yourself as a Junior Developer, this <a href="https://rubygarage.org/blog/how-contribute-to-open-source-projects">article</a> will help you: How Junior Developers Can Contribute to Open Source Projects.</p>
+<p><strong>#Appetizer</strong></p>
+<blockquote>
+<p>Previously, we have discussed what are open source projects and why open source is good for your business. In this article, we’ll explain why you should contribute to such projects, how to contribute, and what projects to choose. Who are just starting their career and would like to get involved with the community (and maybe become a coding genius).</p>
+</blockquote>
+</div>
+<div id="e-start-your-open-source-carreer---13-min-read-to-go-ahead" class="section level3">
+<h3><strong>E </strong> Start your Open Source Carreer - 13 min read to go ahead</h3>
+<p>Ok. Now it’s time to start your Open Source Career. This <a href="https://blog.algolia.com/start-your-open-source-career/">blog</a> of Vincent Voyer helps you getting your feet wet. It takes only 13 minutes to read.</p>
+<p><strong>#Appetizer</strong></p>
+<blockquote>
+<p>“I don’t have an idea” is a common complaint by developers who want to contribute to open source but think they don’t have any good ideas or good projects to share. Well, to that I say: that’s OK. There are opportunistic ways to contribute to open source. Many projects have started to list good contributions for first-timers via labels or tags.</p>
+</blockquote>
+</div>
+</div>
+<div id="projects-to-contribute" class="section level2">
+<h2>Projects to Contribute</h2>
+<p>So - ready, steady, go. You can use this <a href="https://opensource.guide/starting-a-project/">guide</a> for starting a new project or this <a href="https://github.com/firstcontributions/first-contributions">repository</a> for your first contributions.</p>
+<div id="exploring-resources" class="section level3">
+<h3>Exploring Resources</h3>
+<p>Some resources to help you discover and contribute new projects:</p>
+<ul>
+<li><a href="https://github.com/explore/">GitHub Expolore</a></li>
+<li><a href="https://up-for-grabs.net/#/">Up For Grabs</a></li>
+<li><a href="https://opensourcefriday.com">Open Source Friday</a></li>
+<li><a href="https://contributor.ninja">Contributor-ninja</a></li>
+<li><a href="https://www.codetriage.com">CodeTriage</a></li>
+<li><a href="https://24pullrequests.com">24 Pull Requests</a></li>
+</ul>
+</div>
+<div id="projects---a-selection" class="section level3">
+<h3>Projects - A Selection</h3>
+<p>Finally some open source projects being high-rated on GitHub:</p>
+<div id="visual-studio-code" class="section level4">
+<h4>Visual Studio Code</h4>
+<p><strong>#WhatAbout</strong></p>
+<blockquote>
+<p>Visual Studio Code is a code editor redefined and optimized for building and debugging modern web and cloud applications.</p>
+</blockquote>
+<div class="figure">
+<img src="img/visual-studio-code.png" alt="[Visit them.](https://code.visualstudio.com)" width="15%" />
+<p class="caption">
+<a href="https://code.visualstudio.com">Visit them.</a>
+</p>
+</div>
+</div>
+<div id="react-native" class="section level4">
+<h4>React Native</h4>
+<p><strong>#WhatAbout</strong></p>
+<blockquote>
+<p>React Native is an open-source mobile application framework created by Facebook. It is used to develop applications for Android, iOS and UWP by enabling developers to use React along with native platform capabilities.</p>
+</blockquote>
+<div class="figure">
+<img src="img/react-native.png" alt="[Visit them.](https://facebook.github.io/react-native/)" width="25%" />
+<p class="caption">
+<a href="https://facebook.github.io/react-native/">Visit them.</a>
+</p>
+</div>
+</div>
+<div id="tensorflow" class="section level4">
+<h4>TensorFlow</h4>
+<p><strong>#WhatAbout</strong></p>
+<blockquote>
+<p>An open source machine learning library for research and production.</p>
+</blockquote>
+<div class="figure">
+<img src="img/tensor-flow.png" alt="[Visit them.](https://www.tensorflow.org)" width="20%" />
+<p class="caption">
+<a href="https://www.tensorflow.org">Visit them.</a>
+</p>
+</div>
+</div>
+<div id="angular" class="section level4">
+<h4>Angular</h4>
+<p><strong>#WhatAbout</strong></p>
+<blockquote>
+<p>Angular is a platform for building mobile and desktop web applications.</p>
+</blockquote>
+<div class="figure">
+<img src="img/angular.png" alt="[Visit them.](https://angular.io)" width="20%" />
+<p class="caption">
+<a href="https://angular.io">Visit them.</a>
+</p>
+</div>
+</div>
+<div id="ansible" class="section level4">
+<h4>Ansible</h4>
+<p><strong>#WhatAbout</strong></p>
+<blockquote>
+<p>Ansible is the simplest way to automate apps and IT infrastructure.</p>
+</blockquote>
+<div class="figure">
+<img src="img/ansible.png" alt="[Visit them.](https://www.ansible.com)" width="15%" />
+<p class="caption">
+<a href="https://www.ansible.com">Visit them.</a>
+</p>
+</div>
+</div>
+<div id="kubernetes" class="section level4">
+<h4>Kubernetes</h4>
+<p><strong>#WhatAbout</strong></p>
+<blockquote>
+<p>Kubernetes is an open-source container-orchestration system for automating application deployment, scaling, and management.</p>
+</blockquote>
+<div class="figure">
+<img src="img/kubernetes.png" alt="[Visit them.](https://kubernetes.io/de/)" width="35%" />
+<p class="caption">
+<a href="https://kubernetes.io/de/">Visit them.</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -17,7 +17,7 @@ library(printr)
 ```
 
 <div class="jumbotron" style="color:white; background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(img/keyboard-keys-2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-  <h2>Advanced R and Open Social Data Science</h1>
+  <h1>Advanced R and Open Social Data Science</h1>
   <p>... because learning from hackers is learning to win?</p>
   <p> <span class="label label-default">
   #DataScience

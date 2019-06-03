@@ -483,88 +483,101 @@ The graded tasks (see above) will be graded using the below rubrics.
 The grading rubric is taken from the [University of British Columbia Master of Data Science program](http://ubc-mds.github.io) ([CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/us/)).
 
 
-#### Accuracy
+```{r grading-rubric, echo=FALSE}
+accuracy <- c(
+  Poor = c(
+    "Code fails to run, doesn't have clear output, or performs the wrong task."
+  ),
+  Unsatisfactory = c(
+    "Code performs only some of the correct tasks, the output is not easily understandable and the methods used to achieve the result are inefficient if performance is a concern."
+  ),
+  Satisfactory = c(
+    "Code performs most of the correct tasks, the output is understandable, however the methods used to achieve the result are inefficient if performance is a concern."
+  ),
+  Good = c(
+    "Code performs the correct tasks, the output is reasonably easy to understand, however the methods used to achieve the result are not the most efficient if performance is a concern."
+  ),
+  Excellent = c(
+    "Code runs correctly without crashing, the output is very clear, and the intended or suitably correct methods are employed to achieve the correct result.
+    Student has chosen the most efficient algorithm reasonable if performance is a concern."
+  )
+)
 
-<table>
-  <tr>
-    <th>No attempt (0)</th>
-    <th>Poor (F)</th>
-    <th>Unsatisfactory (D)</th>
-    <th>Satisfactory (C- to C+)</th>
-    <th>Good (B- to B+)</th>
-    <th>Excellent (A- to A+)</th>
-  </tr>
-  <tr>
-    <td>Did not attempt</td>
-    <td>Code fails to run, doesn't have clear output, or performs the wrong task.</td>
-    <td>Code performs only some of the correct tasks, the output is not easily understandable and the methods used to achieve the result are inefficient (if performance is a concern).</td>
-    <td>Code performs most of the correct tasks, the output is understandable, however the methods used to achieve the result are inefficient (if performance is a concern). </td>
-    <td>Code performs the correct tasks, the output is reasonably easy to understand, however the methods used to achieve the result are not the most efficient (if performance is a concern).</td>
-    <td>Code runs correctly without crashing, the output is very clear, and the intended or suitably correct methods are employed to achieve the correct result. Student has chosen the most efficient algorithm reasonable if performance is a concern.</td>
-  </tr>
+mechanics <- c(
+  Poor = c(
+    "Evaluator was unable to run/open/read assignment submission despite best efforts.
+    This may be because the student forgot to include certain files in the submission or tailored the software to only work on their local machine e.g. the code only works when run from a certain directory on the student's machine, contains paths to files only on the student's machine, etc., or they did not submit their assignment correctly or completely, or it was unclear where the relevant parts of the assignment are included in the submission."
+  ),
+  Unsatisfactory = c(
+    "Evaluator had to spend some time to get the raw submission to work correctly"
+  ),
+  Satisfactory = c(
+    "Evaluator had to make an obvious, small, quick fix to get things working or the wrong file format was submitted"
+  ),
+  Good = c(
+    "The submission is self-contained and works flawlessly; it just works in anybody's hands."
+  ),
+  Excellent = c(
+    "The student did not forget to include all the files in the submission.
+    Any necessary libraries to install are either included or are installed by a script, or are made obvious that that the evaluator must install them.
+    Student used the asked for file format. 
+    All assignment instructions were followed.
+    All files were put in a repository, in a reasonable place, with reasonable names; any source files .tex, .Rmd are rendered to a readable output format e.g. .pdf, all figures are included, there is a README file indicating where to find the different aspects of the assignment, etc."
+  )
+)
 
-</table>
+code_quality <- c(
+  Poor = c(
+    "Code is difficult to read and understand due to many issues that affects readability. 
+    Code is also poorly organized."
+  ),
+  Unsatisfactory = c(
+    "Code is generally easy to read and understand with few non-reoccurring issues and at most two reoccurring issue that affects readability."
+  ),
+  Satisfactory = c(
+    "Code is generally easy to read and understand with few non-reoccurring issues and at most one reoccurring issue that affects readability"
+  ),
+  Good = c(
+    "Code is easy to read and understand with only 1-2 minor and non-reoccurring issues that affect readability."
+  ),
+  Excellent = c(
+    "Code is exceptionally easy to read and understand.
+    For example, variable names are clear, an appropriate amount of whitespace is used to maximize visibility, tabs and spaces are not mixed for indentation, sufficient comments are given.
+    Any coding sections of the assignment that were not completed have documentation explaining what a coded solution would look like.
+    Overall, the code is extremely well organized and documented."
+  )
+)
 
+robustness <- c(
+  Poor = c(
+    "Multiple issues with code repetition exist, and several tests are absent and/or are of poor efficacy"
+  ),
+  Unsatisfactory = c(
+    "Some form of re-occuring code repetition exists, or tests efficacy is poor."
+  ),
+  Satisfactory = c(
+    "Some form of re-occuring code repetition exists, or tests efficacy is poor."
+  ),
+  Good = c(
+    "Code repetition is mostly minimized and effective tests are present for most functions."
+  ),
+  Excellent = c(
+    "Code repetition is minimized via the use of loops/mapping functions, functions or classes or scripts/files as needed without becoming overly complicated. 
+    Functions are short, concise, and cohesive without losing clarity; code can be easily modified.
+    Tests are present to ensure functions work as expected. 
+    Exceptions are caught and thrown if necessary, pnce students have learned about exceptions."
+  )
+)
 
-#### Mechanics
-
-This rubric measures the student's ability to produce an assignment that *works correctly*;
-
-<table>
-  <tr>
-    <th>No attempt (0)</th>
-    <th>Poor (F)</th>
-    <th>Unsatisfactory (D)</th>
-    <th>Satisfactory (C- to C+)</th>
-    <th>Good (B- to B+)</th>
-    <th>Excellent (A- to A+)</th>
-  </tr>
-  <tr>
-    <td>Did not attempt</td>
-    <td>Evaluator was unable to run/open/read assignment submission despite best efforts.<br/><br/>This may be because the student forgot to include certain files in the submission or tailored the software to only work on their local machine (e.g. the code only works when run from a certain directory on the student's machine, contains paths to files only on the student's machine, etc.), or they did not submit their assignment correctly or completely, or it was unclear where the relevant parts of the assignment are included in the submission. </td>
-    <td>Evaluator had to spend some time to get the raw submission to work correctly</td>
-    <td></td>
-    <td>Evaluator had to make an obvious, small, quick fix to get things working or the wrong file format was submitted</td>
-    <td>The submission is self-contained and works flawlessly; it just works (in anybody's hands). <br></br> The student did not forget to include all the files in the submission. <br></br> Any necessary libraries to install are either included or are installed by a script, or are made obvious that that the evaluator must install them. <br></br> Student used the asked for file format. All assignment instructions were followed.
-<br/><br/>
-All files were put in a repository, in a reasonable place, with reasonable names; any source files (.tex, .Rmd) are rendered to a readable output format (e.g. .pdf), all figures are included, there is a README file indicating where to find the different aspects of the assignment, etc.
-    </td>
-  </tr>
-</table>
-
-
-#### Code Quality
-
-<table>
-  <tr>
-    <th></th>
-    <th>No attempt (0)</th>
-    <th>Poor (F)</th>
-    <th>Unsatisfactory (D)</th>
-    <th>Satisfactory (C- to C+)</th>
-    <th>Good (B- to B+)</th>
-    <th>Excellent (A- to A+)</th>
-  </tr>
-  <tr>
-    <th>Readability and Documentation (50%)</th>
-    <td>Did not attempt</td>
-    <td>Code is difficult to read and understand due to many issues that affects readability. Code is also poorly organized.</td>
-    <td>Code is generally easy to read and understand with few non-reoccurring issues and at most two reoccurring issue that affects readability. </td>
-    <td>Code is generally easy to read and understand with few non-reoccurring issues and at most one reoccurring issue that affects readability. </td>
-    <td>Code is easy to read and understand with only 1-2 minor and non-reoccurring issues that affect readability. </td>
-    <td>Code is exceptionally easy to read and understand.<br></br> For example, variable names are clear, an appropriate amount of whitespace is used to maximize visibility, tabs and spaces are not mixed for indentation, sufficient comments are given.<br></br> Any coding sections of the assignment that were not completed have documentation explaining what a coded solution would look like. <br></br> Overall, the code is extremely well organized and documented.</td>
-  </tr>
-  <tr>
-    <th>Robustness and Maintainability (50%)</th>
-    <td>Did not attempt</td>
-    <td>No effort has been made to reduce code repetition. Tests are absent.</td>
-    <td>Multiple issues with code repetition exist, and several tests are absent and/or are of poor efficacy</td>
-    <td>Some form of re-occuring code repetition exists, or tests efficacy is poor. </td>
-    <td>Code repetition is mostly minimized and effective tests are present for most functions.</td>
-    <td>Code repetition is minimized via the use of loops/mapping functions, functions or classes or scripts/files as needed without becoming overly complicated. <br></br> Functions are short, concise, and cohesive without losing clarity; code can be easily modified. <br></br> Tests are present to ensure functions work as expected. Exceptions are caught and thrown if necessary (Once students have learned about exceptions).</td>
-  </tr>
-</table>
-
+rubric <- dplyr::bind_rows(
+  `Accuracy 25%` = accuracy,
+  `Code Quality 25%` = code_quality,
+  `Mechanics 25%` = mechanics,
+  `Robustness 25%` = robustness,
+  .id = "Dimension"
+)
+rubric
+```
 
 ## Attendance
 

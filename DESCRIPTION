@@ -1,0 +1,18 @@
+Package: defaultpkgs
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Maximilian",
+           family = "Held",
+           role = c("aut", "cre"),
+           email = "info@maxheld.de",
+           comment = c(ORCID = "0000-0002-4703-5388"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
+Encoding: UTF-8
+Language: en
+LazyData: true
+Imports: 
+    DiagrammeR,
+    usethis,
+    printr

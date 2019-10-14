@@ -7,7 +7,7 @@ date: "`r format(Sys.time(), '%d %B, %Y')`"
 bibliography: library.bib
 ---
 
-```{r setup, echo = FALSE}
+```{r setup, echo=FALSE, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(printr)
 ```
@@ -17,7 +17,7 @@ library(printr)
 ```
 
 <div class="jumbotron" style="color:white; background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(img/keyboard-keys-2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-  <h2>Advanced R and Open Social Data Science</h2>
+  <h2>Open Source Software for the Humanities and Social Sciences</h2>
   <p>... because learning from hackers is learning to win?</p>
   <p> <span class="label label-default">
   #DataScience
@@ -76,51 +76,43 @@ You do *not* need to have completed a prior version of this class, or any other 
 If you *have* some prior training, you will start the class at a different level.
 
 
-## Time and Place (Summer Term 2019) {.alert .alert-warning}
+## Time and Place (Winter Term 2019/2020) {.alert .alert-warning}
 
-*Students should attend >= 3 full days to guarantee successful participation.
-Below dates include backup dates.*
+Students should attend all 4 full days to guarantee successful participation.
 
-The times and dates are (also on [univIS](http://univis.uni-erlangen.de)).
+The times and dates are also on [univIS](http://univis.uni-erlangen.de).
 
 
 ### Preparatory Meeting
 
-Wednesday, April 24th, 2019 18:15-19:45 at the Nuremberg Campus of Technology (NCT) in *Nuremberg* (see [below](#venue) for directions).
+Friday, October 18th, 2019 16:15-17:45 at the Nuremberg Campus of Technology (NCT) in *Nuremberg* (see [below](#venue) for directions).
 
 
-### Main Dates: Ascension Day Extended Weekend (Christi Himmelfahrt)
+### Main Dates: Allerheiligen/Reformationstag Extended Weekend
 
-**Thursday, May 30th through Sunday, June 2nd, 10-18:00** at the Nuremberg Campus of Technology (NCT) in *Nuremberg* (see [below](#venue) for directions).
-
-
-### Backup: Corpus Christi Extended Weekend (Fronleichnam)
-
-**Thursday, June 20th through Sunday, June 23rd, 10-18:00** at the Nuremberg Campus of Technology (NCT) in *Nuremberg* (see [below](#venue) for directions).
-The backup date will be used if the main dates have to be cancelled for some reason.
+**Thursday, October 31st through Sunday, November 3rd, 10-18:00** at the Nuremberg Campus of Technology (NCT) in *Nuremberg* (see [below](#venue) for directions).
 
 
 ### Venue
 
 Classes will take place here:
 
-:
-    <address>
-    | Nuremberg Campus of Technology
-    | "Auf AEG" Haus 11
-    | Room 11.2.2
-    | Fürther Straße 246c
-    | 90429 Nuremberg
-    </address>
+<address>
+| Nuremberg Campus of Technology
+| "Auf AEG" Haus 11
+| Room 11.2.2
+| Fürther Straße 246c
+| 90429 Nuremberg
+</address>
 
 
-    (The building can be hard to find; see [here](http://datascience.phil.fau.de/fossos/img/directions.pdf) for directions).
+(The building can be hard to find; see [here](http://datascience.phil.fau.de/fossos/img/directions.pdf) for directions).
 
 
 ## Language requirements
 
 Depending on who will be attending the class, instruction may also occur in english or german.
-In any event, all of the readings and other course material are all in english, and participants are expected to be proficient in reading and writing english technical documents.
+In any event, all of the readings and other course material are in english, and participants are expected to be proficient in reading and writing english technical documents.
 
 
 ## A Multi-Semester Series {.alert .alert-info}
@@ -162,11 +154,18 @@ This class was/is listed as:
         - Elective (Wahlpflichtbereich FPO 2018)
         - Elective (Wahlpflichtbereich FPO 2016)
     - "Soft Skills" (Schlüsselqualifikationen)
+- 2019/2020 Winter Term: "Open Source Software for the Humanities and Social Sciences", crosslisted in:
+    - Bachelor Sociology
+        - Sociological Methods (Module `SOZ M`, [Soziologische Methodenlehre](https://www.soziologie.phil.fau.de/institut/arbeitsbereiche/methoden-der-empirischen-sozialforschung/))
+    - "Soft Skills" (Schlüsselqualifikationen)
+    - Bachelor Digital Humanities and Social Sciences ("BA Zweitfach")
+        - Elective (Wahlpflichtbereich FPO 2018)
+        - Elective (Wahlpflichtbereich FPO 2016)
 
 
 ## Related Classes
 
-[Daniel Lemmer](https://www.pol.phil.fau.eu/person/daniel-lemmer/) is (again) offering an [introduction to R](https://univis.uni-erlangen.de/form?__s=2&dsc=anew/lecture_view&lvs=phil/dsp/isoz/zentr/einfhr_0&anonymous=1&founds=phil/dsp/ipowi/zentr/dieeur,/dieusa,/politi_4,/spanie,///isoz/zentr/einfhr_0&sem=2019s&__e=920) (in german) as a seminar in the summer term 2019.
+[Daniel Lemmer](https://www.pol.phil.fau.eu/person/daniel-lemmer/) is (again) offering an [introduction to R](https://univis.uni-erlangen.de/form?__s=2&dsc=anew/lecture_view&lvs=phil/dsp/isoz/zentr/einfhr_3&anonymous=1&founds=phil/dsp/ipowi/zentr/argent,/spanie,/wahlpa,///isoz/zentr/einfhr_3&sem=2019w&__e=183) (in german) as a seminar in the winter term 2019/2020.
 Daniel's introduction to R is a great complement to *FOSSOS*, though it is *not* a prequisite (and the same holds vice-versa).
 You may take the introducion *before* or *after* attending *FOSSOS*, but you may also take the two classes *concurrently* (the dates do not clash).
 If you *have* (or are currently) taking Daniel's introduction to R, you may move on to more advanced R training in *FOSSOS* (such as using the [tidyverse](https://www.tidyverse.org) domain specific language (DSL) and the [r-lib](https://github.com/r-lib) partial reimplementation).

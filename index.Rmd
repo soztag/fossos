@@ -85,12 +85,12 @@ The times and dates are also on [univIS](http://univis.uni-erlangen.de).
 
 ### Preparatory Meeting
 
-Friday, October 18th, 2019 16:15-17:45 at the Nuremberg Campus of Technology (NCT) in *Nuremberg* (see [below](#venue) for directions).
+**Friday, October 18th, 2019 16:15-17:45** at the Nuremberg Campus of Technology (NCT) (see [below](#venue) for directions).
 
 
 ### Main Dates: Allerheiligen/Reformationstag Extended Weekend
 
-**Thursday, October 31st through Sunday, November 3rd, 10-18:00** at the Nuremberg Campus of Technology (NCT) in *Nuremberg* (see [below](#venue) for directions).
+**Thursday, October 31st through Sunday, November 3rd, 10-18:00** at the Nuremberg Campus of Technology (NCT) (see [below](#venue) for directions).
 
 
 ### Venue
@@ -167,8 +167,8 @@ This class was/is listed as:
 
 [Daniel Lemmer](https://www.pol.phil.fau.eu/person/daniel-lemmer/) is (again) offering an [introduction to R](https://univis.uni-erlangen.de/form?__s=2&dsc=anew/lecture_view&lvs=phil/dsp/isoz/zentr/einfhr_3&anonymous=1&founds=phil/dsp/ipowi/zentr/argent,/spanie,/wahlpa,///isoz/zentr/einfhr_3&sem=2019w&__e=183) (in german) as a seminar in the winter term 2019/2020.
 Daniel's introduction to R is a great complement to *FOSSOS*, though it is *not* a prequisite (and the same holds vice-versa).
-You may take the introducion *before* or *after* attending *FOSSOS*, but you may also take the two classes *concurrently* (the dates do not clash).
-If you *have* (or are currently) taking Daniel's introduction to R, you may move on to more advanced R training in *FOSSOS* (such as using the [tidyverse](https://www.tidyverse.org) domain specific language (DSL) and the [r-lib](https://github.com/r-lib) partial reimplementation).
+His introduction is focused on running common statistical analyses in R.
+*FOSSOS* is focused on open source tooling *around* R, R as a data science glue language and more advanced R.
 
 If you have *not* taken (or will not) Daniel's (or another) introduction to R, you will probably spend your time in *FOSSOS* learning the broader open source tooling (["Software Carpentry"](https://datascience.phil.fau.de/fossos/stack.html#software_carpentry)) around R, which is still plenty of exciting material to keep you busy for a semester.
 
@@ -287,15 +287,24 @@ There is no *one* curriculum that's quite right for us, so I have cobbled togeth
 
 All resources are listed, in roughly advisable chronological order, along with the [stack](/stack).
 
+<div class="alert alert-warning role="alert">
+<b>Resources</b> listed in the <a href="/stack">stack</a> are <em>mandatory reading</em>.
+<b>Additional Resources</b> listed in the <a href="/stack">stack</a> are <em>recommended or optional reading</em>.
+</div>
+
 The good news is that there are no academic papers or books for this class and everything students need is available online.
 There is, however, still a lot of material to work through (to the tune of hours per week), though it is written in a hopefully more accessible style than many academic documents.
 The listed resources are guaranteed to cover everything you need to use the software, often including tutorials, videos and exercises.
 Students are not limited to the listed resources; they can also choose their own material, so as long as it covers roughly the same ground.
 In fact, students are encouraged to share good additional resources with the rest of the class.
 
+There is a lot of duplicate content between the alternative resources listed.
+Students should browse *each* of the resources, and then work in-depth through whichever they find most suitable.
+
 <div class="alert alert-warning role="alert">
-Students are expected to work through (not just read) all the material listed *before the session* in which the software is covered (see schedule).
-Additional resources are optional.
+First-time students of <em>FOSSOS</em> are expected to work through (not just read) all the material listed in the <a href="https://datascience.phil.fau.de/fossos/stack.html#introduction">Introduction</a> and <a href="https://datascience.phil.fau.de/fossos/stack.html#software_carpentry">Software Carpentry</a> sections.
+
+Repeat participants in the seminar who have mastered this material can advance to any of the other sections according to their interests and should prepare accordingly.
 </div>
 
 <div class="alert alert-success role="alert">
@@ -321,14 +330,9 @@ Likewise, some students may wish to cover a lot of breadth (at shallow depth), w
 This is all fine, but students should ensure that they learn *something* at a *useful* level to solve real-world problems, as will also be required for the assessment.
 If in doubt, ask the instructor for guidance.
 
-Every student should first become competent in the practices and tools covered in "Software Carpentry"; these are required for all later topics.
+Every student should first become competent in the practices and tools covered in ["Software Carpentry"](https://datascience.phil.fau.de/fossos/stack.html#software_carpentry); these are required for all later topics.
 
-As a lower bound, *every* student should cover at least *one* top-level heading ("Software Carpentry", "Intermediate R", etc.) per semester.
-
-You can find out whatever will be worked on during the next session(s) by consulting the [kanban board](https://github.com/soztag/fossos/projects/2).
-During the earlier sessions, we will also cover some topics *together* in class.
-These topics will also be listed on the [kanban board](https://github.com/soztag/fossos/projects/2).
-
+As a loose guide, *every* student should cover at least *one* top-level heading ("Interactive R", "Intermediate R", etc.) per semester.
 
 
 ## Digital Places
@@ -347,8 +351,6 @@ We're going to use a few digital tools to get organised in this class, all based
 
 These venues are also linked from the top bar of the class website, so you can always easily find them.
 
-You can (and should) cross-reference issues and discussions between all of these venues.
-
 
 ## Assessment
 
@@ -364,6 +366,7 @@ The only conditions are:
 1. The work needs to be related to the tools and practices covered in class.
 2. The work needs to be on GitHub or otherwise transparent.
 3. The instructor needs to be able to assess the quality of the work, and advise you in your work.
+    This unfortunately rules out any projects not using the technologies covered in this class.
 
 We will begin with relatively easy, small tasks to serve other students in class, then address smaller issues with resources for the broader community, and eventually, fixing "real" bugs or enhancing functionality of open source data science software.
 
@@ -389,6 +392,7 @@ Students who want to receive a grade on the class also have to complete a couple
 The numbers next to the labels roughly indicate the **estimated workload and difficulty** of a task (also known as "story points" in agile development).
 Estimates are frequently wrong, and these points can be adjusted in consultation with the instructor, if some task turns out to be much harder or easier than expected.
 These story points correspond to ECTS credit points; if you are taking this as a "Proseminar", you will need to have owned and closed issues worth 5 story points.
+If you are taking this as a "Hauptseminar", you will need to have owned and closed 7.5 story points worth of issues.
 
 You will be graded based on how well you have adhered to the best practices and tooling covered in class, as well as (if applicable) the guidelines and standards of the external project (some other repo) or platform (Stack Overflow)
 
@@ -496,16 +500,18 @@ accuracy <- c(
   Good = c(
     "Code performs the correct tasks, the output is reasonably easy to understand, however the methods used to achieve the result are not the most efficient if performance is a concern."
   ),
-  Excellent = c(
-    "Code runs correctly without crashing, the output is very clear, and the intended or suitably correct methods are employed to achieve the correct result.
-    Student has chosen the most efficient algorithm reasonable if performance is a concern."
+  Excellent = glue::glue(
+    "Code runs correctly without crashing, the output is very clear, and the intended or suitably correct methods are employed to achieve the correct result.",
+    "Student has chosen the most efficient algorithm reasonable if performance is a concern.",
+    .sep = " "
   )
 )
 
 mechanics <- c(
-  Poor = c(
-    "Evaluator was unable to run/open/read assignment submission despite best efforts.
-    This may be because the student forgot to include certain files in the submission or tailored the software to only work on their local machine e.g. the code only works when run from a certain directory on the student's machine, contains paths to files only on the student's machine, etc., or they did not submit their assignment correctly or completely, or it was unclear where the relevant parts of the assignment are included in the submission."
+  Poor = glue::glue(
+    "Evaluator was unable to run/open/read assignment submission despite best efforts.",
+    "This may be because the student forgot to include certain files in the submission or tailored the software to only work on their local machine e.g. the code only works when run from a certain directory on the student's machine, contains paths to files only on the student's machine, etc., or they did not submit their assignment correctly or completely, or it was unclear where the relevant parts of the assignment are included in the submission.",
+    .sep = " "
   ),
   Unsatisfactory = c(
     "Evaluator had to spend some time to get the raw submission to work correctly"
@@ -516,19 +522,21 @@ mechanics <- c(
   Good = c(
     "The submission is self-contained and works flawlessly; it just works in anybody's hands."
   ),
-  Excellent = c(
-    "The student did not forget to include all the files in the submission.
-    Any necessary libraries to install are either included or are installed by a script, or are made obvious that that the evaluator must install them.
-    Student used the asked for file format. 
-    All assignment instructions were followed.
-    All files were put in a repository, in a reasonable place, with reasonable names; any source files .tex, .Rmd are rendered to a readable output format e.g. .pdf, all figures are included, there is a README file indicating where to find the different aspects of the assignment, etc."
+  Excellent = glue::glue(
+    "The student did not forget to include all the files in the submission.",
+    "Any necessary libraries to install are either included or are installed by a script, or are made obvious that that the evaluator must install them.",
+    "Student used the asked for file format.",
+    "All assignment instructions were followed.",
+    "All files were put in a repository, in a reasonable place, with reasonable names; any source files .tex, .Rmd are rendered to a readable output format e.g. .pdf, all figures are included, there is a README file indicating where to find the different aspects of the assignment, etc.",
+    .sep = " "
   )
 )
 
 code_quality <- c(
-  Poor = c(
-    "Code is difficult to read and understand due to many issues that affects readability. 
-    Code is also poorly organized."
+  Poor = glue::glue(
+    "Code is difficult to read and understand due to many issues that affects readability.",
+    "Code is also poorly organized.",
+    .sep = " "
   ),
   Unsatisfactory = c(
     "Code is generally easy to read and understand with few non-reoccurring issues and at most two reoccurring issue that affects readability."
@@ -539,11 +547,12 @@ code_quality <- c(
   Good = c(
     "Code is easy to read and understand with only 1-2 minor and non-reoccurring issues that affect readability."
   ),
-  Excellent = c(
-    "Code is exceptionally easy to read and understand.
-    For example, variable names are clear, an appropriate amount of whitespace is used to maximize visibility, tabs and spaces are not mixed for indentation, sufficient comments are given.
-    Any coding sections of the assignment that were not completed have documentation explaining what a coded solution would look like.
-    Overall, the code is extremely well organized and documented."
+  Excellent = glue::glue(
+    "Code is exceptionally easy to read and understand.",
+    "For example, variable names are clear, an appropriate amount of whitespace is used to maximize visibility, tabs and spaces are not mixed for indentation, sufficient comments are given.",
+    "Any coding sections of the assignment that were not completed have documentation explaining what a coded solution would look like.",
+    "Overall, the code is extremely well organized and documented.",
+    .sep = " "
   )
 )
 
@@ -560,11 +569,12 @@ robustness <- c(
   Good = c(
     "Code repetition is mostly minimized and effective tests are present for most functions."
   ),
-  Excellent = c(
-    "Code repetition is minimized via the use of loops/mapping functions, functions or classes or scripts/files as needed without becoming overly complicated. 
-    Functions are short, concise, and cohesive without losing clarity; code can be easily modified.
-    Tests are present to ensure functions work as expected. 
-    Exceptions are caught and thrown if necessary, pnce students have learned about exceptions."
+  Excellent = glue::glue(
+    "Code repetition is minimized via the use of loops/mapping functions, functions or classes or scripts/files as needed without becoming overly complicated.",
+    "Functions are short, concise, and cohesive without losing clarity; code can be easily modified.",
+    "Tests are present to ensure functions work as expected.",
+    "Exceptions are caught and thrown if necessary, pnce students have learned about exceptions.",
+    .sep = " "
   )
 )
 
@@ -577,6 +587,7 @@ rubric <- dplyr::bind_rows(
 )
 rubric
 ```
+
 
 ## Attendance
 
@@ -596,10 +607,10 @@ This has the advantage that students will learn to set up their own development 
 The class will assist students in installing software on their devices, but **students are responsible for maintaining their computers**.
 In particular, student laptops must:
 
-- have a reasonably current operating system (MacOS >= 10.13, Microsoft Windows >= Vista, Linux),
+- have a reasonably current *desktop* operating system (MacOS >= 10.13, Microsoft Windows >= Vista, Linux),
 - have a current version of a web browser installed,
 - *not* be virus-infested or in some other borked-up state,
-- *not* be a mobile device (iOS or Android) (unless you can SSH into a Linux box or something),
+- *not* be a mobile device (iOS or Android won't work!) (unless you can SSH into a Linux box or something),
 - and have ready access to one of the WiFi networks at FAU: `FAU-STUD`, `eduroam` or `FAU.fm`.
   (If you need help setting up your WiFi, consult the RRZE Website.)
 

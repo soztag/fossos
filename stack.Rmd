@@ -18,7 +18,7 @@ The below R-based toolchain should be considered as merely *one* (out of several
 However, once participants have mastered this toolchain, they should find it relatively easy to adapt to other ecosystems.
 
 All of the software will be [free and open source software](https://en.wikipedia.org/wiki/Free_and_open-source_software), but we will also be using some proprietary Software-as-a-Service ([Saas](https://en.wikipedia.org/wiki/Software_as_a_service)) offerings.
-For each of the proprietary services, there *are* open-source and/or self-hosted alternatives, but these are often much less convenient (e.g. [self-hosted Jenkins](https://jenkins.io) vs [Travis CI](https://travis-ci.com)), or they are much less popular in the community, and therefore less useful (e.g. [GitLab](GitLab) vs [GitHub](https://github.com)).
+For each of the proprietary services, there *are* open-source and/or self-hosted alternatives, but these are often much less convenient (e.g. [self-hosted Jenkins](https://jenkins.io) vs [GitHub Actions](https://github.com/features/actions)), or they are much less popular in the community, and therefore less useful (e.g. [GitLab](GitLab) vs [GitHub](https://github.com)).
 Relying on, or pushing proprietary services, especially in an education context, is always awkward, but the disadvantages can sometimes be outweighted by convenience and network effect advantages.
 For some aspects of open source software development and open science, proprietary services -- especially GitHub and the [StackExchange network](https://stackoverflow.com) -- for better or for worse just *are* the only game in town.
 In any event, *most* of what students will learn in this class is in free and open source software, and the remaining proprietary usage should easily translate to other, competing or open services. 
@@ -66,13 +66,13 @@ To *start* this class you need to know your way around your own computer and com
 You should know, or easily find, the answer to questions such as:
 
 - *In what directory (absolute path) are programs I use daily stored on computer?*
-- *What is the OS and version on my computer?*
+- *What is the operating system (OS) and version on my computer?*
 - *In what directory (absolute path) do I store my files?*
 - *Do I have sufficient privileges to install software?
   If not, how can I get them?*
-- *Which file format is better suited to editing: A `*.docx` or a `*.pdf`?*
+- *Which file format is better suited to editing and why: A `*.docx` or a `*.pdf`?*
 - *Why do the search queries `jaguar car` and `jaguar -car` give different results on Google?*
-- *I can name at least 10 file types.*
+- *Name at least 10 file types.*
 - *What is the username I usually use on public-facing platforms?*
 - *What is Two-Factor Authentification? (2FA)?*
 - *How is my harddisc formatted?*
@@ -103,6 +103,9 @@ Choose your username carefully: it should be easy to type, and clearly identify 
 If you already have such a public username on other platforms (say, twitter), consider reusing that.
 Your username need not be your real name, but it makes things easier if it includes (parts of) your name.
 </div>
+
+Please flesh out your profile on GitHub.com and all of the accounts below a bit by adding a picture, a name and a short description of yourself.
+
 
 <div class="alert alert-warning" role="alert">
 Also be careful in choosing your [commit email address](https://help.github.com/articles/about-commit-email-addresses/).
@@ -383,7 +386,7 @@ However this is strictly optional, will not be supported in class.
 - [The Unix shell](https://swcarpentry.github.io/shell-novice/02-filedir/index.html)
 
 
-### Bash {#bash}
+### Bash (Optional) {#bash}
 
 It turns out that `bash`, the default shell on UNIX-type computers is *also* a **scripting language** upon itself.
 [Scripting languages](https://en.wikipedia.org/wiki/Scripting_language) are programming languages which facilitate automated execution of tasks, such as, say, running a bunch of updates and then power cycling your computer.
@@ -431,7 +434,7 @@ Notice that LaTeX, Atom and R (all below) each have their own *internal* package
 If you're installing a package *for* either of those, use the corresponding ecosystem package manager, *not* your system-wide program (= `brew`, `apt-get`, `cholocatey`).
 
 
-### Text Editor {#editor}
+### Text Editor (Optional) {#editor}
 
 <i class="fab fa-react fa-3x fa-pull-left"></i> <a class="btn btn-info" href="https://atom.io" role="button">Install Atom</a>
 
@@ -519,7 +522,7 @@ For most everyone, RStudio will therefore be the strongly recommended choice.
 - [The panes in RStudio](https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=5)
 
 
-### Branching Model {#gitflow}
+### Branching Model (Optional) {#gitflow}
 
 <a class="btn btn-default" href="https://guides.github.com/introduction/flow/" role="button">GitHub Flow</a>
 
@@ -537,12 +540,12 @@ We will use it to learn the branch and pull-request model.
 - [Comparing Commits accross time](https://help.github.com/articles/comparing-commits-across-time/)
 
 
-## Technical & Scientific Authoring {#sciwri}
+### Technical & Scientific Authoring {#sciwri}
 
 **All software in this section is included in the Docker image.**
 
 
-### Document Conversion {#conversion}
+#### Document Conversion {#conversion}
 
 <i class="far fa-file-alt fa-3x fa-pull-left"></i> <a class="btn btn-info" href="https://pandoc.org" role="button">Install Pandoc</a>
 
@@ -556,13 +559,13 @@ But as part of this work, Pandoc has *also* defined its own extension (flavor) t
 You should *both* learn to *use* Pandoc at the CLI as well as to *write* in the corresponding Pandoc's Markdown style.
 
 
-#### Resources
+##### Resources
 
 - [Pandoc User's Guide](https://pandoc.org/MANUAL.html)
 - *especially* [Pandoc's Markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)
 
 
-### Typesetting {#typesetting}
+#### Typesetting (optional) {#typesetting}
 
 <i class="far fa-file-alt fa-3x fa-pull-left"></i> <a class="btn btn-info" href="https://www.latex-project.org" role="button">Install LaTeX</a>
 
@@ -575,13 +578,13 @@ Instead, we will be using Pandoc to compile our Pandoc Markdown source *to* PDF 
 Still, it is important to learn some of the basics of LaTeX to use it programmatically.
 
 
-#### Resources:
+##### Resources:
 
 - Overleaf [Learn LaTeX in 30 Minutes](https://www.overleaf.com/learn/latex/Learn_LaTeX_in_30_minutes)
 - [LaTeX cheat sheet](http://users.dickinson.edu/~richesod/latex/latexcheatsheet.pdf)
 
 
-### Bibliography Management {#bib}
+### Bibliography Management (optional) {#bib}
 
 <a class="btn btn-info" href="https://github.com/jgm/pandoc-citeproc" role="button">Install Pandoc Citeproc</a>
 <a class="btn btn-default" href="biblio.html" role="button">Install Zotero</a>
@@ -592,7 +595,7 @@ It is also one of those tools, where there is no strong reason to standardize on
 
 Check if your bibliography manager can export to at least one of these formats.
 
-If you have a choice, a BibTex or BibLaTeX file (confusingly both named `*.bib*`) are preferable.
+If you have a choice, a BibTeX or BibLaTeX file (confusingly both named `*.bib`) are preferable.
 
 
 #### Resources:
@@ -763,10 +766,3 @@ tba.
 ## Package development
 
 - Really "just" Hadley Wickham's [R Packages](http://r-pkgs.had.co.nz)
-
-
-## Open Science resources
-
-- _Unpaywall_ [link](https://unpaywall.org/)
-
-Finding the perfect article only to notice it is behind a paywall can be frustrating. Unpaywall is a browser extension that checks if the document can be obtained from a free and legal alternative source.

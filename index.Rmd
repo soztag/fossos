@@ -46,6 +46,9 @@ library(printr)
 > *[Coding – ] it’s the next best thing we have to a superpower.*
 > -- [Drew Houston](@drewhouston) via [code.org](https://code.org)
 
+> *Perfectionism prevents us from taking double steps in our career. We think we have to be perfect, but we don’t.*
+> -- [Reshma Saujani](https://www.ellevatenetwork.com/articles/8056-quotes-from-women-in-tech)
+
 > *The bad news is that whenever you learn a new skill, you’re going to suck.*
 > -- [Hadley Wickham](http://hadley.nz)
 
@@ -58,7 +61,8 @@ library(printr)
 > *Most learning is not the result of instruction. It is rather the result of unhampered participation in a meaningful setting.*
 > -- Ivan @Illich-1971
 
-
+> *We need to understand that if we all work on inclusion together, it’s going to be faster, broader, better, and more thorough than anything we can do on our own.*
+> -- [Ellen Pao](https://code.likeagirl.io/15-quotes-from-women-in-tech-that-will-inspire-you-773d4aeb6ae5)
 ## Prerequisites {.alert .alert-success}
 
 *Everyone* is welcome to this seminar.

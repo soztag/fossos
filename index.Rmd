@@ -46,8 +46,22 @@ library(printr)
 > *[Coding – ] it’s the next best thing we have to a superpower.*
 > -- [Drew Houston](@drewhouston) via [code.org](https://code.org)
 
+<<<<<<< Updated upstream
 > *Perfectionism prevents us from taking double steps in our career. We think we have to be perfect, but we don’t.*
 > -- [Reshma Saujani](https://www.ellevatenetwork.com/articles/8056-quotes-from-women-in-tech)
+=======
+
+
+> *I also say to my team: Do 10% of your job shittily. It’s okay to do something shittily. Perfectionism prevents us from taking double steps in our career. We think we have to be perfect, but we don’t.*
+> -- [Rashma Saujani](https://skillcrush.com/2016/02/23/advice-from-women-in-tech/) 
+
+hi
+
+
+
+
+
+>>>>>>> Stashed changes
 
 > *The bad news is that whenever you learn a new skill, you’re going to suck.*
 > -- [Hadley Wickham](http://hadley.nz)

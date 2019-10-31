@@ -87,7 +87,6 @@ If you feel like you need to brush up on some basic computing skills, these reso
 - WikiHow [Basic Computer Skills](https://www.wikihow.com/Category:Basic-Computer-Skills)
 - Tech Republic [10 things...](https://www.techrepublic.com/blog/10-things/10-things-you-have-to-know-to-be-computer-literate/)
 - Viking Code School [Terms to know](http://www.vikingcodeschool.com/web-development-basics/terms-to-know)
-- ... just google the answers to the above questions.
 - [Free Linux tutorials](https://linuxjourney.com/)
 - ... just google the answers to the above questions.
 

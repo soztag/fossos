@@ -3,7 +3,7 @@ title: "Syllabus"
 author:
   name: "Max Held"
   affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
+date: "Fall Term 2019"
 bibliography: library.bib
 ---
 

@@ -79,6 +79,9 @@ hi
 > -- [Ellen Pao](https://code.likeagirl.io/15-quotes-from-women-in-tech-that-will-inspire-you-773d4aeb6ae5)
 ## Prerequisites {.alert .alert-success}
 
+> *Always code as if the guy who ends up maintaining your code will be a violent psychopath who knows where you live!*
+> -- [John Woods](https://www.goodreads.com/quotes/tag/programming)
+
 *Everyone* is welcome to this seminar.
 This is *not* a "proper" computer science class, and participants do *not* need any background in CS, statistics or math.
 

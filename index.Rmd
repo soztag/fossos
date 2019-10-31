@@ -70,7 +70,7 @@ You should just be curious and ready to:
 - read and write technical documents in simple, readable english and
 - collaborate intensively using (perhaps unfamiliar) web-based tools.
 
-No worries, we'll bring everyone up to speed in no time.
+No worries, we'll bring everyone up to speed in very little time.
 
 You do *not* need to have completed a prior version of this class, or any other class.
 If you *have* some prior training, you will start the class at a different level.

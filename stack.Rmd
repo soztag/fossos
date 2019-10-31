@@ -89,6 +89,7 @@ If you feel like you need to brush up on some basic computing skills, these reso
 - Viking Code School [Terms to know](http://www.vikingcodeschool.com/web-development-basics/terms-to-know)
 - ... just google the answers to the above questions.
 - [Free Linux tutorials](https://linuxjourney.com/)
+- [Free, incredible, awesome Linux tutorials](https://linuxjourney.com/)
 
 
 ## Software Carpentry {#carpentry}

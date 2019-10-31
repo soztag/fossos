@@ -1,6 +1,6 @@
 ---
 title: "Stack"
-author: 
+author:
   name: "Maximilian Held"
   affiliation: "Friedrich-Alexander Universität Erlangen-Nürnberg (FAU)"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
@@ -21,7 +21,7 @@ All of the software will be [free and open source software](https://en.wikipedia
 For each of the proprietary services, there *are* open-source and/or self-hosted alternatives, but these are often much less convenient (e.g. [self-hosted Jenkins](https://jenkins.io) vs [GitHub Actions](https://github.com/features/actions)), or they are much less popular in the community, and therefore less useful (e.g. [GitLab](GitLab) vs [GitHub](https://github.com)).
 Relying on, or pushing proprietary services, especially in an education context, is always awkward, but the disadvantages can sometimes be outweighted by convenience and network effect advantages.
 For some aspects of open source software development and open science, proprietary services -- especially GitHub and the [StackExchange network](https://stackoverflow.com) -- for better or for worse just *are* the only game in town.
-In any event, *most* of what students will learn in this class is in free and open source software, and the remaining proprietary usage should easily translate to other, competing or open services. 
+In any event, *most* of what students will learn in this class is in free and open source software, and the remaining proprietary usage should easily translate to other, competing or open services.
 
 <div class="alert alert-info" role="alert">
 The stack is listed below in the **approximate order** in which software is covered in this class, and together with **mandatory study material** and **tasks**.
@@ -87,6 +87,7 @@ If you feel like you need to brush up on some basic computing skills, these reso
 - WikiHow [Basic Computer Skills](https://www.wikihow.com/Category:Basic-Computer-Skills)
 - Tech Republic [10 things...](https://www.techrepublic.com/blog/10-things/10-things-you-have-to-know-to-be-computer-literate/)
 - Viking Code School [Terms to know](http://www.vikingcodeschool.com/web-development-basics/terms-to-know)
+- [Free Linux tutorials](https://linuxjourney.com/)
 - ... just google the answers to the above questions.
 
 
@@ -198,7 +199,7 @@ In addition to StackExchange and RStudio Community, there are a couple of other 
 
 The full [GFM spec](https://github.github.com/gfm/) is just FYI; there's nothing to install here.
 
-Plain text has many advantages (more on that later), but one glaring disadvantage: 
+Plain text has many advantages (more on that later), but one glaring disadvantage:
 it does not look very nice, and does not implement many of the typesetting conventions that have evolved since Gutenberg (say, **bold** face).
 
 Markup syntaxes solve this problem.
@@ -250,7 +251,7 @@ We will be using different programs going forward.
 
 <i class="fab fa-docker fa-3x fa-pull-left"></i><a class="btn btn-info" href="https://www.docker.com/products/docker-desktop" role="button">Install Docker Desktop</a>
 
-Docker is an open-source industry standard to define, provision and share computing environments, known as *containers*. 
+Docker is an open-source industry standard to define, provision and share computing environments, known as *containers*.
 Containers allow you to run computing environments on other computers.
 Containers are similar to virtual machines (a computer inside a computer), but slimmer and generally neater.
 
@@ -272,21 +273,21 @@ We are using it in this class to reduce the burden of local installations, but i
 #### Tasks
 
 - Install and run a docker image:
-  
+
   1. Download and install [Docker Desktop Community](https://www.docker.com/products/docker-desktop).
     You need to set up a docker ID as part of the download, and you should remember your account credentials.
   2. Launch Docker Desktop.
     A small whale symbol will show up in your task bar, but not much else.
   3. Launch a system shell and type in
-    
+
     ```
     docker run --env=PASSWORD=yourpassword --rm --publish=8787:8787 rocker/verse
     ```
-    
+
     On macOS and Linux, your default system shell is an application called "Terminal".
-    On Windows, you can use the "command prompt" or "PowerShell" applications. 
+    On Windows, you can use the "command prompt" or "PowerShell" applications.
     If you already have git installed on Windows, you can also use the git bash emulator.
-    
+
     Depending on how fast your internet connection is, this process will take a while to complete.
   4. Open a webbrowser and point it to `http://localhost:8787`.
     You should see the login window for the RStudio IDE.
@@ -360,9 +361,9 @@ On **macOS**, **Linux**: Nothing to install, ships with bash.
 On **Windows**:
 
 - Install [Git for Windows](https://gitforwindows.org) because that comes with at least a git shell.
-  Choose **git bash emulation** on install. 
+  Choose **git bash emulation** on install.
 - If your version is >= Windows 10 Anniversary Update you can also install [Install the Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and use the [Windows 10 Bash Shell](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/).
-  However this is a *separate* system inside your Windows installation, and the programs installed inside it may (as of 2019-01) *not* be used "normal" windows GUI programs. 
+  However this is a *separate* system inside your Windows installation, and the programs installed inside it may (as of 2019-01) *not* be used "normal" windows GUI programs.
   If you don't know what this means, do not install the WSL; it can be very confusing.
 
 If you like a fancier shell, you might want to look at the [oh-my-zsh](https://ohmyz.sh) project, which has some pretty cool features.
@@ -617,7 +618,7 @@ If you have a choice, a BibTeX or BibLaTeX file (confusingly both named `*.bib`)
 - Work through the RStudio Cloud [primers](https://rstudio.cloud/learn/primers)
 - DataCamp [Introduction to R](https://www.datacamp.com/courses/free-introduction-to-r) (free tier)
 - [R Cookbook](http://www.cookbook-r.com)
-- Codecademy [Learn R: Introduction](https://www.codecademy.com/learn/learn-r/modules/learn-r-introduction) (7 days trial) 
+- Codecademy [Learn R: Introduction](https://www.codecademy.com/learn/learn-r/modules/learn-r-introduction) (7 days trial)
 
 
 #### Additional Resources

@@ -13,6 +13,8 @@ knitr::opts_chunk$set(echo = FALSE)
 
 Here's the software stack we'll be using.
 
+You should work yourself through this stack in the order suggested.
+
 This is by no means the *only* way to do open science or data science with open source software, and recommended packages are likely to change over time.
 The below R-based toolchain should be considered as merely *one* (out of several) consistent implementations of some best practices.
 However, once participants have mastered this toolchain, they should find it relatively easy to adapt to other ecosystems.
@@ -247,7 +249,76 @@ If you don't want to install something, [Github](https://github.com) (see below)
 We will be using different programs going forward.
 
 
-### Containerisation {#docker}
+### Shell {#cli}
+
+A shell is a command-line interface (CLI) to your computer (as opposed to a point-and-click graphical user interface, or GUI).
+You may also know this as "the console", or "the terminal".
+
+There are technically different *kinds* of shells, though the `bash` shell is the most widespread, and is often used interchangeably with *the* shell.
+
+A lot of programs that we'll be using only run at the CLI, so it's important to know how to use it.
+
+You can use the (Linux) shell that ships with our Docker container, but you should also know your way around the shell that ships with your OS (to, among other things, spin up a Docker image).
+
+On **macOS**, **Linux**: Nothing to install, ships with a bash shell or something similar.
+
+On **Windows**:
+
+- Install [Git for Windows](https://gitforwindows.org) because that comes with at least a git shell.
+  Choose **git bash emulation** on install.
+- If your version is >= Windows 10 Anniversary Update you can also install [Install the Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and use the [Windows 10 Bash Shell](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/).
+  However this is a *separate* system inside your Windows installation, and the programs installed inside it may (as of 2019-01) *not* be used "normal" windows GUI programs.
+  If you don't know what this means, do not install the WSL; it can be very confusing.
+
+If you like a fancier shell, you might want to look at the [oh-my-zsh](https://ohmyz.sh) project, which has some pretty cool features.
+However this is strictly optional, will not be supported in class.
+
+
+#### Resources
+
+- [The Unix Shell (Carpentries)](http://swcarpentry.github.io/shell-novice/)
+- [Command Line for Beginners](https://learntocodewith.me/getting-started/topics/command-line/)
+- Viking Code School [Command Line crash course](http://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course)
+- Shell chapter form [Happywithgitr](http://happygitwithr.com/shell.html)
+- If you're on windows: [how to access ubuntu bash files in windows](https://www.howtogeek.com/261383/how-to-access-your-ubuntu-bash-files-in-windows-and-your-windows-system-drive-in-bash/)
+- Video: [Linux Terminal commands and navigation](https://www.youtube.com/watch?v=AO0jzD1hpXc)
+
+
+#### Additional Resources
+
+- Learn enough [Command line tutorial](https://www.learnenough.com/command-line-tutorial)
+- Codecademy course [Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line) (offers a free tier)
+- DataCampcourse [Introduction to Shell for Data Science](https://www.datacamp.com/courses/introduction-to-shell-for-data-science)
+- [The Unix shell](https://swcarpentry.github.io/shell-novice/02-filedir/index.html)
+
+
+### Bash (Optional) {#bash}
+
+It turns out that `bash`, the default shell on UNIX-type computers is *also* a **scripting language** upon itself.
+[Scripting languages](https://en.wikipedia.org/wiki/Scripting_language) are programming languages which facilitate automated execution of tasks, such as, say, running a bunch of updates and then power cycling your computer.
+
+`bash` isn't necessarily the greatest scripting language; especially for more complicated projects, "proper" scripting languages such as Python, Ruby or R might serve you better.
+
+But `bash` has the advantage that it is available in (almost all) UNIX-type computing environments, so it's often the easiest way to automate steps.
+It looks a bit arcane (because it is), but you don't need much to build powerful scripts that can save you a lot of time.
+
+This entire topic and the below *additional resources* is recommended for advanced readers.
+You won't need this starting out.
+
+
+#### Additional Resources
+
+- [The Unix Workbench](https://seankross.com/the-unix-workbench/index.html)
+- [Writing Shell Scripts - Beginners Guide](https://medium.com/tech-tajawal/writing-shell-scripts-the-beginners-guide-4778e2c4f609)
+- [Bash Boilerplate](http://bash3boilerplate.sh)
+- [Bash programming by (counter-)example](http://matt.might.net/articles/bash-by-example/)
+- [Tips and Tricks for good Bash Scripts](https://codeburst.io/13-tips-tricks-for-writing-shell-scripts-with-awesome-ux-19a525ae05ae)
+- [Bash Scripting Best Practices](https://sap1ens.com/blog/2017/07/01/bash-scripting-best-practices/)
+- [Writing Readable Bash Scripts](https://mads-hartmann.com/2017/06/16/writing-readable-bash-scripts.html)
+- [Google Shell Style Guide](https://google.github.io/styleguide/shell.xml)
+
+
+### Containerisation (optional) {#docker}
 
 <i class="fab fa-docker fa-3x fa-pull-left"></i><a class="btn btn-info" href="https://www.docker.com/products/docker-desktop" role="button">Install Docker Desktop</a>
 
@@ -330,6 +401,7 @@ You also need to *configure* git on your machine, and wherever else you are usin
 
 #### Resources
 
+- [Version Control with Git (Carpentries)](http://swcarpentry.github.io/git-novice/)
 - [Try Git](https://try.github.io/)
 - Jenny Bryan's [Happy Git With R](http://happygitwithr.com) (*yes, you should study this completely -- until Chapter 33*)
 - [Referencing issues in commit messages](https://help.github.com/articles/closing-issues-via-commit-messages)
@@ -345,72 +417,23 @@ You also need to *configure* git on your machine, and wherever else you are usin
 - [Free DataCamp Course](https://www.datacamp.com/courses/introduction-to-git-for-data-science)
 
 
-### Command Line Interface {#cli}
+### Branching Model (Optional) {#gitflow}
 
-A shell is a command-line interface (CLI) to your computer (as opposed to a point-and-click graphical user interface, or GUI).
-You may also know this as "the console", or "the terminal".
+<a class="btn btn-default" href="https://guides.github.com/introduction/flow/" role="button">GitHub Flow</a>
 
-There are technically different *kinds* of shells, though the `bash` shell is the most widespread, and is often used interchangeably with *the* shell.
+There is a varied set of practices and tools that have evolved *on top of* Git.
+Together with the powerful git scm, it is these practices and tools, that make massively collaborative software development possible.
 
-A lot of programs that we'll be using only run at the CLI, so it's important to know how to use it.
-
-You can use the (Linux) shell that ships with our Docker container, but you should also know your way around the shell that ships with your OS (to, among other things, spin up a Docker image).
-
-On **macOS**, **Linux**: Nothing to install, ships with bash.
-
-On **Windows**:
-
-- Install [Git for Windows](https://gitforwindows.org) because that comes with at least a git shell.
-  Choose **git bash emulation** on install.
-- If your version is >= Windows 10 Anniversary Update you can also install [Install the Windows Subsystem for Linux (WSL)](https://docs.microsoft.com/en-us/windows/wsl/install-win10) and use the [Windows 10 Bash Shell](https://www.howtogeek.com/249966/how-to-install-and-use-the-linux-bash-shell-on-windows-10/).
-  However this is a *separate* system inside your Windows installation, and the programs installed inside it may (as of 2019-01) *not* be used "normal" windows GUI programs.
-  If you don't know what this means, do not install the WSL; it can be very confusing.
-
-If you like a fancier shell, you might want to look at the [oh-my-zsh](https://ohmyz.sh) project, which has some pretty cool features.
-However this is strictly optional, will not be supported in class.
-
+One of the simpler practices is GitHub Flow.
+We will use it to learn the branch and pull-request model.
 
 #### Resources
 
-- [Command Line for Beginners](https://learntocodewith.me/getting-started/topics/command-line/)
-- Viking Code School [Command Line crash course](http://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course)
-- Shell chapter form [Happywithgitr](http://happygitwithr.com/shell.html)
-- If you're on windows: [how to access ubuntu bash files in windows](https://www.howtogeek.com/261383/how-to-access-your-ubuntu-bash-files-in-windows-and-your-windows-system-drive-in-bash/)
-- Video: [Linux Terminal commands and navigation](https://www.youtube.com/watch?v=AO0jzD1hpXc)
+- [How to fork](https://guides.github.com/activities/forking/)
+- [Understanding the GitHub Flow](https://desktop.github.com)
+- [Resolving a Merge Conflict](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
+- [Comparing Commits accross time](https://help.github.com/articles/comparing-commits-across-time/)
 
-
-#### Additional Resources
-
-- Learn enough [Command line tutorial](https://www.learnenough.com/command-line-tutorial)
-- Codecademy course [Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line) (offers a free tier)
-- DataCampcourse [Introduction to Shell for Data Science](https://www.datacamp.com/courses/introduction-to-shell-for-data-science)
-- [The Unix shell](https://swcarpentry.github.io/shell-novice/02-filedir/index.html)
-
-
-### Bash (Optional) {#bash}
-
-It turns out that `bash`, the default shell on UNIX-type computers is *also* a **scripting language** upon itself.
-[Scripting languages](https://en.wikipedia.org/wiki/Scripting_language) are programming languages which facilitate automated execution of tasks, such as, say, running a bunch of updates and then power cycling your computer.
-
-`bash` isn't necessarily the greatest scripting language; especially for more complicated projects, "proper" scripting languages such as Python, Ruby or R might serve you better.
-
-But `bash` has the advantage that it is available in (almost all) UNIX-type computing environments, so it's often the easiest way to automate steps.
-It looks a bit arcane (because it is), but you don't need much to build powerful scripts that can save you a lot of time.
-
-This entire topic and the below *additional resources* is recommended for advanced readers.
-You won't need this starting out.
-
-
-#### Additional Resources
-
-- [The Unix Workbench](https://seankross.com/the-unix-workbench/index.html)
-- [Writing Shell Scripts - Beginners Guide](https://medium.com/tech-tajawal/writing-shell-scripts-the-beginners-guide-4778e2c4f609)
-- [Bash Boilerplate](http://bash3boilerplate.sh)
-- [Bash programming by (counter-)example](http://matt.might.net/articles/bash-by-example/)
-- [Tips and Tricks for good Bash Scripts](https://codeburst.io/13-tips-tricks-for-writing-shell-scripts-with-awesome-ux-19a525ae05ae)
-- [Bash Scripting Best Practices](https://sap1ens.com/blog/2017/07/01/bash-scripting-best-practices/)
-- [Writing Readable Bash Scripts](https://mads-hartmann.com/2017/06/16/writing-readable-bash-scripts.html)
-- [Google Shell Style Guide](https://google.github.io/styleguide/shell.xml)
 
 
 ### Package Management {#pkg-mngt}
@@ -521,24 +544,6 @@ For most everyone, RStudio will therefore be the strongly recommended choice.
 - [RStudio Projects documentation](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)
 - [Good enough practices](https://swcarpentry.github.io/good-enough-practices-in-scientific-computing/)
 - [The panes in RStudio](https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=5)
-
-
-### Branching Model (Optional) {#gitflow}
-
-<a class="btn btn-default" href="https://guides.github.com/introduction/flow/" role="button">GitHub Flow</a>
-
-There is a varied set of practices and tools that have evolved *on top of* Git.
-Together with the powerful git scm, it is these practices and tools, that make massively collaborative software development possible.
-
-One of the simpler practices is GitHub Flow.
-We will use it to learn the branch and pull-request model.
-
-#### Resources
-
-- [How to fork](https://guides.github.com/activities/forking/)
-- [Understanding the GitHub Flow](https://desktop.github.com)
-- [Resolving a Merge Conflict](https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/)
-- [Comparing Commits accross time](https://help.github.com/articles/comparing-commits-across-time/)
 
 
 ### Technical & Scientific Authoring {#sciwri}
@@ -655,6 +660,7 @@ If you have a choice, a BibTeX or BibLaTeX file (confusingly both named `*.bib`)
 
 #### Resources
 
+- - [R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder/)
 - Documentation for the above packages.
 - List of [resources here](https://www.tidyverse.org/learn/).
 - Hadley Wickham and Garrett Grolemund's [R for Data Science](https://r4ds.had.co.nz) (read only the chapters that you are interested in).
@@ -720,7 +726,8 @@ Covering them in any depth, or even listing good resources (of which there are g
 
 ## Advanced R {#adv-r}
 
-- Really "just" Hadley Wickham's [Advanced R](https://adv-r.hadley.nz)
+- [Programming with R (Carpentries)](http://swcarpentry.github.io/r-novice-inflammation/)
+- Hadley Wickham's [Advanced R](https://adv-r.hadley.nz)
 
 
 ## Cloud Computing with R {#cloud}

@@ -21,6 +21,9 @@ navbar:
     text: Instructor
     href: http://www.maxheld.de
   right:
+  - icon: fa-comments
+    text: Chat
+    href: https://gitter.im/soztag/fossos
   - icon: fa-tasks
     text: Issues
     href: https://github.com/soztag/fossos/issues

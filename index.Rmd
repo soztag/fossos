@@ -3,7 +3,7 @@ title: "Syllabus"
 author:
   name: "Max Held"
   affiliation: "Friedrich-Alexander-Universität Erlangen-Nürnberg (FAU)"
-date: "Fall Term 2019"
+date: "Summer Term 2020"
 bibliography: library.bib
 ---
 
@@ -17,7 +17,7 @@ library(printr)
 ```
 
 <div class="jumbotron" style="color:white; background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url(img/keyboard-keys-2.jpg) no-repeat center center fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover;">
-  <h2>Open Source Software for the Humanities and Social Sciences</h2>
+  <h2>Software Carpentry: Hacking Skills for Data Science</h2>
   <p>... because learning from hackers is learning to win?</p>
   <p> <span class="label label-default">
   #DataScience
@@ -46,31 +46,28 @@ library(printr)
 > *[Coding – ] it’s the next best thing we have to a superpower.*
 > -- [Drew Houston](@drewhouston) via [code.org](https://code.org)
 
-> *Perfectionism prevents us from taking double steps in our career.*
-> *We think we have to be perfect, but we don’t.*
-> -- [Reshma Saujani](https://www.ellevatenetwork.com/articles/8056-quotes-from-women-in-tech)
-
-> *I also say to my team: Do 10% of your job shittily. *
-> *It’s okay to do something shittily.*
-> *Perfectionism prevents us from taking double steps in our career.*
-> *We think we have to be perfect, but we don’t.*
-> -- [Rashma Saujani](https://skillcrush.com/2016/02/23/advice-from-women-in-tech/)
-
-> *The bad news is that whenever you learn a new skill, you’re going to suck.*
-> -- [Hadley Wickham](http://hadley.nz)
+> *So we were very worried that what if the astronaut, during mid-course, would select pre-launch, for example?*
+> *Never would happen, they said.*
+> *Never would happen.* 
+> *It happened.*
+> -- [Margaret Hamilton](https://www.metaltoad.com/blog/history-computer-girls-part-2-margaret)
 
 > *Computers ... a bicycle for the mind*
 > -- [Steven Jobs](https://www.brainpickings.org/2011/12/21/steve-jobs-bicycle-for-the-mind-1990/)
 
+> *To me programming is more than an important practical art.*
+> *It is also a gigantic undertaking in the foundations of knowledge.*
+> -- [Grace Murray Hopper](https://en.wikipedia.org/wiki/Grace_Hopper)
+
 > *Think of free speech, not free beer.*
 > -- [Richard Stallman](https://stallman.org/)
+
+> *Open source isn't like free sunshine; it's like a free puppy.*
+> -- [Sarah Novotny](https://sarahnovotny.com/)
 
 > *Most learning is not the result of instruction.*
 > *It is rather the result of unhampered participation in a meaningful setting.*
 > -- Ivan @Illich-1971
-
-> *We need to understand that if we all work on inclusion together, it’s going to be faster, broader, better, and more thorough than anything we can do on our own.*
-> -- [Ellen Pao](https://code.likeagirl.io/15-quotes-from-women-in-tech-that-will-inspire-you-773d4aeb6ae5)
 
 
 ## Prerequisites {.alert .alert-success}
@@ -90,37 +87,41 @@ You do *not* need to have completed a prior version of this class, or any other 
 If you *have* some prior training, you will start the class at a different level.
 
 
-## Time and Place (Winter Term 2019/2020) {.alert .alert-warning}
+## Time and Place (Summer Term 2020) {.alert .alert-warning}
 
-Students should attend all 4 full days to guarantee successful participation.
-
-The times and dates are also on [univIS](http://univis.uni-erlangen.de).
+This will be an **all-remote**, largely **asynchronous** seminar, held via [Gitter chat](https://gitter.im/soztag/fossos), [GitHub](http://github.com/soztag/fossos) and occasional [Zoom](http://zoom.us) video conference.
 
 
 ### Preparatory Meeting
 
-**Friday, October 18th, 2019 16:15-17:45** at the Nuremberg Campus of Technology (NCT) (see [below](#venue) for directions).
+**Thursday, April 30th, 2020 15:00-16:00** (in a video conference, see below).
 
 
-### Main Dates: Allerheiligen/Reformationstag Extended Weekend
+### Asynchronous Collaboration
 
-**Thursday, October 31st through Sunday, November 3rd, 10-18:00** at the Nuremberg Campus of Technology (NCT) (see [below](#venue) for directions).
+Throughout the semester, students can work at through the material at their own pace and schedule.
+Support from the instructor and fellow students is available on the [Gitter chat](https://gitter.im/soztag/fossos).
 
-
-### Venue
-
-Classes will take place here:
-
-<address>
-| Nuremberg Campus of Technology
-| "Auf AEG" Haus 11
-| Room 11.2.2
-| Fürther Straße 246c
-| 90429 Nuremberg
-</address>
+Depending on needs, short video conferences will be held for selected topics.
 
 
-(The building can be hard to find; see [here](http://datascience.phil.fau.de/fossos/img/directions.pdf) for directions).
+### Digital Venus
+
+We're going to use a few digital tools to work asynchronously.
+
+- Static information will be at https://datascience.phil.fau.de/fossos/, the **class website**.
+  You can find all the resources (~ readings) and software links on https://datascience.phil.fau.de/fossos/stack.html.
+- Pretty much all *individual* activity (i.e. to be done by one or a few students) is tracked as issues on our class repository **issue tracker** at https://github.com/soztag/fossos/issues.
+  If you have a question, have an idea to work on, or are looking for inspiration for a task, this is your place.
+  Issues are organised using labels and assignees.
+  Milestones are currently not in use.
+- A (currently relevant) subset of these issues are also listed on our **Kanban board** at https://github.com/soztag/fossos/projects/2.
+  This board gives you an overview what everyone is busy with at any given point.
+  You can move your "own" issues around the board as appropriate, and you can also add issues that you want to see addressed.
+- There is a [Gitter chat](https://gitter.im/soztag/fossos) that students can use throughout the semester to get support from the instructor and fellow students.
+  If you have your own repo for your own project (advanced students) you can open your own gitter chat and invite the instructor or fellow students for support.
+
+These venues are also linked from the top bar of the class website, so you can always easily find them.
 
 
 ## Language requirements
@@ -175,12 +176,13 @@ This class was/is listed as:
     - Bachelor Digital Humanities and Social Sciences ("BA Zweitfach")
         - Elective (Wahlpflichtbereich FPO 2018)
         - Elective (Wahlpflichtbereich FPO 2016)
+- 2020 Summer Term:  "Software Carpentry -- Hacking Skills for Data Science"
 
 
 ## Related Classes
 
 [Daniel Lemmer](https://www.pol.phil.fau.eu/person/daniel-lemmer/) is (again) offering an [introduction to R](https://univis.uni-erlangen.de/form?__s=2&dsc=anew/lecture_view&lvs=phil/dsp/isoz/zentr/einfhr_3&anonymous=1&founds=phil/dsp/ipowi/zentr/argent,/spanie,/wahlpa,///isoz/zentr/einfhr_3&sem=2019w&__e=183) (in german) as a seminar in the winter term 2019/2020.
-Daniel's introduction to R is a great complement to *FOSSOS*, though it is *not* a prequisite (and the same holds vice-versa).
+Daniel's introduction to R is a great complement to *FOSSOS*, though it is *not* a prerequisite (and the same holds vice-versa).
 His introduction is focused on running common statistical analyses in R.
 *FOSSOS* is focused on open source tooling *around* R, R as a data science glue language and more advanced R.
 
@@ -337,7 +339,7 @@ For broader, more open-ended discussions, use the <a href="https://github.com/or
 ## Schedule
 
 Because students will learn at different speeds, and from different starting points, there is not *a* schedule for the class.
-We will, however, progress through the [stack](/stack) in the order in which software (and resources) are listed.
+The [stack](/stack) lists the tools (and resources) in the rough order in which they should be studied.
 
 Students can work through this material at their own pace.
 Likewise, some students may wish to cover a lot of breadth (at shallow depth), while others want to dig in on a particular topic.
@@ -348,22 +350,8 @@ Every student should first become competent in the practices and tools covered i
 
 As a loose guide, *every* student should cover at least *one* top-level heading ("Interactive R", "Intermediate R", etc.) per semester.
 
-
-## Digital Places
-
-We're going to use a few digital tools to get organised in this class, all based on GitHub.
-
-- Static information will be at https://datascience.phil.fau.de/fossos/, the **class website**.
-  You can find all the resources (~ readings) and software links on https://datascience.phil.fau.de/fossos/stack.html.
-- Pretty much all *individual* activity (i.e. to be done by one or a few students) is tracked as issues on our class repository **issue tracker** at https://github.com/soztag/fossos/issues.
-  If you have a question, have an idea to work on, or are looking for inspiration for a task, this is your place.
-  Issues are organised using labels and assignees.
-  Milestones are currently not in use.
-- A (currently relevant) subset of these issues are also listed on our **Kanban board** at https://github.com/soztag/fossos/projects/2.
-  This board gives you an overview what we will be working on in the current and coming sessions.
-  You can move your "own" issues around the board as appropriate, and you can also add issues that you want to see addressed.
-
-These venues are also linked from the top bar of the class website, so you can always easily find them.
+There are often several heavily overlapping resources recommended for a tool; students should study whichever best suits their taste.
+It's a good idea to browse through all of the resources to make sure you don't miss anything.
 
 
 ## Assessment
@@ -604,6 +592,8 @@ rubric
 
 
 ## Attendance
+
+(Does not apply for the 2020 summer term.)
 
 Attendance is not mandatory, as per university policy.
 However, students are *highly* recommended to attend the seminar regularly, and to thoroughly study the assigned material.

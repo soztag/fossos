@@ -94,12 +94,12 @@ This will be an **all-remote**, largely **asynchronous** seminar, held via [Gitt
 
 ### Preparatory Meeting
 
-**Thursday, April 30th, 2020 15:00-16:00** (in a video conference, see below).
+**Thursday, April 30th, 2020 15:00-17:00** (in a video conference, see below).
 
 
 ### Asynchronous Collaboration
 
-Throughout the semester, students can work at through the material at their own pace and schedule.
+Throughout the semester, students can work through the material at their own pace and schedule.
 Support from the instructor and fellow students is available on the [Gitter chat](https://gitter.im/soztag/fossos).
 
 Depending on needs, short video conferences will be held for selected topics.
@@ -323,17 +323,13 @@ First-time students of <em>FOSSOS</em> are expected to work through (not just re
 Repeat participants in the seminar who have mastered this material can advance to any of the other sections according to their interests and should prepare accordingly.
 </div>
 
-<div class="alert alert-success role="alert">
-Whenever your run into a problem, or have a question, raise an issue on our <a href="https://github.com/soztag/fossos/issues">github issue tracker</a>.
+Whenever your run into a problem, or have a question, raise an issue on our [https://github.com/soztag/fossos/issues](github issue tracker).
 Please also make sure that:
 
-- the issue does not <em>already exist</em> (always <em>search first!</em>)
-- the issue is properly <em>labelled</em> (so we can all navigate through the issues)
-- the issue is <em>answerable</em>, <em>actionable</em> and <em>closable</em>.
-  Good issues are framed in such a way that they <em>can</em> be closed.
-
-For broader, more open-ended discussions, use the <a href="https://github.com/orgs/soztag/teams/fossos-18-ws">class discussion board</a>
-</div>
+- the issue does not *already exist* (always *search first!*)
+- the issue is properly *labelled* (so we can all navigate through the issues)
+- the issue is *answerable*, *actionable* and *closable*.
+  Good issues are framed in such a way that they *can* be closed.
 
 
 ## Schedule
@@ -591,18 +587,6 @@ rubric
 ```
 
 
-## Attendance
-
-(Does not apply for the 2020 summer term.)
-
-Attendance is not mandatory, as per university policy.
-However, students are *highly* recommended to attend the seminar regularly, and to thoroughly study the assigned material.
-It is highly unlikely that you will be able to receive passing grades on the assignments otherwise.
-
-Even though technical in nature, this class is no "rocket science", and we will get everyone up to speed, no matter the prior knowledge.
-However, you have to work hard and thoroughly, otherwise it is very possible that you will simply fail the class, or receive a poor grade.
-
-
 ## Technical Requirements {#reqs}
 
 Unfortunately, FAU has no computer lab facilities suitable for teaching this class and participants will have to **bring their own computers**.
@@ -655,14 +639,18 @@ For a list of things you *still* need to install "locally", consult the [stack](
 
 For installation instructions, see [here](/stack.html#docker)).
 
+Unfortunately, Docker has some [system requirement](https://docs.docker.com/docker-for-windows/install/) that many Windows versions do not meet.
 
-### Cloud Alternative (Not Recommended)
+
+#### Cloud Alternative (Not Recommended)
 
 As a backup plan to using Docker on your own own operating system, you may use [RStudio Cloud](https://rstudio.cloud), a data science Software-as-a-Service (SaaS).
 RStudio Cloud furnishes you with a ready RStudio session in a Docker image similar to `rocker/verse` with all necessary system dependencies.
 
 RStudio Cloud is still in *alpha* and may not be always reliable.
-Once out of alpha, it will also be a paid service, for which you may have to pay yourself.
+Once out of alpha, it may also be a paid service, for which you may have to pay yourself.
+
+Full disclosure: the instructor has worked for RStudio PBC.
 
 You are strongly encouraged to invest the time and effort to set up and maintain a development environment on your own computer.
 
@@ -707,11 +695,12 @@ If you are using a Windows machine, you may consider the following alternatives 
 
 There is no guarantee that any of these alternatives or links will work for you; you will have to research them on your own.
 
+
 ## Contributors
 
 A big **Thank You** to all contributors (in alphabetical order by username):
 
-```{r contribs, echo=FALSE, results='asis'}
+```{r contribs, echo=FALSE, results='asis', message=FALSE}
 # wrappers are necessary to shut up chatty function
 # function apparently chats via cat, which cannot be disabled in chunk options
 invisible(capture.output(

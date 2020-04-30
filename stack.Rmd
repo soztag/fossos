@@ -173,10 +173,10 @@ A lot of volunteers spend a lot of time on these sites, so it is very important 
 
 #### Tasks
 
-- Sign up to StackOverflow and post your profile to the [course discussion board](https://github.com/orgs/soztag/teams/fossos-18-ws)
-- Find an interesting question an StackOverflow and post it to the [course discussion board](https://github.com/orgs/soztag/teams/fossos-18-ws)
-- Sign up to RStudio community and post your profile to the [course discussion board](https://github.com/orgs/soztag/teams/fossos-18-ws)
-- Find and interesting discussion on RStudio community and post it to the [course discussion board](https://github.com/orgs/soztag/teams/fossos-18-ws)
+- Sign up to StackOverflow.
+- Find an interesting question an StackOverflow and post it to the chat.
+- Sign up to RStudio community and post your profile to the chat so we can follow each other.
+- Find and interesting discussion on RStudio community and post it to the chat.
 
 
 #### Additional Resources
@@ -223,7 +223,9 @@ The extension `.md` serves merely to tell computers that the following plain tex
 
 Markdown was (originally) quite a minimal standard, and has since branched out into a few specialised "flavors", offering additional features.
 
-We will be using only *two* of these flavors: GitHub Flavored Markdown and Pandoc's Markdown (more on that below).
+We will be using only *two* of these flavors: GitHub Flavored Markdown (GFM) and Pandoc's Markdown (more on that below).
+
+StackOverflow, RStudio Community (Discourse), Gitter chat and many other services also support GFM.
 
 GitHub, a leading code-hosting service, has extended the above original Markdown spec by a couple of additional features.
 In addition to these formatting niceties, Github also implements some clever cross-referencing and autocompletion magic.
@@ -276,7 +278,6 @@ However this is strictly optional, will not be supported in class.
 
 #### Resources
 
-- [The Unix Shell (Carpentries)](http://swcarpentry.github.io/shell-novice/)
 - [Command Line for Beginners](https://learntocodewith.me/getting-started/topics/command-line/)
 - Viking Code School [Command Line crash course](http://www.vikingcodeschool.com/web-development-basics/a-command-line-crash-course)
 - Shell chapter form [Happywithgitr](http://happygitwithr.com/shell.html)
@@ -288,8 +289,8 @@ However this is strictly optional, will not be supported in class.
 
 - Learn enough [Command line tutorial](https://www.learnenough.com/command-line-tutorial)
 - Codecademy course [Learn the Command Line](https://www.codecademy.com/learn/learn-the-command-line) (offers a free tier)
-- DataCampcourse [Introduction to Shell for Data Science](https://www.datacamp.com/courses/introduction-to-shell-for-data-science)
-- [The Unix shell](https://swcarpentry.github.io/shell-novice/02-filedir/index.html)
+- DataCamp course [Introduction to Shell for Data Science](https://www.datacamp.com/courses/introduction-to-shell-for-data-science)
+- [The Unix Shell (Carpentries)](http://swcarpentry.github.io/shell-novice/)
 
 
 ### Bash (Optional) {#bash}
@@ -302,7 +303,7 @@ It turns out that `bash`, the default shell on UNIX-type computers is *also* a *
 But `bash` has the advantage that it is available in (almost all) UNIX-type computing environments, so it's often the easiest way to automate steps.
 It looks a bit arcane (because it is), but you don't need much to build powerful scripts that can save you a lot of time.
 
-This entire topic and the below *additional resources* is recommended for advanced readers.
+This entire topic and the below *additional resources* are recommended for advanced readers.
 You won't need this starting out.
 
 
@@ -326,7 +327,7 @@ Docker is an open-source industry standard to define, provision and share comput
 Containers allow you to run computing environments on other computers.
 Containers are similar to virtual machines (a computer inside a computer), but slimmer and generally neater.
 
-We are using it in this class to reduce the burden of local installations, but it is also generally a helpful tool.
+You may want to use Docker in class to quickly get a development environment, but it is also generally a helpful tool.
 
 
 #### Resources
@@ -392,11 +393,11 @@ There plenty of those out there, but one of the easiest is the GitHub Desktop ap
 
 **You should install Git and GitHub Desktop even if you are using Docker**.
 
-You also need to *configure* git on your machine, and wherever else you are using Git (such as a SaaS):
+You also need to *configure* git on your machine, so that git knows you are and to allow you to authenticate against git hosts (GitHub.com in our case) and wherever else you are using Git (such as a SaaS):
 
 - [Your local machine](https://help.github.com/articles/setting-your-username-in-git/)
-- RStudio
 - [RStudio Cloud](https://bren.zendesk.com/hc/en-us/articles/360015826731-How-to-connect-RStudio-Cloud-with-Github)
+- Configuring git inside Docker isn't recommended; it can get difficult you must be careful not to disclose your credentials.
 
 
 #### Resources
@@ -435,8 +436,7 @@ We will use it to learn the branch and pull-request model.
 - [Comparing Commits accross time](https://help.github.com/articles/comparing-commits-across-time/)
 
 
-
-### Package Management {#pkg-mngt}
+### Package Management (optional) {#pkg-mngt}
 
 <a class="btn btn-default" href="https://en.wikipedia.org/wiki/APT_(Debian)" role="button">Linux: already ships with `apt`</a>
 <a class="btn btn-info" href="https://brew.sh" role="button">macOS: install home`brew`</a>
@@ -546,12 +546,11 @@ For most everyone, RStudio will therefore be the strongly recommended choice.
 - [The panes in RStudio](https://campus.datacamp.com/courses/working-with-the-rstudio-ide-part-1/orientation?ex=5)
 
 
-### Technical & Scientific Authoring {#sciwri}
+### Technical & Scientific Authoring (optional) {#sciwri}
 
 **All software in this section is included in the Docker image.**
 
-
-#### Document Conversion {#conversion}
+#### Document Conversion (optional) {#conversion}
 
 <i class="far fa-file-alt fa-3x fa-pull-left"></i> <a class="btn btn-info" href="https://pandoc.org" role="button">Install Pandoc</a>
 
@@ -660,7 +659,9 @@ If you have a choice, a BibTeX or BibLaTeX file (confusingly both named `*.bib`)
 
 #### Resources
 
-- - [R for Reproducible Scientific Analysis](http://swcarpentry.github.io/r-novice-gapminder/)
+- [R for Reproducible Scientific Analysis (Carpentries)](http://swcarpentry.github.io/r-novice-gapminder/)
+- [R for Reproducible Science (Merely Useful)](https://merely-useful.github.io/r-rse/)
+- [Novice R (Merely Useful)](https://merely-useful.github.io/r/)
 - Documentation for the above packages.
 - List of [resources here](https://www.tidyverse.org/learn/).
 - Hadley Wickham and Garrett Grolemund's [R for Data Science](https://r4ds.had.co.nz) (read only the chapters that you are interested in).

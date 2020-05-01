@@ -353,7 +353,7 @@ You may want to use Docker in class to quickly get a development environment, bu
   3. Launch a system shell and type in
 
     ```
-    docker run --env=PASSWORD=yourpassword --rm --publish=8787:8787 rocker/verse
+    docker run --env=PASSWORD=foo --rm --publish=8787:8787 rocker/verse
     ```
 
     On macOS and Linux, your default system shell is an application called "Terminal".
